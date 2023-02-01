@@ -1,0 +1,78 @@
+/* ESTILO PADRÃO P2 */
+
+Body {
+    background-color: #1e1e1e;
+    font: normal 15px
+     Verdana;
+}
+
+header {
+    font: normal 14px Verdana;
+    color: aliceblue;
+    text-align: center;
+}
+
+section {
+    background-color: #252526;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+    color: aliceblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+}
+
+footer {
+    font-size: 10px ;
+    color: rgb(155, 155, 155);
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+div {
+    text-align: center;
+}
+
+#msg {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.numberSpace {
+    margin: 40px;
+}
+
+.numberBox {
+    margin: 0px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#tryB {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(237, 201, 73);
+}
+
+#tryB:hover {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(154, 131, 50);
+}
+
+#tryB:focus {
+    padding: 8px;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: rgb(70, 60, 24);
+}
+
+#chts {
+    display: inline;
+}
+
+.cht {
+    margin: 23px;
+}
