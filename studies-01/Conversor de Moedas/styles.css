@@ -1,0 +1,23 @@
+h1 {
+    padding-bottom: 0pt;
+}
+
+body {
+    background-color: white;
+}
+
+.button {}
+.button:active{
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+
+.isertValue {
+    padding-bottom: 10pt;
+    display: inline;
+}
+
+.firstValue {
+    width: 60pt;
+    height: 10pt;
+}

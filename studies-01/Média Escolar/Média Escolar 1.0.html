@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Escolar</title>
+    <style>
+        .default {
+            margin-top: 15pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Média Escolar</h1>
+    <input type="number" name="n1" id="n1">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="conclu" class="default">
+        Situação:
+    </div>
+    <script>
+        function verificar() {
+            //window.alert ('O botão funcionou') // Teste de Func. do Botão
+            var r1 = window.document.getElementById('n1')
+            var v1 = Number(n1.value)
+            //window.alert ('Sua nota é ' + v1) // Teste de Func. da Conversão
+            if (7 <= v1) {
+                //window.alert ('Condição funcionou') // Teste de  Func. de Condição
+                var c1 = window.document.getElementById('conclu')
+
+                c1.innerText = ('Situação: Aprovado!')   
+            } else {
+                var c1 = window.document.getElementById('conclu')
+
+                c1.innerText = ('Situação: Reprovado.')
+            }
+        }
+    </script>
+</body>
+</html>

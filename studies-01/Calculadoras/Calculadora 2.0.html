@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style> 
+    .tit {
+        margin-bottom: 0pt;
+    }
+    .ope {
+        margin: 20pt;
+    }
+    .space {
+        width: 60pt;
+    }
+    .but {
+        margin-inline: 2pt;
+    }
+    .result {
+        margin-top: 15pt;
+        margin-bottom: 15pt;
+    }
+    </style>
+</head>
+<body>
+    <h1 class="tit">
+        Calculadora
+    </h1><hr />
+    
+    <div id="ope" class="ope">
+        <output id="e1"></output>
+        <output id="o"></output>
+        <output id="e1"></output>
+        <output id="result"></output>
+    </div><hr />
+
+    <div id="calcu">
+        <input type="button" value="1" onclick="one()" class="but">
+        <input type="button" value="2" onclick="two()" class="but">
+        <input type="button" value="3" onclick="tree()" class="but">
+        <input type="button" value="4" onclick="four()" class="but">
+        <input type="button" value="5" onclick="five()" class="but">
+        <input type="button" value="6" onclick="six()" class="but">
+        <input type="button" value="7" onclick="seven()" class="but">
+        <input type="button" value="8" onclick="eight()" class="but">
+        <input type="button" value="9" onclick="nine()" class="but">
+    </div>
+
+    <div class="result">
+    <input type="button" value="+" onclick="somar()" class="but">
+    <input type="button" value="-" onclick="subtrair()" class="but">
+    <input type="button" value="*" onclick="multiplicar()" class="but">
+    <input type="button" value="/" onclick="dividir()" class="but">
+    <input type="button" value="=" onclick="calcular()" class="but">
+    </div>
+
+    <script>
+        var n1 = 0
+        var n2 = 0
+        var ot = 0
+        var op = 'not'
+
+        if (ot === 0) {
+
+            function one() {
+            var n1 = 1
+            var o1 = window.document.getElementById('e1')
+            o1.innerHTML = (n1)}
+
+            function two() {
+            var n1 = 2
+            var o1 = window.document.getElementById('e1')
+            o1.innerHTML = (n1)}
+        
+            function tree() {
+            var n1 = 3
+            var o1 = window.document.getElementById('e1')
+            o1.innerHTML = (n1)}
+
+            function four() {
+            var n1 = 4
+            var o1 = window.document.getElementById('e1')
+            o1.innerHTML = (n1)}
+
+            function five() {
+            var n1 = 5
+            var o1 = window.document.getElementById('e1')
+            o1.innerHTML = (n1)}
+
+            function six() {
+            var n1 = 6
+            var o1 = window.document.getElementById('e1')
+            o1.innerHTML = (n1)}
+
+            function seven() {
+            var n1 = 7
+            var o1 = window.document.getElementById('e1')
+            o1.innerHTML = (n1)}
+            
+            function eight() {
+            var n1 = 8
+            var o1 = window.document.getElementById('e1')
+            o1.innerHTML = (n1)}
+            
+            function nine() {
+            var n1 = 9
+            var o1 = window.document.getElementById('e1')
+            o1.innerHTML = (n1)}
+        }
+
+        function somar() {
+            var n1 = window.document.getElementById('e1')
+            var v1 = Number(n1.value)
+
+            var op = 'soma'
+
+            //window.alert(n1)
+            //window.alert(v1)
+            //window.alert(op)
+
+            var sbs = document.getElementById('o')
+            sbs.innerText = ('+')
+            ot = 1
+
+            //window.alert(ot) // Teste de troca de time
+        }
+
+        function subtrair() {
+            var n1 = window.document.getElementById('e1')
+            var v1 = Number(n1.value)
+
+            var op = 'soma'
+
+            //window.alert(n1)
+            //window.alert(v1)
+            //window.alert(op)
+
+            var sbs = document.getElementById('o')
+            sbs.innerText = ('+')
+            ot = 1
+
+            //window.alert(ot) // Teste de troca de time
+        }
+
+        function multiplicar() {
+            var n1 = window.document.getElementById('e1')
+            var v1 = Number(n1.value)
+
+            var op = 'multi'
+
+            //window.alert(n1)
+            //window.alert(v1)
+            //window.alert(op)
+
+            var sbs = document.getElementById('o')
+            sbs.innerText = ('*')
+            ot = 1
+
+            //window.alert(ot) // Teste de troca de time
+        }
+
+        function dividir() {
+            var n1 = window.document.getElementById('e1')
+            var v1 = Number(n1.value)
+
+            var op = 'divi'
+
+            //window.alert(n1)
+            //window.alert(v1)
+            //window.alert(op)
+
+            var sbs = document.getElementById('o')
+            sbs.innerText = ('/')
+            ot = 1
+
+            //window.alert(ot) // Teste de troca de time
+        }
+        
+        if (ot === 1) {
+
+            //window.alert(ot)
+
+            function one() 
+            if (ot===1) {
+            var n2 = 1
+            var o2 = window.document.getElementById('e2')
+            o2.innerHTML = (n2)}
+
+            function two() {
+            var n2 = 2
+            var o2 = window.document.getElementById('e2')
+            o2.innerHTML = (n2)}
+        
+            function tree() {
+            var n2 = 3
+            var o2 = window.document.getElementById('e2')
+            o2.innerHTML = (n2)}
+
+            function four() {
+            var n2 = 4
+            var o1 = window.document.getElementById('e2')
+            o2.innerHTML = (n2)}
+
+            function five() {
+            var n2 = 5
+            var o1 = window.document.getElementById('e2')
+            o2.innerHTML = (n2)}
+
+            function six() {
+            var n2 = 6
+            var o1 = window.document.getElementById('e2')
+            o2.innerHTML = (n2)}
+
+            function seven() {
+            var n2 = 7
+            var o1 = window.document.getElementById('e2')
+            o2.innerHTML = (n2)}
+            
+            function eight() {
+            var n2 = 8
+            var o2 = window.document.getElementById('e2')
+            o2.innerHTML = (n2)}
+            
+            function nine() {
+            var n2 = 9
+            var o2 = window.document.getElementById('e2')
+            o2.innerHTML = (n2)}
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="tit">
+        Calculadora
+    </h1><hr />
+    
+    <div id="ope" class="ope">
+        <output id="e1"></output>
+        <output id="o"></output>
+        <output id="e2"></output>
+        <output id="r"></output>
+    </div><hr />
+
+    <div id="buttons_n">
+        <input type="button" value="1" onclick="one()" class="butt_n">
+        <input type="button" value="2" onclick="two()" class="butt_n">
+        <input type="button" value="3" onclick="tree()" class="butt_n">
+        <input type="button" value="4" onclick="four()" class="butt_n">
+        <input type="button" value="5" onclick="five()" class="butt_n">
+        <input type="button" value="6" onclick="six()" class="butt_n">
+        <input type="button" value="7" onclick="seven()" class="butt_n">
+        <input type="button" value="8" onclick="eight()" class="butt_n">
+        <input type="button" value="9" onclick="nine()" class="butt_n">
+
+        <button type="button" onClick="recarregarAPagina()">Limpar</button>
+    </div>
+
+    <div class="buttons_o">
+    <input type="button" value="+" onclick="somar()" class="butt_o">
+    <input type="button" value="-" onclick="subtrair()" class="butt_o">
+    <input type="button" value="*" onclick="multiplicar()" class="butt_o">
+    <input type="button" value="/" onclick="dividir()" class="butt_o">
+    <input type="button" value="=" onclick="calcular()" class="butt_o">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

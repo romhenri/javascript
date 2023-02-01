@@ -1,0 +1,24 @@
+.tit {
+    margin-bottom: 0pt;
+}
+.ope {
+    margin: 20pt;
+}
+.space {
+    width: 60pt;
+}
+.butt_n {
+    margin-inline: 2pt;
+}
+.butt_o {
+    margin-inline: 2pt;
+    margin-top: 8pt;
+}
+.butt_c {
+    margin-inline: 15pt;
+    margin-top: 8pt;
+}
+.result {
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+}

@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32pt;
+}
+img {
+    display: grid;
+}
+.jovem {
+    width: 15%;
+}

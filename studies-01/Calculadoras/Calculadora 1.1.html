@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style> 
+    .space {
+        width: 60pt;
+    }
+    .but {
+        margin-inline: 2pt;
+    }
+    .result {
+        margin-top: 15pt;
+        margin-bottom: 15pt;
+    }
+    </style>
+</head>
+<body>
+    <h1>
+        Calculadora
+    </h1>
+    <input type="number" name="Primeiro" id="b1" class="space"> &
+    <input type="number" name="Segundo" id="b2" class="space"> =
+
+    <output id="result"></output>
+
+    <div class="result">
+    <input type="button" value="Somar" onclick="somar()" class="but">
+    <input type="button" value="Multiplicar" onclick="multiplicar()" class="but">
+    <input type="button" value="Dividir" onclick="dividir()" class="but">
+    </div>
+
+    <script>
+        function somar() {
+            var n1 = window.document.getElementById('b1')
+            var n2 = window.document.getElementById('b2')
+            var conclu = window.document.getElementById('result')
+            var v1 = Number(n1.value)
+            var v2 = Number(n2.value)
+
+            //window.alert ('v1 e v2 = '+ v1 + ' ' + v2) // Teste
+
+            var r = v1 + v2
+            
+            //window.alert (r) // Teste
+
+            conclu.innerHTML = (r)
+        }
+
+        function multiplicar() {
+            var n1 = window.document.getElementById('b1')
+            var n2 = window.document.getElementById('b2')
+            var conclu = window.document.getElementById('result')
+            var v1 = Number(n1.value)
+            var v2 = Number(n2.value)
+
+            //window.alert ('v1 e v2 = '+ v1 + ' ' + v2) // Teste
+
+            var r = v1 * v2
+            
+            //window.alert (r) // Teste
+
+            conclu.innerHTML = (r)
+        }
+
+        function dividir() {
+            var n1 = window.document.getElementById('b1')
+            var n2 = window.document.getElementById('b2')
+            var conclu = window.document.getElementById('result')
+            var v1 = Number(n1.value)
+            var v2 = Number(n2.value)
+
+            //window.alert ('v1 e v2 = '+ v1 + ' ' + v2) // Teste
+
+            var r = v1 / v2
+            
+            //window.alert (r) // Teste
+
+            conclu.innerHTML = (r)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="t1" id="t1">
+
+    <input type="button" value="Verificar" onclick="b()">
+
+    <div class="A"></div>
+    <div class="A"></div>
+
+
+
+
+
+
+    <script>
+        function b() {
+            window.alert ('função funcionando')
+
+            var t = window.document.getElementById('t1')
+            var v = Number(t.value)
+
+            window.alert ('condição funcionando')
+
+            if (t>2) {
+                window.alert ('maior que 2')
+            }
+        }
+    
+    </script>
+</body>
+</html>

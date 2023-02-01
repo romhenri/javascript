@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não Clique no Botão</title>
+    <style>
+        div#b1 {
+            font: normaç 20pt Arial;
+            background-color: green;
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="b1">
+        Não Clique Aqui
+    </div>
+    <script>
+        var a = window.document.getElementById('b1')
+        a.addEventListener ('click', clicou)
+        a.addEventListener ('mouseenter', passou)
+        a.addEventListener ('mouseout', saiu)
+        function clicou() {
+            var a = window.document.getElementById('b1')
+            a.innerText = 'Não Clique De Novo'
+            a.style.background = 'red'
+        }
+        function passou() {
+            var a = window.document.getElementById('b1')
+            a.innerText = 'Não se Atreva'
+        }
+        function saiu() {
+            var a = window.document.getElementById('b1')
+            a.innerText = 'Não Clique Aqui'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Pidão</title>
+    <style>
+        body {
+            color: aliceblue;
+            font-size: 16pt;
+            background-color: black;
+        }
+        h1 {
+            color: aliceblue;
+            font-size: 32pt;
+            text-align: left;
+            margin-left: 12pt;
+        }
+        p {
+            color: aliceblue;
+            font-size: 16pt;
+            text-align: left;
+            margin-bottom: 28pt;
+            margin-left: 12pt;
+        }
+        div {
+            text-align: center;
+            width: 30%;
+            margin-top: 20pt;
+            margin-left: 12pt;
+            
+        }
+        div#botão {
+            text-align: center;
+            margin: 9pt;
+            border: 1pt solid #fff;
+            margin-left: 12pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Site Pidão
+    </h1>
+    <p>
+        Este site solicita farinha na cubuca.
+    </p>
+    <div id="botão" onclick="ss">
+        Sim, receba farinha
+    </div>
+    <div id="botão">
+        Não, sem farinha
+    </div>
+
+    <script>
+        window.alert('põe farinha na cubucaaaaaaa')
+        function Sim (){
+            var a = window.document.getElementById('botão')
+            a.innerText = 'Me dêeeeeeeeeeeeee'
+        }
+
+        function ss(){
+            var x = window.document.getElementsByName('botão')
+            x.innerText = 'Me dêeeeeeeeeeeeeeeee'
+        }
+    </script>
+</body>
+</html>

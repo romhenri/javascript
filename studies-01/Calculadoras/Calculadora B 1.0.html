@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 1.0</title>
+    <style>
+        .conclu {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Calculadora Básica
+    </h1>
+    <input type="number" name="bx1" id="b1"> +
+    <input type="number" name="bx2" id="b2">
+    <input type="button" value="Somar" onclick="somar()">
+
+    <div class="conclu" id="conclu">
+        Resultado:
+    </div>
+
+    <script>
+        function somar() {
+            var v1 = window.document.getElementById('b1')
+            var v2 = window.document.getElementById('b2')
+            var conclu = window.document.getElementById('conclu')
+            var n1 = Number(v1.value)
+            var n2 = Number(v2.value)
+            var s = n1 + n2
+            conclu.innerHTML = 'Resultado: ' + s
+        }
+    </script>
+</body>
+</html>
