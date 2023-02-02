@@ -1,5 +1,9 @@
 /* ESTILO PADRÃO P2 */
 
+h1 {
+    color: rgb(79, 79, 255);
+}
+
 Body {
     background-color: #1e1e1e;
     font: normal 15px
@@ -16,7 +20,7 @@ section {
     background-color: #252526;
     border-radius: 10px;
     padding: 20px;
-    width: 500px;
+    width: 350px;
     margin: auto;
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
@@ -32,12 +36,53 @@ footer {
 
 div {
     text-align: left;
-    margin-left: 30px;
+}
+
+.info {
+    text-align: left;
+    margin-left: 15px;
 }
 
 #msg {
     margin-top: 5px;
     margin-bottom: 25px;
+}
+
+#n {
+    border-radius: 5px;
+    width: 180px;
+}
+
+#st {
+    border-radius: 5px;
+    width: 165px;
+}
+
+.button {
+    font-size: 15px;
+    width: 90px;
+    padding: 8px;
+    background-color: rgb(79, 79, 255);
+    color: aliceblue;
+    border-radius: 15px;
+}
+
+.button:hover {
+    padding: 8px;
+    background-color: rgb(65, 65, 210);
+}
+
+.button:active {
+    padding: 8px;
+    background-color: rgb(21, 21, 66);
+}
+
+.bt {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    text-align: center;
+
 }
 
 a {

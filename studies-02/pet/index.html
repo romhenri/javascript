@@ -7,27 +7,33 @@
     <title>Hora do Dia</title>
     <link rel="stylesheet" href="styles.css"></style>
 </head>
-<body onload="start()">
+<body>
     <header>
-        <h1>Verificador de Pet
+        <h1>Registro de Pet
         </h1>
     </header>
     <section>
         
-        <div>
+        <div class="info">
+            <p>Nome do Pet:
+                <input type="text" id="n">
+            </p>
             <p>Ano de adoção:
-                <input type="number" name="startYear" id="startYear" min="0">
+                <input type="number" name="startYear" id="st">
             </p>
             <p>
                 Cor:
-                <input type="radio" name="color" id="golden" checked> Dourado
-                <input type="radio" name="color" id="gray"> Cinza
-                <input type="radio" name="color" id="brown"> Marrom
+                <input type="radio" name="clr" id="golden" checked> Dourado
+                <input type="radio" name="clr" id="gray"> Cinza
+                <input type="radio" name="clr" id="brown"> Marrom
 
 
             </p>
+        </div>
+
+        <div class="bt">
             <p class="end">
-                <input type="button" value="Verificar" onclick="check()">
+                <input type="button" value="Registrar" onclick="check()" class="button">
             </p>
         </div>
 

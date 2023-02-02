@@ -1,19 +1,28 @@
-function start() {
-    var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('img')
+function check() {
     var date = new Date()
-    var hour = date.getHours()
+    var year = date.getFullYear()
+    var syp = document.getElementById('st')
+    var sy = Number(syp.value)
+    var res = document.getElementById('conclusion')
+    var time = year -sy
+    var name = document.getElementById('n')
 
-    console.log (`O horário é ${hour} horas`)
-
-    msg.innerHTML = `Agora são ${hour} horas`
-
-    if (hour >= 4 && hour < 12) {
-        img.src= 'assets/photo-morning.png'
-    } else if (hour >= 12 && hour < 18) {
-        img.src = 'assets/photo-evening.png'
-    } else {
-        img.src = 'assets/photo-night.png'
-    }
+    console.log(date)
+    console.log(year)
+    console.log(syp)
+    console.log(sy)
+    console.log(n)
     
-}
+    if (sy == 0 || sy.value > year) {
+        console.log('Dados inválidos!')
+        alert('Dados invalidos!')
+    } else {
+        var cks = document.getElementById('clr')
+
+        console.log('Dados válidos!')
+        console.log(time)
+
+        if (cks[0].checked) {
+            console.log('Dourado')}
+    }
+    }
