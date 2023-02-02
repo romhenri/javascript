@@ -20,8 +20,12 @@ function play() {
         }, 100)
 
     } else if (secretNumber <= chosenNumber) {
-        alert('Erro! o núemro é menor.')
+        alert('Erro! o número é menor.')
     } else if (secretNumber >= chosenNumber) {
         alert('Erro! o número é maior.')
     }
 }
+
+function reload(){
+    window.location.reload();
+} 
