@@ -13,13 +13,15 @@ header {
 }
 
 section {
-    background-color: #252526;
+    background-image:url("assets/backgroundBlack.png");
     border-radius: 10px;
     padding: 20px;
     width: 600px;
     margin: auto;
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+    border: normal 10px blue;
+
 }
 
 footer {
@@ -31,6 +33,7 @@ footer {
 }
 
 div {
+    font-size: 20px;
     text-align: center;
 }
 
@@ -50,10 +53,38 @@ div {
     border-radius: 10px;
 }
 
+@font-face {
+    font-family: 'Funkie Bunny';
+    src: url('assets/Funkie\ Bunny.ttf') format('truetype');
+  }
+
 #tryB {
     padding: 8px;
     border-radius: 15px;
     background-color: rgb(237, 201, 73);
+    font-family: 'Funkie Bunny';
+    color: rgb(62, 38, 0);
+    font-size: 20px;
+}
+
+#reloadB {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(237, 201, 73);
+    font-family: 'Funkie Bunny';
+    color: rgb(62, 38, 0);
+    font-size: 20px;
+    margin: 10px;
+}
+
+#reloadB:hover {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(154, 131, 50);
+    font-family: 'Funkie Bunny';
+    color: rgb(62, 38, 0);
+    font-size: 20px;
+    margin: 10px;
 }
 
 #tryB:hover {
@@ -65,7 +96,14 @@ div {
 #tryB:focus {
     padding: 8px;
     border-radius: 15px;
-    color: aliceblue;
+    color: rgb(217, 217, 217);
+    background-color: rgb(70, 60, 24);
+}
+
+#reloadB:focus {
+    padding: 8px;
+    border-radius: 15px;
+    color: rgb(217, 217, 217);
     background-color: rgb(70, 60, 24);
 }
 
@@ -75,4 +113,8 @@ div {
 
 .cht {
     margin: 23px;
+}
+
+footer {
+    color: aliceblue;
 }

@@ -11,7 +11,14 @@ function play() {
 
     if (secretNumber == chosenNumber) {
         console.log('Acertou!')
-        alert('Você ganhou! Parabéns!')
+
+        var change = window.document.getElementById('geniusDefault')
+        change.src='assets/genius-sad.png'
+
+        setTimeout(function() {
+            alert('Você ganhou! Parabéns!')
+        }, 100)
+
     } else if (secretNumber <= chosenNumber) {
         alert('Erro! o núemro é menor.')
     } else if (secretNumber >= chosenNumber) {
