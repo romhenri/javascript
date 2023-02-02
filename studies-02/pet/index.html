@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="styles.css"></style>
+</head>
+<body onload="start()">
+    <header>
+        <h1>Verificador de Pet
+        </h1>
+    </header>
+    <section>
+        
+        <div>
+            <p>Ano de adoção:
+                <input type="number" name="startYear" id="startYear" min="0">
+            </p>
+            <p>
+                Cor:
+                <input type="radio" name="color" id="golden" checked> Dourado
+                <input type="radio" name="color" id="gray"> Cinza
+                <input type="radio" name="color" id="brown"> Marrom
+
+
+            </p>
+            <p class="end">
+                <input type="button" value="Verificar" onclick="check()">
+            </p>
+        </div>
+
+        <div id="conclusion">
+
+        </div>
+
+    </section>
+    <footer>
+        <p><a href="https://github.com/henri2023">Dev: @henri2023</a> | <a href="">Versão 1.0</a></p>
+    </footer>
+    <script src="scripts.js">
+    </script>
+</body>
+</html>
