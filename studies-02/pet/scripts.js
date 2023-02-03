@@ -1,4 +1,4 @@
-function check() {
+function checkk() {
     var date = new Date()
     var year = date.getFullYear()
     var syp = document.getElementById('st')
@@ -7,22 +7,26 @@ function check() {
     var time = year -sy
     var name = document.getElementById('n')
 
-    console.log(date)
+    /*console.log(date)
     console.log(year)
     console.log(syp)
     console.log(sy)
-    console.log(n)
+    console.log(n)*/
     
+
     if (sy == 0 || sy.value > year) {
         console.log('Dados inválidos!')
         alert('Dados invalidos!')
     } else {
-        var cks = document.getElementById('clr')
+        var x = document.querySelectorAll('input[type=radio]:checked')[0].value;
+        console.log(x)
+    }}
 
-        console.log('Dados válidos!')
-        console.log(time)
+var x = 66
 
-        if (cks[0].checked) {
-            console.log('Dourado')}
-    }
-    }
+function check() {
+    botao.addEventListener('click', function (event) {
+        event.preventDefault();
+        console.log(form.clr.value);
+    });
+}
