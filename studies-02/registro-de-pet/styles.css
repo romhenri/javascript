@@ -87,4 +87,5 @@ div {
 
 a {
     color: rgba(240, 248, 255, 0.482);
+    text-decoration:none;
 }

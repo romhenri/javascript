@@ -37,6 +37,11 @@ div {
     text-align: center;
 }
 
+a {
+    color: rgb(155, 155, 155);
+    text-decoration:none;
+}
+
 #msg {
     margin-top: 5px;
     margin-bottom: 25px;

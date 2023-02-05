@@ -8,7 +8,7 @@
     </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="startPage()">
     <header>Calculadora
     </header>
 
@@ -17,7 +17,10 @@
 
 
     <div id="currentSpace">
-        <output id="currentNumber" class="currentNumber"> 0 </output>
+        <output id="s1" class="currentNumber"> 0 </output>
+        <output id="os" class="currentNumber">  </output>
+        <output id="s2" class="currentNumber">  </output>
+        <output id="r" class="currentNumber">  </output>
     </div>
 
     <hr>
@@ -25,19 +28,24 @@
     <div id="numbersSpace" class="numbersSpace">
                 <input type="button" value="1" onclick="one()" class="buttonN">
                 <input type="button" value="2" onclick="two()" class="buttonN">
-                <input type="button" value="3" onclick="tree()" class="buttonN">
-                <input type="button" value="+" id="mais" onclick="mais()" class="button">
-                <input type="button" value="-" id="menos" onclick="menos()" class="button">
+                <input type="button" value="3" onclick="three()" class="buttonN">
+                <input type="button" value="+" id="mais" onclick="more()" class="button">
+
+                <input type="button" value="-" id="menos" onclick="less()" class="button">
+
                 <input type="button" value="4" onclick="four()" class="buttonN">
+
                 <input type="button" value="5" onclick="five()" class="buttonN">
-                <input type="button" value="6" onclick="six()" class="buttonN">
-                <input type="button" value="*" id="menos" onclick="menos()" class="button">
-                <input type="button" value="/" id="mais" onclick="mais()" class="button">
+
+                <input type="button" value="6" 
+                onclick="six()" class="buttonN">
+                <input type="button" value="*" id="menos" onclick="times()" class="button">
+                <input type="button" value="/" id="mais" onclick="divide()" class="button">
                 <input type="button" value="7" onclick="seven()" class="buttonN">
                 <input type="button" value="8" onclick="eight()" class="buttonN">
                 <input type="button" value="9" onclick="nine()" class="buttonN">
-                <input type="button" value="C" id="mais" onclick="mais()" class="button">
-                <input type="button" value="=" id="mais" onclick="mais()" class="button">
+                <input type="button" value="C" id="mais" onclick="reload()" class="button">
+                <input type="button" value="=" id="mais" onclick="calculate()" class="button">
     </div>
 </section>
 

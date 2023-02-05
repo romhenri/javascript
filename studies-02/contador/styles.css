@@ -58,6 +58,7 @@ p {
 
 a {
     color: rgba(240, 248, 255, 0.500);
+    text-decoration:none
 }
 
 @font-face {
