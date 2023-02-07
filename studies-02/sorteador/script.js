@@ -1,22 +1,20 @@
-var x = 0
+function generate() {
+    const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    var min = parseInt(document.getElementById('minNumber').value)
+    var max = parseInt(document.getElementById('maxNumber').value)
 
-var now = window.document.getElementById('currentNumber')
-now.innerHTML = (x)
+    console.log(min)
+    console.log(max)
 
-function menos() {
-    var now = window.document.getElementById('currentNumber')
-    x = x - 1
-    now.innerHTML = (x)
-}
+    console.log(`Min = ${min}`)
+    console.log(`Max = ${max}`)
 
-function mais() {
-    var now = window.document.getElementById('currentNumber')
-    x = x +1
-    now.innerHTML = (x)
-}
+    console.log(max - min);
 
-function reset() {
-    var now = window.document.getElementById('currentNumber')
-    x = 0
-    now.innerHTML = (x)
+    let result = parseInt((Math.random() * (max - min + 1)) + min);
+
+    console.log(result)
+
+    const end = document.getElementById('endSpace')
+    end.innerHTML = (result)
 }

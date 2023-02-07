@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteador</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>Sorteador</header>
@@ -13,15 +13,28 @@
 <div></div>
 <section>
 
-    <div>
-        <input type="number" name="minValue" id="minValue">
-        <input type="number" name="maxValue" id="maxValue">
+    <div id="valuesSpace">
+        <label for="minValue">De</label>
+        <input type="number" name="minValue" id="minNumber">
+        <label for="maxValue">até</label>
+        <input type="number" name="maxValue" id="maxNumber">
+    </div>
+    
+    <!-- <div id="rulesSpace">
+        <label for="repeatRadio">Repetição</label>
+        <input type="radio" id="repeatRadio"> 
+        <input type="checkbox" checked data-toggle="toggle">
+    </div> -->
+
+    <div id="buttonSpace">
+        <input type="button" value="Sortear" class="button" onclick="generate()">
     </div>
 
+    <hr>
 
-
-
-
+    <div class="end">
+        <output id="endSpace"></output>
+    </div>
 
     <!-- <div>
         <input type="button" value="-" id="menos" onclick="menos()" class="button">
@@ -33,9 +46,7 @@
         <input type="button" value="+" id="mais" onclick="mais()" class="button">
     </div> -->
 </section>
-<div>
-    <input type="button" value="Limpar" id="clear" onclick="reset()">
-</div>
+
 <footer>
     <a href="https://github.com/henri2023">Dev: @henri2023</a> | <a href="https://github.com/henri2023/genio-numerico">Versão 1.0</a>
 </footer>

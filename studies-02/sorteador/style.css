@@ -19,7 +19,7 @@ section {
     background-color: #252526;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 200px;
     margin: auto;
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
@@ -34,8 +34,9 @@ footer {
 }
 
 div {
-    text-align: center;
+    text-align: left;
     margin: auto;
+    margin-left: 10px;
 }
 
 /* Textos */
@@ -46,6 +47,11 @@ h1 {
     text-align: center;
     /*margin: 10px;*/
     margin-bottom: 25px;
+}
+
+hr {
+    width: 180px;
+    border: normal #4a4a4a;
 }
 
 p {
@@ -74,8 +80,8 @@ a {
 .button {
     font-family: Montserrat;
     font-size: 12px;
-    width: 40px;
-    padding: 8px;
+    width: 80px;
+    padding: 4px;
     background-color: rgb(79, 79, 255);
     color: aliceblue;
     border-radius: 15px;
@@ -120,4 +126,55 @@ a {
 
 #clear:active {
     background-color: #747474e9;
+}
+
+/* ___Inputs___ */
+
+input {
+    accent-color: rgb(79, 79, 255);
+    border-color: rgb(79, 79, 255);
+
+    border: normal 6px;
+}
+
+input[type=number] {
+    width: 40px;
+    padding: 5px;
+
+    border-radius: 9px;
+
+    border: normal 7px rgb(79, 79, 255);
+
+    outline: none; 
+    /* -moz-appearance: textfield; */
+}
+
+/* Input Number sem Setas */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+}
+
+/* Divs */
+
+#valuesSpace {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#rulesSpace {
+    margin-bottom: 12px;
+}
+
+#buttonSpace {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.end {
+    text-align: center;
+    margin-top: 10px;
 }
