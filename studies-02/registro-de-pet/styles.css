@@ -1,7 +1,7 @@
 /* ESTILO PADRÃO P2 */
 
 h1 {
-    color: rgb(79, 79, 255);
+    color: aliceblue;
 }
 
 Body {
@@ -50,11 +50,20 @@ div {
 #n {
     border-radius: 5px;
     width: 180px;
-}
+    border: normal 7px rgb(79, 79, 255);
+    outline: none; 
+    accent-color: rgb(79, 79, 255);
+    border-color: rgb(79, 79, 255);
+
+    border: normal 6px;}
 
 #st {
     border-radius: 5px;
     width: 165px;
+    accent-color: rgb(79, 79, 255);
+    border-color: rgb(79, 79, 255);
+
+    border: normal 6px;
 }
 
 .button {
@@ -89,3 +98,11 @@ a {
     color: rgba(240, 248, 255, 0.482);
     text-decoration:none;
 }
+
+input[type=text] {
+    width: 40px;
+
+    border-radius: 9px;
+
+    border: normal 7px rgb(79, 79, 255);
+    outline: none; }
