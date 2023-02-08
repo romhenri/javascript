@@ -106,3 +106,20 @@ input[type=text] {
 
     border: normal 7px rgb(79, 79, 255);
     outline: none; }
+
+.img {
+    width: 200px;
+    text-align: center;
+}
+
+#conclusion {
+    text-align: center;
+}
+
+input[type=radio]:checked {
+    color: rgb(255, 0, 0);
+}
+
+#golden {
+    color: rgb(255, 0, 0)
+}

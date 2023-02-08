@@ -7,7 +7,7 @@ function register() {
     var sy = Number(syp.value)
     var res = document.getElementById('conclusion')
     var time = year -sy
-    var name = document.getElementById('n')
+    var name = document.getElementById('n').value
 
     console.log(date)
     console.log(year)
@@ -41,5 +41,9 @@ function register() {
         }
 
         console.log(coat);
+
+        const endText = document.getElementById('endText')
+
+        endText.innerHTML=(`Você tem o ${name} há ${time} anos!`)
     }
 }
