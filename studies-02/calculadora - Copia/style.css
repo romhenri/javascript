@@ -64,6 +64,8 @@ a {
 hr {
     width: 300px;
 
+    
+    
     background-color: aqua;
     color: aqua;
 }
@@ -191,7 +193,7 @@ hr {
     background-color: #747474e9;
 }
 
-/* Div's */
+/* Divs */
 
 #numbersSpace {
     /* display: flex; */
@@ -202,9 +204,6 @@ hr {
     /* margin-top: 20px;
     margin-bottom: 20px; */
     display: inline-block;
-
-    align-items: center;
-    text-align: center;
 
     /* -webkit-column-count: 5;
     -moz-column-count: 5; 
@@ -219,17 +218,4 @@ hr {
 
 #under {
     text-align: center;
-}
-
-.zeroD {
-    text-align: start;
-}
-
-#zeroN {
-    width: 162px;
-    align-items: flex-start;
-}
-
-#hide1 {
-    display: none;
 }

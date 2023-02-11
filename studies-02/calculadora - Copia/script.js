@@ -368,49 +368,6 @@ function startPage() {
             }
         } else {
             alert('ot não reconhecido')}
-
-            
-    }
-
-    function zero() {
-        if (ot == 0) {
-            if (nn == 0) {
-                n1 = 0
-    
-                let box = document.getElementById('s1')
-                box.innerHTML = (n1)
-            
-                nn = nn + 1
-            } else if (nn == 1){
-                n1 = n1 * 10
-                n1 = n1 + 0
-    
-                let box = document.getElementById('s1')
-                box.innerHTML = (n1)
-            
-                nn = nn + 1
-            }
-        } else if (ot == 1){
-            if (nn == 0) {
-                n2 = 0
-    
-                let box = document.getElementById('s2')
-                box.innerHTML = (n2)
-            
-                nn = nn + 1
-            } else if (nn == 1){
-                n2 = n2 * 10
-                n2 = n2 + 0
-    
-                let box = document.getElementById('s2')
-                box.innerHTML = (n2)
-            
-                nn = nn + 1
-            }
-        } else {
-            alert('ot não reconhecido')}
-
-    
     }
 
 // ___Operadores___ //

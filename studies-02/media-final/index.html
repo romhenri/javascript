@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+
+    <h1>Calculadora para Finais</h1>
+    <hr>
+       <div class="item1">
+            Nota Geral dos Bimestres:
+            <input type="number" id="averageScoreGlobal">
+            Peso:
+            <input type="number" id="ASGp" placeholder="6">
+        </div>
+        <hr>
+        <div class="item2">
+            Média Mínima:
+            <input type="number" id="averageGoalFinal" placeholder="5">
+            Peso:
+            <input type="number" id="AGFp" placeholder="4">
+            <input type="button" value="Calcular" class="button" onclick="Executar()">
+        </div>
+        <hr>
+        <div class="item3">
+            Resultado:
+            <output id="conclusion"></output>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

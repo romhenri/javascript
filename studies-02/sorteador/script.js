@@ -11,7 +11,9 @@ function generate() {
 
     console.log(max - min);
 
-    let result = parseInt((Math.random() * (max - min + 1)) + min);
+    let result = parseInt(Math.random() * 3)
+
+    // let result = parseInt((Math.random() * (max - min)) + min);
 
     console.log(result)
 
