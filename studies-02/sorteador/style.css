@@ -19,7 +19,8 @@ section {
     background-color: #252526;
     border-radius: 10px;
     padding: 20px;
-    width: 200px;
+    width: 700px;
+    max-width: 90%;
     margin: auto;
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
@@ -160,7 +161,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Divs */
 
 #valuesSpace {
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
     margin-left: 10px;
 }
