@@ -1,0 +1,142 @@
+/* ELEMENTOS PADRÕES */
+
+/* Espaços */
+Body {
+    background-color: #1e1e1e;
+    font: normal 15px Verdana;
+}
+
+header {
+    font: normal 20px Montserrat;
+    color: aliceblue;
+    text-align: center;
+    margin: 20px;
+}
+
+section {
+    background-color: #252526;
+    border-radius: 10px;
+    padding: 20px;
+    width: 700px;
+    max-width: 80%;
+    margin: auto;
+    color: aliceblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+}
+
+footer {
+    font-size: 10px ;
+    color: rgba(240, 248, 255, 0.500);
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+div {
+    text-align: center;
+    margin: auto;
+}
+
+/* Textos */
+
+h1 {
+    font: normal 16px Montserrat;
+    color: aliceblue;
+    text-align: center;
+    /*margin: 10px;*/
+    margin-bottom: 25px;
+}
+
+p {
+    font: normal 16px Verdana;
+    color: aliceblue;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 25px;
+
+}
+
+a {
+    color: rgba(240, 248, 255, 0.500);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/Montserrat-Regular.ttf');
+    format: ('truetype');
+  }
+
+/* Elementos Especiais */
+
+/*___ Botão ___*/
+
+.par {
+    font-family: Montserrat;
+    font-size: 12px;
+    width: 90px;
+    padding: 8px;
+    background-color: rgb(48, 103, 254);
+    color: aliceblue;
+    border-radius: 15px;
+
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    border: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+}
+
+.impar {
+    font-family: Montserrat;
+    font-size: 12px;
+    width: 90px;
+    padding: 8px;
+    background-color: #f98820;
+    color: aliceblue;
+    border-radius: 15px;
+
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    border: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+}
+
+#item1, #tem2 {
+    margin-top: 20px;
+}
+
+input {
+    border-radius: 15px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+}
+
+.button {
+    font-family: Montserrat;
+    font-size: 12px;
+    width: 50px;
+    padding: 8px;
+    background-color: #3a3a3ae9;
+    color: aliceblue;
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+}
+
+.button:hover {
+    background-color: #4f4f4fe9;
+}
+
+.button:active {
+    color: rgba(240, 248, 255, 0.800);
+    background-color: #747474e9;
+}
+

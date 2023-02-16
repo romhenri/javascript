@@ -1,9 +1,11 @@
+// Atribuições 
 const BTN = document.getElementById('btn')
 const MQC = document.getElementById('conclusionSpace')
 const HT = document.getElementById('title')
 var used = []
-console.log(used);
 var x = 0
+
+console.log(used);
 
 const quotes = [
     '“O homem que sofre antes de ser necessário, sofre mais que o necessário.” - Sêneca',
@@ -41,10 +43,11 @@ const quotes = [
     '“Você tem poder sobre sua mente, não sobre eventos externos. Perceba isso e você encontrará a sua força.” - Marco Aurélio',
     '“O homem não se preocupa tanto com problemas reais quanto com as ansiedades imaginadas sobre problemas reais.” - Epicteto',
     '“A morte, portanto, o mais terrível dos males, não é nada para nós, visto que, quando existimos, a morte não chegou e, quando a morte chegou, nós não existimos.” - Epicuro',
-    'É loucura um homem orar aos deuses por aquilo que ele tem o poder de obter por si mesmo.” - Epicuro',
+    '“É loucura um homem orar aos deuses por aquilo que ele tem o poder de obter por si mesmo.” - Epicuro',
     '“Lembre-se: não basta ser agredido ou insultado para ser ferido, você deve acreditar que está sendo prejudicado. Se alguém conseguir provocá-lo, perceba que a sua própria mente é cúmplice da provocação.” - Epicteto',
     '“Nada, na minha opinião, é uma prova melhor de uma mente bem organizada do que a capacidade de um homem parar exatamente onde está e passar algum tempo em sua própria companhia.” - Sêneca',
-    '“A alma é tingida com a cor de seus pensamentos.” - Marco Aurélio'
+    '“A alma é tingida com a cor de seus pensamentos.” - Marco Aurélio',
+    'Foco não é sobre dizer "Sim" para uma coisa, mas dizer "Não" para todas as outras.'
 ]
 
 console.log(`Disponível: ${quotes.length} opções de citações.`);
