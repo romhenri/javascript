@@ -70,6 +70,11 @@ a {
 /* Elementos Especiais */
 
 /*___ Botão ___*/
+
+input[type=button] {
+    cursor: pointer;
+}
+
 .button {
     font-family: Montserrat;
     font-size: 12px;
@@ -115,6 +120,7 @@ a {
 
 #item1 {
     align-items: center;
+    text-align: left;
     display: flex;
     min-width: 50%;
 }
@@ -125,3 +131,4 @@ a {
     margin-left: 3%;
     margin-right: 3%;
 }
+
