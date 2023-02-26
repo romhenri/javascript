@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <section>
+        <h1>Pedra, Papel e Tesoura</h1>
+
+
+        <div id="battleSpace">
+            <div id="chooseSpace">
+
+                <img src="assets/img/rock.png" alt=""
+                width="90px" class="choseOption" onmouseenter="rockPreview()" onclick="rockTry()" id="rockOp">
+                <img src="assets/img/paper.png" alt=""
+                width="90px" class="choseOption" onmouseenter="paperPreview()" onclick="paperTry()" id="paperOp">
+                <img src="assets/img/scissors.png" alt=""
+                width="90px" class="choseOption"
+                onmouseenter="scissorsPreview()" onclick="scissorsTry()" id="scissorsOp">
+    
+            </div>
+    
+            <div id="loadingSpace">
+                <img src="assets/img/spin.png" alt="" width="90px" id="loading">
+            </div>
+            <div id="nullObject">
+                <img src="assets/img/paper.png" alt="" width="90px" class="nullObject" id="preview">
+            </div>
+    
+
+            <div id="loadingSpace">
+                <img src="assets/img/spin.png" alt="" width="90px" id="loading">
+            </div>
+        </div>
+    </section>
+
+<footer ><a  href="https://pt.vecteezy.com/vetor-gratis/bot%C3%A3o">Botão Vetores por Vecteezy</a></footer>
+    
+</body>
+<script src="assets/js/script.js"></script>
+</html>

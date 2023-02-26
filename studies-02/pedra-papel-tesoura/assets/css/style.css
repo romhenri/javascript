@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {background-color: rgba(0, 0, 0, 0.950);}
+
+section {
+    background-color: rgb(33, 33, 33);
+    width: 800px;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+} section h1 {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+} footer a {
+        text-decoration: none;
+        color: #ffffffa7; transition: 0.3s;
+} footer a:hover {
+    color: #ffffff4d
+}
+
+/* ============================== */
+
+#battleSpace {display: flex; align-items: center; gap: 90px;}
+ 
+#chooseSpace {
+    display: flex; flex-direction: column; gap: 15px;
+}
+
+.choseOption {
+    filter: grayscale(60%);
+    transition: 0.3s;
+} .choseOption:hover {
+    filter: grayscale(0%);
+    rotate: 60deg;
+    scale: 110%;
+} .choseOption:active {
+    scale: 100%;
+}
+
+#loading {
+    animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#nullObject {
+    position: relative; right: 180px;
+    opacity: 20%;rotate: 60deg;
+} 
+
+.tried {
+    
+}
