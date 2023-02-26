@@ -16,6 +16,7 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 * Hora do dia.
 * Contador.
 * Calculadora.
+* Registro de Pet.
 * Gênio Numérico.
 * Sorteador.
 * Gerador de Citações.

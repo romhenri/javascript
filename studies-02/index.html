@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" href="assets/icon-02.png">
+    <style>
+
+/* Espaços */
+Body {
+    background-color: #1e1e1e;
+    font: normal 15px Verdana;
+}
+
+header {
+    font: normal 20px Montserrat;
+    color: aliceblue;
+    text-align: center;
+    margin: 20px;
+}
+
+section {
+    background-color: #252526;
+    border-radius: 10px;
+    padding: 20px;
+
+    width: 60%;
+    max-width: 80%;
+    min-width: 300px;
+
+    margin: auto;
+    margin-bottom: 1%;
+    color: aliceblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+}
+
+footer {
+    font-size: 10px ;
+    color: rgba(240, 248, 255, 0.500);
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+div {
+    text-align: center;
+}
+
+/* Textos */
+
+h1 {
+    font: normal 16px Montserrat;
+    color: aliceblue;
+    text-align: center;
+    /*margin: 10px;*/
+    margin: 20px;
+} 
+
+p {
+    font: normal 13px Verdana;
+    color: aliceblue;
+    text-align: left;
+}
+
+a {
+    color: rgba(240, 248, 255, 0.500);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/Montserrat-Regular.ttf');
+    format: ('truetype');
+  }
+
+/* Elementos Especiais */
+
+/*___ Botão ___*/
+
+input[type=button] {
+    cursor: pointer;
+}
+
+.button {
+    font-family: Montserrat;
+    font-size: 12px;
+    width: 90px;
+    padding: 8px;
+    background-color: rgb(79, 79, 255);
+    color: aliceblue;
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+} .button:hover {
+    background-color: rgb(65, 65, 210);
+} .button:active {
+    color: rgba(240, 248, 255, 0.800);
+    background-color: rgb(34, 34, 109);
+}
+
+.buttonAlt {
+    font-family: Montserrat;
+    font-size: 12px;
+    width: 90px;
+    padding: 8px;
+    background-color: #3a3a3ae9;
+    color: aliceblue;
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+
+} .buttonAlt:hover {
+    background-color: #4f4f4fe9;
+} .buttonAlt:active {
+    color: rgba(240, 248, 255, 0.800);
+    background-color: #747474e9;
+}
+
+/* Container e Items */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#item1 {
+    align-items: center;
+    text-align: left;
+    display: flex;
+    min-width: 50%;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Projetos de Fevereiro</h1>
+
+    <section id="hora-do-dia">
+        <div id="container1" class="container">
+            <div id="item1">
+                <img src="assets/arrow-white.png" alt="" class="arrow">
+
+                Hora do Dia
+            </div>
+            <div id="item2">
+                <a href="https://github.com/henri2023/javascript/tree/main/studies-02/hora-do-dia">
+                <input type="button" value="Github" class="buttonAlt"></a>
+
+                <a href="https://henri2023.github.io/javascript/studies-02/hora-do-dia/">
+                <input type="button" value="Acessar" class="button">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="genio-numerico">
+        <div id="container1" class="container">
+            <div id="item1">
+                <img src="assets/arrow-white.png" alt="" class="arrow">
+
+                Gênio Numérico
+            </div>
+            <div id="item2">
+                <a href="https://github.com/henri2023/javascript/tree/main/studies-02/genio-numerico">
+                <input type="button" value="Github" class="buttonAlt"></a>
+
+                <a href="https://henri2023.github.io/javascript/studies-02/genio-numerico/">
+                <input type="button" value="Acessar" class="button">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="registro-de-pet">
+        <div id="container2" class="container">
+            <div id="item1">
+                <img src="assets/arrow-white.png" alt="" class="arrow">
+
+                Registro de Pet
+            </div>
+            <div id="item2">
+                <a href="https://github.com/henri2023/javascript/tree/main/studies-02/registro-de-pet">
+                <input type="button" value="Github" class="buttonAlt"></a>
+
+                <a href="https://henri2023.github.io/javascript/studies-02/registro-de-pet/">
+                <input type="button" value="Acessar" class="button">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="contador">
+        <div id="container2" class="container">
+            <div id="item1">
+                <img src="assets/arrow-white.png" alt="" class="arrow">
+
+                Contador
+            </div>
+            <div id="item2">
+                <a href="https://github.com/henri2023/javascript/tree/main/studies-02/contador">
+                <input type="button" value="Github" class="buttonAlt"></a>
+
+                <a href="https://henri2023.github.io/javascript/studies-02/contador/">
+                <input type="button" value="Acessar" class="button">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="calculadora">
+        <div id="container2" class="container">
+            <div id="item1">
+                <img src="assets/arrow-white.png" alt="" class="arrow">
+
+                Calculadora
+            </div>
+            <div id="item2">
+                <a href="https://github.com/henri2023/javascript/tree/main/studies-02/calculadora">
+                <input type="button" value="Github" class="buttonAlt"></a>
+
+                <a href="https://henri2023.github.io/javascript/studies-02/calculadora/">
+                <input type="button" value="Acessar" class="button">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="sorteador">
+        <div id="container2" class="container">
+            <div id="item1">
+                <img src="assets/arrow-white.png" alt="" class="arrow">
+
+                Sorteador
+            </div>
+            <div id="item2">
+                <a href="https://github.com/henri2023/javascript/tree/main/studies-02/sorteador">
+                <input type="button" value="Github" class="buttonAlt"></a>
+
+                <a href="https://henri2023.github.io/javascript/studies-02/sorteador/">
+                <input type="button" value="Acessar" class="button">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="gerador-de-citacoes">
+        <div id="container2" class="container">
+            <div id="item1">
+                <img src="assets/arrow-white.png" alt="" class="arrow">
+
+                Gerador de Citações
+            </div>
+            <div id="item2">
+                <a href="https://github.com/henri2023/javascript/tree/main/studies-02/gerador-de-citacoes">
+                <input type="button" value="Github" class="buttonAlt"></a>
+
+                <a href="https://henri2023.github.io/javascript/studies-02/gerador-de-citacoes/">
+                <input type="button" value="Acessar" class="button">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="media-final">
+        <div id="container2" class="container">
+            <div id="item1">
+                <img src="assets/arrow-white.png" alt="" class="arrow">
+
+                Média Final
+            </div>
+            <div id="item2">
+                <a href="https://github.com/henri2023/javascript/tree/main/studies-02/media-final">
+                <input type="button" value="Github" class="buttonAlt"></a>
+
+                <a href="https://henri2023.github.io/javascript/studies-02/media-final/">
+                <input type="button" value="Acessar" class="button">
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <a href="https://github.com/henri2023">Dev:@henri2023</a> | <a href="https://henri2023.github.io/javascript/studies-02/">Menu</a> | <a href="/">Versão 1.0</a>
+</footer>
+</html>
