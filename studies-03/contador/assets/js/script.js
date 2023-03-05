@@ -1,23 +1,34 @@
 console.log('Script started...');
 
-const EXB = getElementById('exhibitionNumber')
-const CNB = getElementById('currentNumber')
+const NUM = window.document.getElementById('number')
 var x = 0
 
-var now = window.document.getElementById('currentNumber')
-now.innerHTML = (x)
+console.log(x);
 
 function menos() {
     x = x - 1
-    EXB.innerHTML = (x)
+    NUM.innerHTML = (x)
 }
 
 function mais() {
     x = x +1
-    EXB.innerHTML = (x)
+    NUM.innerHTML = (x)
 }
 
 function reset() {
     x = 0
-    EXB.innerHTML = (x)
+    NUM.innerHTML = (x)
 }
+
+function save() {
+    localStorage.setItem("saved", x)
+
+    alert(`Número ${localStorage.saved} salvo!`);
+}
+
+function retrieve() {
+
+    NUM.innerHTML = (localStorage.saved)
+    alert(`Número ${localStorage.saved} recuperado!`);
+}
+

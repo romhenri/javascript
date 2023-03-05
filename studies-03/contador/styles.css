@@ -48,7 +48,7 @@ footer, footer a {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('assets/Montserrat-Regular.ttf');
+    src: url('assets/css/fonts/Montserrat-Regular.ttf');
     format:('truetype');
   }
 
@@ -84,21 +84,22 @@ footer, footer a {
     margin: 50px;
 }
 
-#clear {
-    font-size: 10px;
+.btn {
+    font-size: 10px; cursor: pointer;
     width: 60px;
     padding: 8px;
     margin-top: 15px;
     margin-bottom: 0px;
-    border-radius: 15px;
-    border: 0px;
+    border-radius: 15px; color: #ffff;
+    border: 0px; background-color: var(--bgc);
 }
-
-#clear:hover {
+.btn:hover {
     background-color: #4f4f4fe9;
-} #clear:active {
+} .btn:active {
     background-color: #747474e9;
 }
+
+.big { width: 80px; font-size: 10px;} .biggest {width: 100px;}
 
 #workSpace {
     display: flex; justify-content: space-evenly; align-items: center;

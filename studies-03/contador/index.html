@@ -16,15 +16,21 @@
     <div id="workSpace">
         <input type="button" value="-" id="menos" onclick="menos()" class="button btn-c">
 
-        <output id="exhibitionNumber"></output>
-
-        <!-- <div id="exhibitionNumber">0</div> -->
+        <output id="number">0</output>
 
         <input type="button" value="+" id="mais" onclick="mais()" class="button btn-c">
     </div>
+    <div style="margin-top: 10px;">
+        <input type="button" value="Limpar" class="btn btn-b big" onclick="reset()"
+    class="button btn-bg">
+    </div>
 </section>
 <div>
-    <input type="button" value="Limpar" id="clear" onclick="reset()"
+    <input type="button" value="Configurações" class="btn biggest" onclick="reset()"
+    class="button btn-bg">
+    <input type="button" value="Salvar" class="btn" onclick="save()"
+    class="button btn-bg">
+    <input type="button" value="Recuperar" class="btn big" onclick="retrieve()"
     class="button btn-bg">
 </div>
 <footer>
