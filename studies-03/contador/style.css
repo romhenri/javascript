@@ -27,7 +27,7 @@
 
 /* === Tags Default ============================================ */
 
-* {font-family: Montserrat, Verdana, sans-serif; margin: 0;}
+* {font-family: Montserrat, Arial, Verdana; margin: 0;}
 
 Body {background-color: var(--bg);}
 
@@ -43,11 +43,9 @@ header {color: var(--white); text-align: center;}
 div {text-align: center;}
 
 footer, footer a {
-    text-align: center; text-decoration:none; font-family: Verdana, sans-serif;
+    text-align: center; text-decoration:none;
     color: var(--bgc2); transition: 0.3s; margin-top: 10px;
-} footer a:hover {
-    color: var(--white);
-}
+} footer a:hover {color: var(--white)}
 
 /* === Textos ============================================ */
 
@@ -83,7 +81,8 @@ footer, footer a {
 .alfa {background-color: var(--alfa); text-decoration: solid;
 box-shadow: 0px 0px 0px var(--alfa);}
 
-.round {border-radius: 15px} .circle {border-radius: 999px}
+.round {border-radius: 15px} .circle {border-radius: 999px} .tip {border-radius: 0px;}
+.tip-l {border-radius: 5px;}
 
 .invert {filter: invert(100%)} .shadow {filter: drop-shadow(3px 3px 10px var(--shadow))} 
 .blur {filter: blur(3px)} .blur1 {filter: blur(1px)}
