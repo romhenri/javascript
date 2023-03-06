@@ -2,11 +2,9 @@
 
 1. Declarations.
 2. Tags Default.
-3. Textos.
 4. Buttons.
 5. Design Details.
 6. Media Queries.
-7. Project.
 
 */
 
@@ -60,7 +58,7 @@ footer, footer a {
 .button {
     font-family: Montserrat; padding: 8px;
     color:  var(--white); font-size: 12px;
-    border-radius: 15px;
+    border-radius: 5px;
     border: 0px; cursor: pointer; transition: 0.3s;
 }
 
@@ -84,30 +82,36 @@ box-shadow: 0px 0px 0px var(--alfa);}
 .round {border-radius: 15px} .circle {border-radius: 999px} .tip {border-radius: 0px;}
 .tip-l {border-radius: 5px;}
 
+/* === Filter ============================================ */
+
 .invert {filter: invert(100%)} .shadow {filter: drop-shadow(3px 3px 10px var(--shadow))} 
 .blur {filter: blur(3px)} .blur1 {filter: blur(1px)}
 .blur2 {filter: blur(2px)} .blur3 {filter: blur(3px)}
 .blur4 {filter: blur(4px)} .blur5 {filter: blur(5px)}
 .blur10 {filter: blur(10px)} .blur20 {filter: blur(20px)}
 
+/* === Flex ============================================ */
+
+.flex {display: flex; flex-direction: row; align-items: center}
 .flex-row {display: flex; flex-direction: row; align-items: center}
 .flex-column {display: flex; flex-direction: column; align-items: center}
 .spc-evenly { justify-content: space-evenly}
 .spc-between {justify-content: space-between}
 .spc-around {justify-content: space-around}
 .spc-center {justify-content: center}
+.g0 {gap: 0px}.g1 {gap: 1px}
+.g2 {gap: 2px}.g3 {gap: 3px}
+.g4 {gap: 4px}.g5 {gap: 5px}
+.g6 {gap: 6px}.g7 {gap: 7px}
+.g8 {gap: 8px}.g9 {gap: 9px}
+.g10 {gap: 10px}.g11 {gap: 11px}
+.g12 {gap: 12px}.g13 {gap: 13px}
+.g15 {gap: 15px}.g20 {gap: 20px}
+.g25 {gap: 25px}.g30 {gap: 30px}
+.g35 {gap: 35px}.g40 {gap: 40px}
+.g45 {gap: 45px}.g50 {gap: 50px}
 
-.m0 {margin: 0px}.m1 {margin: 1px}
-.m2 {margin: 2px}.m3 {margin: 3px}
-.m4 {margin: 4px}.m5 {margin: 5px}
-.m6 {margin: 6px}.m7 {margin: 7px}
-.m8 {margin: 8px}.m9 {margin: 9px}
-.m10 {margin: 10px}.m11 {margin: 11px}
-.m12 {margin: 12px}.m13 {margin: 13px}
-.m15 {margin: 15px}.m20 {margin: 20px}
-.m25 {margin: 25px}.m30 {margin: 30px}
-.m35 {margin: 35px}.m40 {margin: 40px}
-.m45 {margin: 45px}.m50 {margin: 50px}
+/* === Padding ============================================ */
 
 .p0 {padding: 0px}.p1 {padding: 1px}
 .p2 {padding: 2px}.p3 {padding: 3px}
@@ -121,6 +125,20 @@ box-shadow: 0px 0px 0px var(--alfa);}
 .p35 {padding: 35px}.p40 {padding: 40px}
 .p45 {padding: 45px}.p50 {padding: 50px}
 
+/* === Margin ============================================ */
+
+.m0 {margin: 0px}.m1 {margin: 1px}
+.m2 {margin: 2px}.m3 {margin: 3px}
+.m4 {margin: 4px}.m5 {margin: 5px}
+.m6 {margin: 6px}.m7 {margin: 7px}
+.m8 {margin: 8px}.m9 {margin: 9px}
+.m10 {margin: 10px}.m11 {margin: 11px}
+.m12 {margin: 12px}.m13 {margin: 13px}
+.m15 {margin: 15px}.m20 {margin: 20px}
+.m25 {margin: 25px}.m30 {margin: 30px}
+.m35 {margin: 35px}.m40 {margin: 40px}
+.m45 {margin: 45px}.m50 {margin: 50px}
+
 .m5-row {margin: 0px 10px 0px 10px}.m10-row {margin: 0px 10px 0px 10px}
 .m15-row {margin: 0px 15px 0px 15px}.m20-row {margin: 0px 20px 0px 20px}
 .m25-row {margin: 0px 25px 0px 25px}.m30-row {margin: 0px 30px 0px 30px}
@@ -132,6 +150,8 @@ box-shadow: 0px 0px 0px var(--alfa);}
 .m25-column{margin:25px 0px 25px 0px}.m30-column{margin:30px 0px 30px 0px}
 .m35-column{margin:35px 0px 35px 0px}.m40-column{margin:40px 0px 40px 0px}
 .m45-column{margin:45px 0px 45px 0px}.m50-column{margin:50px 0px 50px 0px}
+
+/* === Largura e Altura ============================================ */
 
 .w0 {width: 0px} .w1 {width: 1px} .w2 {width: 2px}
 .w3 {width: 3px} .w4 {width: 4px} .w5 {width: 5px}
@@ -145,32 +165,26 @@ box-shadow: 0px 0px 0px var(--alfa);}
 .w130 {width: 130px} .w140 {width: 140px} .w150 {width: 150px}
 .w160 {width: 160px} .w170 {width: 170px} .w180 {width: 180px}
 
+/* === Textos ============================================ */
+
 .f1{font-size: 1px} .f2{font-size: 2px} .f3{font-size: 3px}
 
-h1 {font-size: 24px; font-weight: lighter;}
-p {font-size: 12px; font-weight: lighter;}
-a, footer {font-size: 10px; font-weight: lighter;}
+h1 {font-size: 24px; font-weight: normal;}
+p {font-size: 12px; font-weight: normal;}
+a, footer {font-size: 10px; font-weight: normal;}
 
-.txt {font-size: 12px; font-weight: lighter;}
-.txt-min {font-size: 10px; font-weight: lighter;}
+.txt {font-size: 12px; font-weight: normal;}
+.txt-min {font-size: 10px; font-weight: normal;}
 
 /* === Media Queries ============================================ */
 
 @media screen and (max-width:500px) {
     section {width: 80%;}
 
-    h1 {font-size: 20px; font-weight: lighter;}
-    p {font-size: 14px; font-weight: lighter;}
-    a, footer {font-size: 12px; font-weight: lighter;}
+    h1 {font-size: 20px; font-weight: normal;}
+    p {font-size: 14px; font-weight: normal;}
+    a, footer {font-size: 12px; font-weight: normal;}
 
-    .txt {font-size: 14px; font-weight: lighter;}
-    .txt-min {font-size: 12px; font-weight: lighter;}
+    .txt {font-size: 14px; font-weight: normal;}
+    .txt-min {font-size: 12px; font-weight: normal;}
 }
-
-
-/* === Projects ============================================ */
-
-
-#workSpace {
-    display: flex; justify-content: space-evenly; align-items: center;
-} 
