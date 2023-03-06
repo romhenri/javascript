@@ -60,8 +60,8 @@ footer, footer a {
 /* === Buttons ============================================ */
 
 .button {
-    font-family: Montserrat; font-size: 12px; padding: 8px;
-    color:  var(--white);
+    font-family: Montserrat; padding: 8px;
+    color:  var(--white); font-size: 12px;
     border-radius: 15px;
     border: 0px; cursor: pointer; transition: 0.3s;
 }
@@ -148,34 +148,30 @@ box-shadow: 0px 0px 0px var(--alfa);}
 
 .f1{font-size: 1px} .f2{font-size: 2px} .f3{font-size: 3px}
 
+h1 {font-size: 24px; font-weight: lighter;}
+p {font-size: 12px; font-weight: lighter;}
+a, footer {font-size: 10px; font-weight: lighter;}
 
-
-h1 {
-    font-size: 24px; font-weight: lighter;
-}
-
-p {
-    font-size: 14px; font-weight: lighter;
-}
-
-a, footer {
-    font-size: 10px; font-weight: lighter;
-}
+.txt {font-size: 12px; font-weight: lighter;}
+.txt-min {font-size: 10px; font-weight: lighter;}
 
 /* === Media Queries ============================================ */
 
 @media screen and (max-width:500px) {
     section {width: 80%;}
+
+    h1 {font-size: 20px; font-weight: lighter;}
+    p {font-size: 14px; font-weight: lighter;}
+    a, footer {font-size: 12px; font-weight: lighter;}
+
+    .txt {font-size: 14px; font-weight: lighter;}
+    .txt-min {font-size: 12px; font-weight: lighter;}
 }
+
 
 /* === Projects ============================================ */
 
-.big { width: 80px; font-size: 10px;} .biggest {width: 100px;}
 
 #workSpace {
     display: flex; justify-content: space-evenly; align-items: center;
 } 
-
-#workSpace p {
-    font-size: 1.0rem;
-}
