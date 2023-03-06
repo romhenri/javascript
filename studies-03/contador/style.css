@@ -155,10 +155,10 @@ h1 {
 }
 
 p {
-    font-size: 16px; font-weight: lighter;
+    font-size: 14px; font-weight: lighter;
 }
 
-a {
+a, footer {
     font-size: 10px; font-weight: lighter;
 }
 
