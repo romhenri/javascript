@@ -9,29 +9,26 @@
     <link rel="icon" href="assets/img/icon-03.png">
 </head>
 <body>
-    <header>Contador</header>
+    <header class="m20">Contador</header>
 
 <div></div>
 <section>
     <div id="workSpace">
-        <input type="button" value="-" id="menos" onclick="menos()" class="button btn-c">
+        <input type="button" value="-" id="menos" onclick="menos()" class="button c1">
 
         <output id="number">0</output>
 
-        <input type="button" value="+" id="mais" onclick="mais()" class="button btn-c">
+        <input type="button" value="+" id="mais" onclick="mais()" class="button c1">
     </div>
     <div style="margin-top: 10px;">
-        <input type="button" value="Limpar" class="btn btn-b big" onclick="reset()"
+        <input type="button" value="Limpar" class="button c1 w60" onclick="reset()"
     class="button btn-bg">
     </div>
 </section>
-<div>
-    <input type="button" value="Configurações" class="btn biggest" onclick="reset()"
-    class="button btn-bg">
-    <input type="button" value="Salvar" class="btn" onclick="save()"
-    class="button btn-bg">
-    <input type="button" value="Recuperar" class="btn big" onclick="retrieve()"
-    class="button btn-bg">
+<div class="m10 flex-row spc-evenly">
+    <input type="button" value="Configurações" class="button bgc w110 mg10" onclick="reset()">
+    <input type="button" value="Salvar" class="button bgc mg10 w60" onclick="save()">
+    <input type="button" value="Recuperar" class="button bgc mg10 w80" onclick="retrieve()">
 </div>
 <footer>
     <a href="https://github.com/henri2023">Dev:@henri2023</a> | <a href="https://henri2023.github.io/menu/03/">Menu</a>
