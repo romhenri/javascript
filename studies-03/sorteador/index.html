@@ -25,9 +25,11 @@
         
         <div id="rulesSpace" class="m20">
             <label for="repeatRadio">Não repetir números:</label>
-            <input type="checkbox" data-toggle="toggle" class="m5-row">
+            <input type="checkbox" data-toggle="toggle" class="m5-row" name="repeat" id="repeatButton">
         </div>
     
+        <!-- value="repeat" -->
+
         <div id="line"></div>
     
         <div class="generatedNumber">
@@ -36,8 +38,10 @@
     
 
         <div id="buttonSpace">
+            <input type="button" value="Limpar" class="button bgc mt20 w90 txt" id="clearButton" onclick="clean()">
             <input type="button" value="Sortear" class="button c mt20 w90 txt" id="generateButton" onclick="generate()">
         </div>
+
         <!-- <div>
             <input type="button" value="-" id="menos" onclick="menos()" class="button">
     

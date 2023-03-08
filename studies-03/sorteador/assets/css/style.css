@@ -29,11 +29,16 @@ section {
     color: var(--white); margin: 30px 0px 25px 0px; font-size: 26px;
 }
 
+.historic {
+    margin: 10px; letter-spacing: 4px; overflow-x: hidden;
+}
+
 /* === 6. Media Queries ============================================ */
 
 .mt10 {margin-top: 10px;}
 .mt20 {margin-top: 20px;}
 
+.bgc {background-color: rgb(53, 53, 53);}
 
 /* === 6. Media Queries ============================================ */
 
