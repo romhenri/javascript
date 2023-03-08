@@ -1,0 +1,180 @@
+/* ELEMENTOS PADRÕES */
+
+/* Espaços */
+Body {
+    background-color: #1e1e1e;
+    font: normal 15px Verdana;
+}
+
+header {
+    font: normal 20px Montserrat;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    /*margin: 20px;*/
+}
+
+section {
+    background-color: #252526;
+    border-radius: 10px;
+    padding: 20px;
+    width: 700px;
+    max-width: 80%;
+    margin: auto;
+    color: aliceblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+}
+
+footer {
+    font-size: 10px ;
+    color: rgba(240, 248, 255, 0.500);
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+div {
+    text-align: left;
+    margin: auto;
+}
+
+/* Textos */
+
+h1 {
+    font: normal 16px Montserrat;
+    color: aliceblue;
+    text-align: center;
+    /*margin: 10px;*/
+    margin-bottom: 25px;
+}
+
+hr {
+    width: 180px;
+    border: normal #4a4a4a;
+}
+
+p {
+    font: normal 13px Verdana;
+    color: aliceblue;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+
+a {
+    color: rgba(240, 248, 255, 0.500);
+    text-decoration:none
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/css/fonts/Montserrat-Regular.ttf');
+    format:('truetype');
+  }
+
+/* Elementos Especiais */
+
+/*___ Botão ___*/
+
+.button {
+    font-family: Montserrat;
+    font-size: 12px;
+    width: 80px;
+    padding: 4px;
+    background-color: rgb(79, 79, 255);
+    color: aliceblue;
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+}
+
+.button:hover {
+    background-color: rgb(65, 65, 210);
+}
+
+.button:active {
+    color: rgba(240, 248, 255, 0.800);
+    background-color: rgb(34, 34, 109);
+}
+
+/* Perssonalização */
+
+.current {
+    font-family: Montserrat;
+    font-size: 18px;
+    margin: 50px;
+}
+
+#clear {
+    font-family: Montserrat;
+    font-size: 10px;
+    width: 60px;
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background-color: #3a3a3ae9;
+    color: rgba(240, 248, 255, 1);
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+}
+
+#clear:hover {
+    background-color: #4f4f4fe9;
+}
+
+#clear:active {
+    background-color: #747474e9;
+}
+
+/* ___Inputs___ */
+
+input {
+    accent-color: rgb(79, 79, 255);
+    border-color: rgb(79, 79, 255);
+
+    border: normal 6px;
+}
+
+input[type=number] {
+    width: 40px;
+    padding: 5px;
+
+    border-radius: 9px;
+
+    border: normal 7px rgb(79, 79, 255);
+
+    outline: none; 
+    /* -moz-appearance: textfield; */
+}
+
+/* Input Number sem Setas */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+}
+
+/* Divs */
+
+#valuesSpace {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#rulesSpace {
+    margin-bottom: 12px;
+}
+
+#buttonSpace {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.end {
+    text-align: center;
+    margin-top: 10px;
+}

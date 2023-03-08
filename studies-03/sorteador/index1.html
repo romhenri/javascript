@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon-02.png">
+</head>
+<body>
+    <header>Sorteador</header>
+
+<div></div>
+<section>
+
+    <div id="valuesSpace">
+        <label for="minValue">De</label>
+        <input type="number" name="minValue" id="minNumber">
+        <label for="maxValue">até</label>
+        <input type="number" name="maxValue" id="maxNumber">
+    </div>
+    
+    <!-- <div id="rulesSpace">
+        <label for="repeatRadio">Repetição</label>
+        <input type="radio" id="repeatRadio"> 
+        <input type="checkbox" checked data-toggle="toggle">
+    </div> -->
+
+    <div id="buttonSpace">
+        <input type="button" value="Sortear" class="button" onclick="generate()">
+    </div>
+
+    <hr>
+
+    <div class="end">
+        <output id="endSpace"></output>
+    </div>
+
+    <!-- <div>
+        <input type="button" value="-" id="menos" onclick="menos()" class="button">
+
+        <output id="currentNumber" class="current"> 
+            0
+        </output>
+
+        <input type="button" value="+" id="mais" onclick="mais()" class="button">
+    </div> -->
+</section>
+
+<footer>
+    <a href="https://github.com/henri2023">Dev:@henri2023</a> | <a href="https://henri2023.github.io/menu/02/">Menu</a> | <a href="https://github.com/henri2023/javascript/sorteador">Versão 1.0</a>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
