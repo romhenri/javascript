@@ -1,0 +1,54 @@
+section div input[type=number] {
+  width: 40px;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 6px;
+  color: #fff;
+  background-color: var(--bgc);
+  outline: none;
+}
+
+section div input[type=number]:focus {
+  outline: 2px solid var(--c1);
+}
+
+section div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 1px;
+}
+
+section div input[type=button] {
+
+  margin-left: auto;
+
+}
+
+/* Input Number sem Setas */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0px;
+}
+
+hr {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* font-size: 60px; */
+  font-size: 1.0em !important;
+
+}
