@@ -2,6 +2,7 @@
 
 body {
   background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
 }
 
 header {
@@ -18,14 +19,15 @@ h1, h2, h3 {
 
 main {
   background-color: rgb(0, 0, 0);
-  width: 800px;
+  min-width: 60%;
   height: 600px;
   margin: auto;
   border-radius: 10px;
   overflow: hidden;
   z-index: 1;
   max-width: 90%;
-  background: url("../img/bg.jpg") center center;
+  background: url("../img/bg-black.png") no-repeat center center;
+  background-size: cover;
 }
 
 main::after {
