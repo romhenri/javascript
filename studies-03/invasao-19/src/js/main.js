@@ -1,5 +1,4 @@
-var covid = document.querySelectorAll(".covid");
-// var covid = document.getElementById("covid1");
+var covid = document.querySelectorAll(".alive");
 
 console.log(covid);
 
@@ -14,10 +13,3 @@ covid.forEach((covid) =>
 		covid.classList.remove("alive");
 	})
 );
-
-// covid.addEventListener("click", () => {
-// 	console.log("Clicou");
-// 	covid.src = "src/img/blood.png";
-// 	covid.classList.add("blood");
-// 	covid.classList.remove("covid");
-// });
