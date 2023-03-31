@@ -1,0 +1,30 @@
+#workSpace {
+  height: 60px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+}
+
+#zero {
+  grid-column: span 2;
+  width: 120px !important;
+}
+
+#enter {
+  grid-row: span 2;
+  height: 120px !important;
+}
+
+#clear {
+  border-radius: 25px;
+  background-color: rgb(167, 39, 39);
+  backdrop-filter: brightness(70%);
+}
+
+#enter, #minus, #plus, #undo, #times, #divide {
+  filter: brightness(130%) !important;
+}

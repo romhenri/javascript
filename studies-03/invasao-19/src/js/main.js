@@ -3,7 +3,7 @@ var covid = document.querySelectorAll(".alive");
 console.log(covid);
 
 covid.forEach((covid) =>
-	covid.addEventListener("click", () => {
+	covid.addEventListener("click", (e) => {
 		console.log("Clicou");
 		covid.src = "src/img/covid-breaked.png";
 		setTimeout(() => {
@@ -11,5 +11,7 @@ covid.forEach((covid) =>
 		}, 50);
 		covid.classList.add("blood");
 		covid.classList.remove("alive");
+
+		e.preventDefault();
 	})
 );

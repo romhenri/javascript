@@ -1,0 +1,21 @@
+input[type=button] {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 10px;
+  border: 0px none none;
+  transition: 0.2s ease-out;
+  color: aliceblue;
+  background-color: var(--bgc);
+}
+
+input[type=button]:hover {
+  filter: brightness(88%) !important;
+  border: 0px none none;
+}
+
+input[type=button]:active {
+  filter: brightness(68%) !important;
+  scale: 90%;
+  border: 0px none none;
+}
