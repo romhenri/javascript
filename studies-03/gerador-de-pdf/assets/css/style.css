@@ -1,0 +1,62 @@
+/* === Projects ============================================ */
+
+#workSpace {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section {
+    width: 600px;
+}
+
+section h1 {
+    margin-bottom: 10px;
+}
+
+/* === 6. Media Queries ============================================ */
+
+@media screen and (max-width:500px) {
+    section {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    a, footer {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .txt {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .txt-min {
+        font-size: 12px;
+        font-weight: normal;
+    }
+}
+
+/*: === 6. Media Queries ================ */
+
+.btn-generate {
+    background-color: var(--c1);
+    margin: auto;
+    margin: 20px 0px 10px;
+}
+
+.btn-edit {
+    background-color: var(--bgc);
+    margin: auto;
+    margin: 20px 0px 10px;
+}
