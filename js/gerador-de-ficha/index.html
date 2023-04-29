@@ -6,6 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Gerador de Ficha</title>
 		<link rel="stylesheet" href="src/css/style.css" />
+		<link
+			rel="shortcut icon"
+			href="src/Logo Muccini PNG.png"
+			type="image/x-icon"
+		/>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
 			integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
@@ -14,115 +19,121 @@
 		></script>
 	</head>
 	<body>
-		<section id="content">
-			<h1 id="title">
-				Nome do Prato
-			</h1>
-			<hr />
-			<div id="boxImg">
-				<input type="file" accept="image/*" name="" id="inputImg" />
-				<label for="inputImg" class="textInput">
-					<span id="picture">Foto do Prato</span>
+		<header><h1>Gerador de Fichas</h1></header>
+
+		<main>
+			<section id="content">
+				<h1 id="title">
+					Nome do Prato
+				</h1>
+				<hr />
+				<div id="boxImg">
+					<input type="file" accept="image/*" name="" id="inputImg" />
+					<label for="inputImg" class="textInput">
+						<span id="picture">Foto do Prato</span>
+					</label>
+				</div>
+				<h2>Descrição:</h2>
+				<hr />
+				<p id="desc">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Exercitationem saepe consectetur perspiciatis? Doloremque
+					voluptatibus dolores excepturi officiis saepe nobis id iusto
+					reiciendis qui accusamus vero ullam perspiciatis, in omnis
+					eaque?
+				</p>
+
+				<h2 for="textPrep">Modo de Preparo:</h2>
+				<hr />
+				<p id="prep">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Provident minus hic doloribus aspernatur accusamus
+					laboriosam nemo, nesciunt reprehenderit itaque voluptates
+					commodi sit, iste modi perferendis eligendi tenetur ut vitae
+					porro?
+				</p>
+				<img
+					id="logoSapore"
+					class="logo"
+					src="src/Logo Sapore PNG.png"
+					alt=""
+				/>
+				<img
+					id="logoMuccini"
+					class="logo"
+					src="src/Logo Muccini PNG.png"
+					alt=""
+				/>
+			</section>
+
+			<div id="boxTools">
+				<label for="inputName"
+					>Nome do Arquivo:
+					<input id="inputName" name="inputName" type="text" />
 				</label>
-			</div>
-			<h2>Descrição:</h2>
-			<hr />
-			<p id="desc">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Exercitationem saepe consectetur perspiciatis? Doloremque
-				voluptatibus dolores excepturi officiis saepe nobis id iusto
-				reiciendis qui accusamus vero ullam perspiciatis, in omnis
-				eaque?
-			</p>
+				<label for="inputTitle"
+					>Nome do Prato:
+					<input id="inputTitle" name="inputTitle" type="text" />
+				</label>
+				<label for="inputName"
+					>Descrição:
+					<input id="inputDesc" name="inputDesc" type="text" />
+				</label>
 
-			<h2 for="textPrep">Modo de Preparo:</h2>
-			<hr />
-			<p id="prep">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-				Provident minus hic doloribus aspernatur accusamus laboriosam
-				nemo, nesciunt reprehenderit itaque voluptates commodi sit, iste
-				modi perferendis eligendi tenetur ut vitae porro?
-			</p>
-			<img
-				id="logoSapore"
-				class="logo"
-				src="src/Logo Sapore PNG.png"
-				alt=""
-			/>
-			<img
-				id="logoMuccini"
-				class="logo"
-				src="src/Logo Muccini PNG.png"
-				alt=""
-			/>
-		</section>
+				<label for="inputName"
+					>Modo de Preparo:
+					<input id="inputPrep" name="inputPrep" type="text" />
+				</label>
 
-		<div id="boxTools">
-			<label for="inputName"
-				>Nome do Arquivo:
-				<input id="inputName" name="inputName" type="text" />
-			</label>
-			<label for="inputTitle"
-				>Nome do Prato:
-				<input id="inputTitle" name="inputTitle" type="text" />
-			</label>
-			<label for="inputName"
-				>Descrição:
-				<input id="inputDesc" name="inputDesc" type="text" />
-			</label>
-
-			<label for="inputName"
-				>Modo de Preparo:
-				<input id="inputPrep" name="inputPrep" type="text" />
-			</label>
-
-			<div
-				style="
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-				"
-			>
-				<span
+				<div
 					style="
 						display: flex;
-						justify-content: space-between;
-						width: 255px;
-						margin-bottom: 0;
-					"
-					><label for="logo">Logo:</label>
-					<label for="format">Format:</label></span
-				>
-
-				<form
-					style="
-						display: inline-block;
-						display: flex;
-						justify-content: space-between;
-						margin-top: 0;
+						flex-direction: column;
+						justify-content: center;
 					"
 				>
-					<select id="inputLogo" name="logo">
-						<option value="muc">MUCCINI</option>
-						<option value="sap">SAPORE</option>
-					</select>
+					<span
+						style="
+							display: flex;
+							justify-content: space-between;
+							width: 255px;
+							margin-bottom: 0;
+						"
+						><label for="logo">Logo:</label>
+						<label for="format">Format:</label></span
+					>
 
-					<select id="inputFormat" name="format">
-						<option value="pdf">PDF</option>
-						<option value="jpeg">JPEG</option>
-					</select>
-				</form>
+					<form
+						style="
+							display: inline-block;
+							display: flex;
+							justify-content: space-between;
+							margin-top: 0;
+						"
+					>
+						<select id="inputLogo" name="logo">
+							<option value="muc">MUCCINI</option>
+							<option value="sap">SAPORE</option>
+						</select>
+
+						<select id="inputFormat" name="format">
+							<option value="pdf">PDF</option>
+							<option value="jpeg">JPEG</option>
+						</select>
+					</form>
+				</div>
+
+				<button id="btnDesign">DesignMode</button>
+				<button id="btnGenerate">Exportar PDF</button>
+				<footer>
+					<a href="https://www.linkedin.com/in/romulo-henri/"
+						>Desenvolvido por Rômulo Henri</a
+					>
+				</footer>
 			</div>
+		</main>
 
-			<button id="btnDesign">DesignMode</button>
-			<button id="btnGenerate">Exportar PDF</button>
-			<footer>
-				<a href="https://www.linkedin.com/in/romulo-henri/"
-					>Desenvolvido por Rômulo Henri</a
-				>
-			</footer>
-		</div>
-
+		<!-- Scripts -->
 		<script src="src/js/custom.js"></script>
 		<script src="src/js/custom-image.js"></script>
 		<script src="src/js/export.js"></script>
