@@ -1,37 +1,15 @@
-// alert('Script running...')
-
-const btnGenerate = document.getElementById("btnGenerate");
-const btnDesign = document.getElementById("btnDesign");
-const inputName = document.getElementById("inputName");
-const inputTitle = document.getElementById("inputTitle");
-const inputDesc = document.getElementById("inputDesc");
-const inputPrep = document.getElementById("inputPrep");
-const inputFormat = document.getElementById("inputFormat");
-
-const title = document.getElementById("title");
-const prep = document.getElementById("prep");
-const desc = document.getElementById("desc");
-
 var fileName = "arquivo";
-
-btnDesign.addEventListener("click", () => {
-	document.designMode = "on";
-});
 
 btnGenerate.addEventListener("click", () => {
 	console.log("Gerando...");
 
-	title.innerHTML = `${inputTitle.value}`;
-	desc.innerHTML = `${inputDesc.value}`;
-	prep.innerHTML = `${inputPrep.value}`;
-
-	// Name
+	// PDF Name
 	if (inputName.value) {
 		fileName = inputName.value;
 	}
 
-	if (inputFormat.value == "jpg") {
-		fileName = `${fileName}.jpg`;
+	if (inputFormat.value == "jpeg") {
+		fileName = `${fileName}.jpeg`;
 	}
 
 	// PDF Content
@@ -41,6 +19,7 @@ btnGenerate.addEventListener("click", () => {
 	const options = {
 		margin: [0, 0, 0, 0],
 		filename: fileName,
+		image: { type: "jpeg", quality: 1 },
 		html2canvas: {
 			scale: 3,
 		},

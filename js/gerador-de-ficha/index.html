@@ -76,23 +76,43 @@
 				<input id="inputPrep" name="inputPrep" type="text" />
 			</label>
 
-			<form
+			<div
 				style="
-					display: inline-block;
 					display: flex;
-					justify-content: space-between;
+					flex-direction: column;
+					justify-content: center;
 				"
 			>
-				<select id="inputLogo" name="logo">
-					<option value="muc">MUCCINI</option>
-					<option value="sap">SAPORE</option>
-				</select>
+				<span
+					style="
+						display: flex;
+						justify-content: space-between;
+						width: 255px;
+						margin-bottom: 0;
+					"
+					><label for="logo">Logo:</label>
+					<label for="format">Format:</label></span
+				>
 
-				<select id="inputFormat" name="format">
-					<option value="pdf">PDF</option>
-					<option value="jpg">JPG</option>
-				</select>
-			</form>
+				<form
+					style="
+						display: inline-block;
+						display: flex;
+						justify-content: space-between;
+						margin-top: 0;
+					"
+				>
+					<select id="inputLogo" name="logo">
+						<option value="muc">MUCCINI</option>
+						<option value="sap">SAPORE</option>
+					</select>
+
+					<select id="inputFormat" name="format">
+						<option value="pdf">PDF</option>
+						<option value="jpeg">JPEG</option>
+					</select>
+				</form>
+			</div>
 
 			<button id="btnDesign">DesignMode</button>
 			<button id="btnGenerate">Exportar PDF</button>
@@ -104,6 +124,7 @@
 		</div>
 
 		<script src="src/js/custom.js"></script>
+		<script src="src/js/custom-image.js"></script>
 		<script src="src/js/export.js"></script>
 	</body>
 </html>

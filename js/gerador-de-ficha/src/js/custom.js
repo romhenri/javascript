@@ -1,36 +1,35 @@
-const inputFile = document.querySelector("#inputImg");
-const picture = document.querySelector("#picture");
-const box = document.querySelector("#boxImg");
+// Inputs
+const inputName = document.getElementById("inputName");
+const inputTitle = document.getElementById("inputTitle");
+const inputDesc = document.getElementById("inputDesc");
+const inputPrep = document.getElementById("inputPrep");
+const inputFormat = document.getElementById("inputFormat");
 const inputLogo = document.querySelector("#inputLogo");
-
+// Buttons
+const btnGenerate = document.getElementById("btnGenerate");
+const btnDesign = document.getElementById("btnDesign");
+// Elements
+const title = document.getElementById("title");
+const prep = document.getElementById("prep");
+const desc = document.getElementById("desc");
 const logoMuccini = document.querySelector("#logoMuccini");
-// const logoSapore = document.querySelector("#logoSapore");
 
-const pictureImageTxt = "Foto do Prato";
+// Update Data
+inputTitle.addEventListener("change", () => {
+	if (inputTitle.value) {
+		title.innerHTML = `${inputTitle.value}`;
+	}
+});
 
-picture.innerHTML = pictureImageTxt;
+inputDesc.addEventListener("change", () => {
+	if (inputDesc.value) {
+		desc.innerHTML = `${inputDesc.value}`;
+	}
+});
 
-inputFile.addEventListener("change", function (e) {
-	const inputTarget = e.target;
-	const file = inputTarget.files[0];
-	console.log(file);
-
-	if (file) {
-		const reader = new FileReader();
-
-		reader.addEventListener("load", function (e) {
-			const readerTarget = e.target;
-
-			const img = document.createElement("img");
-			img.src = readerTarget.result;
-			img.classList.add("image");
-
-			box.appendChild(img);
-		});
-
-		reader.readAsDataURL(file);
-	} else {
-		picture.innerHTML = pictureImageTxt;
+inputPrep.addEventListener("change", () => {
+	if (inputPrep.value) {
+		prep.innerHTML = `${inputPrep.value}`;
 	}
 });
 
@@ -39,4 +38,9 @@ inputLogo.addEventListener("change", () => {
 		logoMuccini.width = "0px";
 		logoMuccini.style.display = "none";
 	}
+});
+
+// Design Mode
+btnDesign.addEventListener("click", () => {
+	document.designMode = "on";
 });

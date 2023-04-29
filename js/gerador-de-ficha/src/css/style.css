@@ -133,14 +133,15 @@ button {
   background-color: green;
   color: aliceblue;
   font-weight: 500;
-  cursor: pointer;
   width: 400px;
   box-sizing: border-box;
   transition: .3s;
+  cursor: pointer !important;
 }
 
 button:hover {
   filter: brightness(90%);
+
 }
 
 button:active {
