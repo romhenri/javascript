@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gerador de Ficha</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+			integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</head>
+	<body>
+		<section id="content">
+			<h1>
+				<input
+					placeholder="Título..."
+					type="text"
+					name=""
+					id="inputTitle"
+				/>
+			</h1>
+			<hr />
+			<div id="boxImg">
+				<input type="file" accept="image/*" name="" id="inputImg" />
+				<label for="inputImg" class="textInput">
+					<span id="picture">Foto do Prato</span>
+				</label>
+			</div>
+			<h2>Descrição:</h2>
+			<hr />
+			<!-- <textarea name="textDesc" id="textDesc" cols="0" rows="20" placeholder="Drescrição..."></textarea> -->
+			<p>
+				Bacalhau Gadus Morhua desfiado refogado aos temperos sob
+				musseline gratinado, parma crocante e azeitonas
+			</p>
+
+			<h2 for="textPrep">Modo de Preparo:</h2>
+			<hr />
+			<p>
+				Com o polvo pré cozido em porções de 2 unidades com caldo
+				(congela para o uso)<br />
+				Sela rapidamente arroz pré-cozido;
+				<br />
+				1/4 cebola roxa gratinada em pétolas;
+				<br />
+				1 tomate cereja para decorar.
+			</p>
+			<!-- <textarea name="textPrep" id="textPrep" cols="30" rows="10" placeholder="Receita..."></textarea> -->
+			<img id="logo" src="src/Logo Sapore PNG.png" alt="" />
+		</section>
+
+		<div id="boxTools">
+			<label for="inputName"
+				>Nome do Arquivo:
+				<input id="inputName" name="inputName" type="text" />
+			</label>
+			<button id="btnGenerate">Exportar PDF</button>
+		</div>
+
+		<script src="src/js/custom.js"></script>
+		<script src="src/js/export.js"></script>
+	</body>
+</html>
