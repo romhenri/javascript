@@ -4,6 +4,7 @@
 
 body {
   display: flex;
+  justify-content: center;
   margin: 20px;
 }
 
@@ -115,7 +116,7 @@ section textarea {
   overflow-wrap: break-word;
 }
 
-#logo {
+.logo {
   position: absolute;
 
   top: 93%;
@@ -156,11 +157,19 @@ button:active {
   max-width: 30vw;
 }
 
-#boxTools input {
+#boxTools input, #boxTools select {
   font-size: 22px;
   padding: 15px;
   width: 400px;
   box-sizing: border-box;
+}
+
+#boxTools select {
+  width: 49.4%;
+}
+
+form {
+  width: 400px;
 }
 
 #btnDesign {
@@ -179,4 +188,8 @@ footer, footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.hidden {
+  display: none;
 }

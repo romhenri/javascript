@@ -6,6 +6,7 @@ const inputName = document.getElementById("inputName");
 const inputTitle = document.getElementById("inputTitle");
 const inputDesc = document.getElementById("inputDesc");
 const inputPrep = document.getElementById("inputPrep");
+const inputFormat = document.getElementById("inputFormat");
 
 const title = document.getElementById("title");
 const prep = document.getElementById("prep");
@@ -27,6 +28,10 @@ btnGenerate.addEventListener("click", () => {
 	// Name
 	if (inputName.value) {
 		fileName = inputName.value;
+	}
+
+	if (inputFormat.value == "jpg") {
+		fileName = `${fileName}.jpg`;
 	}
 
 	// PDF Content

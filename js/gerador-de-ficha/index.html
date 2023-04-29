@@ -43,7 +43,18 @@
 				nemo, nesciunt reprehenderit itaque voluptates commodi sit, iste
 				modi perferendis eligendi tenetur ut vitae porro?
 			</p>
-			<img id="logo" src="src/Logo Sapore PNG.png" alt="" />
+			<img
+				id="logoSapore"
+				class="logo"
+				src="src/Logo Sapore PNG.png"
+				alt=""
+			/>
+			<img
+				id="logoMuccini"
+				class="logo"
+				src="src/Logo Muccini PNG.png"
+				alt=""
+			/>
 		</section>
 
 		<div id="boxTools">
@@ -59,10 +70,30 @@
 				>Descrição:
 				<input id="inputDesc" name="inputDesc" type="text" />
 			</label>
+
 			<label for="inputName"
 				>Modo de Preparo:
 				<input id="inputPrep" name="inputPrep" type="text" />
 			</label>
+
+			<form
+				style="
+					display: inline-block;
+					display: flex;
+					justify-content: space-between;
+				"
+			>
+				<select id="inputLogo" name="logo">
+					<option value="muc">MUCCINI</option>
+					<option value="sap">SAPORE</option>
+				</select>
+
+				<select id="inputFormat" name="format">
+					<option value="pdf">PDF</option>
+					<option value="jpg">JPG</option>
+				</select>
+			</form>
+
 			<button id="btnDesign">DesignMode</button>
 			<button id="btnGenerate">Exportar PDF</button>
 			<footer>

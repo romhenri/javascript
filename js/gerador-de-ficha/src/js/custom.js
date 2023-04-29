@@ -1,6 +1,10 @@
 const inputFile = document.querySelector("#inputImg");
 const picture = document.querySelector("#picture");
 const box = document.querySelector("#boxImg");
+const inputLogo = document.querySelector("#inputLogo");
+
+const logoMuccini = document.querySelector("#logoMuccini");
+// const logoSapore = document.querySelector("#logoSapore");
 
 const pictureImageTxt = "Foto do Prato";
 
@@ -27,5 +31,12 @@ inputFile.addEventListener("change", function (e) {
 		reader.readAsDataURL(file);
 	} else {
 		picture.innerHTML = pictureImageTxt;
+	}
+});
+
+inputLogo.addEventListener("change", () => {
+	if (inputLogo.value == "sap") {
+		logoMuccini.width = "0px";
+		logoMuccini.style.display = "none";
 	}
 });
