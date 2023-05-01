@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+canvas {
+  outline: 2px solid black;
+}
+
+button {
+  padding: 30px;
+  outline: 2px solid black;
+  border: none;
+}

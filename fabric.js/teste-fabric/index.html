@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="600"></canvas>
+		<div>
+			<button id="btnAddSquare">Apagar</button>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/fabric"></script>
+		<!-- http://fabricjs.com/docs/ -->
+		<script>
+			const canvas = new fabric.Canvas("canvas");
+			const rect = new fabric.Rect({
+				top: 100,
+				left: 100,
+				width: 80,
+				height: 80,
+				fill: "red",
+			});
+
+			canvas.add(rect);
+		</script>
+		<!-- <img src="dog.jpg" id="my-image" /> -->
+	</body>
+	<script src="script.js"></script>
+</html>
