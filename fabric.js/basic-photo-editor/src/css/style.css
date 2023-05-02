@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #222;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+section {
+  background-color: aliceblue;
+}
+
+canvas {
+  outline: 2px solid black;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

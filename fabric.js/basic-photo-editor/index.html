@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://kit.fontawesome.com/eacbb44f8a.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<section>
+				<canvas id="canvas" width="800" height="600"> </canvas>
+			</section>
+
+			<aside>
+				<button id="btnRemove">
+					<i class="fa-solid fa-trash"></i>
+				</button>
+				<button id="btnCopy">
+					<i class="fa-solid fa-copy"></i>
+				</button>
+				<button id="btnPaste">
+					<i class="fa-solid fa-paste"></i>
+				</button>
+			</aside>
+		</main>
+
+		<!-- http://fabricjs.com/docs/ -->
+		<script src="https://cdn.jsdelivr.net/npm/fabric"></script>
+	</body>
+	<script src="src/js/main.js"></script>
+	<script src="src/js/copy-n-paste.js"></script>
+	<script src="src/js/mobile-touch.js"></script>
+</html>
