@@ -10,6 +10,24 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 
 <hr>
 
+## Bibliotecas
+
+> html2pdf e fabric.js
+
+#### html2pdf
+
+-   Gerador de pdf
+    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-pdf" target="_blank">(Deploy)</a>
+-   Gerador de Ficha.
+    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-ficha" target="_blank">(Deploy)</a>
+
+#### Fabric.js
+
+-   Basic Image Editor.
+    <a href="https://romhenri.github.io/javascript/fabric.js/basic-photo-editor" target="_blank">(Deploy)</a>
+
+<hr>
+
 ## Basic JavaScript
 
 #### Studies-01 = Projetos de Janeiro
@@ -38,20 +56,3 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 -   Sorteador.
 
 <hr>
-
-## Bibliotecas
-
-> html2pdf e fabric.js
-
-<hr>
-
-#### html2pdf
-
--   Gerador de pdf
--   Gerador de Ficha.
-
-<hr>
-
-#### Fabric.js
-
--   Basic Image Editor.

@@ -1,5 +1,18 @@
 // Fabric.js v5
+
+const section = document.getElementById("section");
+
+if (screen.width < 640) {
+	// canvas.width = "200px";
+	// canvas.height = "400px";
+
+	section.innerHTML = `<canvas id="canvas" width="300" height="400"></canvas>`;
+}
+
 const canvas = new fabric.Canvas("canvas");
+
+section.width = `${canvas.width}px`;
+section.height = `${canvas.height}px`;
 
 const btnRemove = document.getElementById("btnRemove");
 const btnCopy = document.getElementById("btnCopy");

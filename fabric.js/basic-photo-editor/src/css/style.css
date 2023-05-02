@@ -12,6 +12,17 @@ main {
   gap: 10px;
 }
 
+@media screen and (max-width: 640px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    max-width: 300px;
+  }
+}
+
 section {
   background-color: aliceblue;
 }
