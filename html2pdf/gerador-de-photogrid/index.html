@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gerador de Ficha</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+		<link
+			rel="shortcut icon"
+			href="src/Logo Muccini PNG.png"
+			type="image/x-icon"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+			integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</head>
+	<body>
+		<header><h1>Gerador de Fichas</h1></header>
+
+		<main>
+			<section id="content">
+				<div class="row">
+					<div class="boxImg">
+						<input
+							type="file"
+							accept="image/*"
+							name="inputImg"
+							id="inputImg1"
+							class="inputImg"
+						/>
+						<label for="inputImg" class="textInput">
+							<span id="picture">Foto do Prato</span>
+						</label>
+					</div>
+
+					<div class="boxImg">
+						<input
+							type="file"
+							accept="image/*"
+							name="inputImg"
+							id="inputImg2"
+							class="inputImg"
+						/>
+						<label for="inputImg" class="textInput">
+							<span id="picture">Foto do Prato</span>
+						</label>
+					</div>
+				</div>
+
+				<hr />
+
+				<img
+					id="logoMuccini"
+					class="logo"
+					src="src/Logo Muccini PNG.png"
+					alt=""
+				/>
+			</section>
+
+			<div id="boxTools">
+				<label for="inputName"
+					>Nome do Arquivo:
+					<input id="inputName" name="inputName" type="text" />
+				</label>
+				<span
+					style="
+						display: flex;
+						justify-content: space-between;
+						width: 255px;
+						margin-bottom: 0;
+					"
+					><label for="logo">Logo:</label>
+					<label for="format">Format:</label></span
+				>
+				<form
+					style="
+						display: inline-block;
+						display: flex;
+						justify-content: space-between;
+						margin-top: 0;
+					"
+				>
+					<select id="inputLogo" name="logo">
+						<option value="muc">MUCCINI</option>
+						<option value="sap">SAPORE</option>
+					</select>
+
+					<select id="inputFormat" name="format">
+						<option value="pdf">PDF</option>
+						<option value="jpeg">JPEG</option>
+					</select>
+				</form>
+
+				<button id="btnDesign">DesignMode</button>
+				<button id="btnGenerate">Exportar PDF</button>
+				<footer>
+					<a href="https://www.linkedin.com/in/romulo-henri/"
+						>Desenvolvido por Rômulo Henri</a
+					>
+				</footer>
+			</div>
+		</main>
+
+		<!-- Scripts -->
+		<!-- <script src="src/js/custom.js"></script> -->
+		<script src="src/js/custom-image.js"></script>
+		<script src="src/js/export.js"></script>
+	</body>
+</html>

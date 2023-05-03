@@ -20,6 +20,8 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
     <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-pdf" target="_blank">(Deploy)</a>
 -   Gerador de Ficha.
     <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-ficha" target="_blank">(Deploy)</a>
+-   Gerador de Photogrid.
+    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-photogrid" target="_blank">(Deploy)</a>
 
 #### Fabric.js
 
