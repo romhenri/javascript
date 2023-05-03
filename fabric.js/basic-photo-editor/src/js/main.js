@@ -14,6 +14,8 @@ const canvas = new fabric.Canvas("canvas");
 section.width = `${canvas.width}px`;
 section.height = `${canvas.height}px`;
 
+const btnBrush = document.getElementById("btnBrush");
+const btnErase = document.getElementById("btnErase");
 const btnRemove = document.getElementById("btnRemove");
 const btnCopy = document.getElementById("btnCopy");
 const btnPaste = document.getElementById("btnPaste");
@@ -34,12 +36,6 @@ canvas.add(rect);
 fabric.Image.fromURL("dog.jpg", function (oImg) {
 	oImg.scale(0.3).set("flipX", true);
 	canvas.add(oImg);
-	// btnRemove.addEventListener("click", () => {
-	// 	// canvas.remove(oImg);
-	// 	var activeObject = canvas.getActiveObject();
-	// 	// canvas.getActiveObject().remove(oImg);
-	// 	activeObject.remove();
-	// });
 });
 
 // Remove activeObject
