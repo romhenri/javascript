@@ -33,13 +33,6 @@ function generate() {
 	var max = parseInt(document.getElementById("maxNumber").value);
 
 	if (errTime == 1) {
-		console.log("Sistema com repetição.");
-
-		console.log("Valores Válidos.");
-
-		console.log(min);
-		console.log(max);
-
 		console.log(`Min = ${min} e Max = ${max}!`);
 
 		console.log(max - min);
@@ -148,11 +141,19 @@ function generate() {
 }
 
 function generateErr() {
-	generateNumber();
+	let Number = generateNumber();
 
-	if (Number % 1) {
-		generateErr();
-	} else {
+	console.log(`chosen ${Number}`);
+
+	if (Number % 2 === 1) {
+		if (Number == max) {
+			Number--;
+			Number--;
+		}
+
+		Number++;
+		return Number;
+	} else if (Number % 2 === 0) {
 		return Number;
 	}
 }
@@ -161,6 +162,6 @@ function generateNumber() {
 	min = parseInt(document.getElementById("minNumber").value);
 	max = parseInt(document.getElementById("maxNumber").value);
 
-	var Number = parseInt(Math.random() * (max - min + 1) + min);
-	return Number;
+	let chosen = parseInt(Math.random() * (max - min + 1) + min);
+	return chosen;
 }
