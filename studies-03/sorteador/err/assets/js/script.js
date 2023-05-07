@@ -35,7 +35,15 @@ function generate() {
 	if (errTime == 1) {
 		console.log(`Min = ${min} e Max = ${max}!`);
 
-		console.log(max - min);
+		console.log(`Interval = ${max - min}`);
+
+		if ((max - min) % 2 == 0) {
+			var allPossible = (max - min) / 2;
+		} else if ((max - min) % 2 == 1) {
+			var allPossible = (max - min + 1) / 2;
+		}
+
+		console.log(`allPossible = ${allPossible}`);
 
 		var result = generateErr();
 
@@ -60,6 +68,11 @@ function generate() {
                     <p class="historic"> ${used} </p>
                 <div id="line"></div>
             `;
+
+			if (used.length == allPossible - 1) {
+				console.log("POSSIBLESS DONE!");
+				errTime = 0;
+			}
 		}
 	} else if (max > 0) {
 		if (REP[0].checked) {
