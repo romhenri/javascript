@@ -1,9 +1,8 @@
-
-
 input[type=number] {
 
-    outline: none; font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 5px; 
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -17,38 +16,74 @@ section {
 }
 
 #line {
-    width: 80%; height: 1px; background-color: rgba(240, 248, 255, 0.227); margin: auto; border-radius: 15px;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(240, 248, 255, 0.227);
+    margin: auto;
+    border-radius: 15px;
 }
 
 .txts {
-    font-size: 26px; transition: 0.3s;
+    font-size: 26px;
+    transition: 0.3s;
     margin: 30px 0px 25px 0px;
 }
 
 .txta {
-    color: var(--white); margin: 30px 0px 25px 0px; font-size: 26px;
+    color: var(--white);
+    margin: 30px 0px 25px 0px;
+    font-size: 26px;
 }
 
 .historic {
-    margin: 10px; letter-spacing: 4px; overflow-x: hidden;
+    margin: 10px;
+    letter-spacing: 4px;
+    overflow-x: hidden;
 }
 
 /* === 6. Media Queries ============================================ */
 
-.mt10 {margin-top: 10px;}
-.mt20 {margin-top: 20px;}
+.mt10 {
+    margin-top: 10px;
+}
 
-.bgc {background-color: rgb(53, 53, 53);}
+.mt20 {
+    margin-top: 20px;
+}
+
+.bgc {
+    background-color: rgb(53, 53, 53);
+}
 
 /* === 6. Media Queries ============================================ */
 
 @media screen and (max-width:500px) {
-    section {width: 80%;}
+    section {
+        width: 80%;
+    }
 
-    h1 {font-size: 20px; font-weight: normal;}
-    p {font-size: 14px; font-weight: normal;}
-    a, footer {font-size: 12px; font-weight: normal;}
+    h1 {
+        font-size: 20px;
+        font-weight: normal;
+    }
 
-    .txt {font-size: 14px; font-weight: normal;}
-    .txt-min {font-size: 12px; font-weight: normal;}
+    p {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    a, footer {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .txt {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .txt-min {
+        font-size: 12px;
+        font-weight: normal;
+    }
 }
