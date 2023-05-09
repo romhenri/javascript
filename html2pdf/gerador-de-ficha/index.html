@@ -5,12 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Gerador de Ficha</title>
+		<!-- Style -->
 		<link rel="stylesheet" href="src/css/style.css" />
+		<!-- Icon -->
 		<link
 			rel="shortcut icon"
 			href="src/Logo Muccini PNG.png"
 			type="image/x-icon"
 		/>
+		<!-- Lib html2pdf -->
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
 			integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
@@ -22,6 +25,7 @@
 		<header><h1>Gerador de Fichas</h1></header>
 
 		<main>
+			<!-- PDF Preview -->
 			<section id="content">
 				<h1 id="title">
 					Nome do Prato
@@ -64,13 +68,14 @@
 					src="src/Logo Muccini PNG.png"
 					alt=""
 				/>
+
+				<div id="userInfo">
+					<span>width: px e height: px</span>
+				</div>
 			</section>
 
+			<!-- PDF Config -->
 			<div id="boxTools">
-				<label for="inputName"
-					>Nome do Arquivo:
-					<input id="inputName" name="inputName" type="text" />
-				</label>
 				<label for="inputTitle"
 					>Nome do Prato:
 					<input id="inputTitle" name="inputTitle" type="text" />
@@ -83,6 +88,11 @@
 				<label for="inputName"
 					>Modo de Preparo:
 					<input id="inputPrep" name="inputPrep" type="text" />
+				</label>
+
+				<label for="inputName"
+					>Nome do Arquivo:
+					<input id="inputName" name="inputName" type="text" />
 				</label>
 
 				<div
@@ -125,6 +135,7 @@
 
 				<button id="btnDesign">DesignMode</button>
 				<button id="btnGenerate">Exportar PDF</button>
+
 				<footer>
 					<a href="https://www.linkedin.com/in/romulo-henri/"
 						>Desenvolvido por Rômulo Henri</a
@@ -134,6 +145,7 @@
 		</main>
 
 		<!-- Scripts -->
+		<script src="src/js/inicial.js"></script>
 		<script src="src/js/custom.js"></script>
 		<script src="src/js/custom-image.js"></script>
 		<script src="src/js/export.js"></script>
