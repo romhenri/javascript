@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -14,13 +18,19 @@ main {
 }
 
 header {
-  background-color: #ececec;
+  background-color: #212529;
+  color: aliceblue;
   height: 5vh;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.171);
+}
+
+header h1 {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400;
 }
 
 section#content {
@@ -100,7 +110,6 @@ h2 {
   background-color: #ececec;
   transition: .3s;
   cursor: pointer;
-
 }
 
 .textInput:hover {
@@ -132,6 +141,13 @@ section textarea {
   outline: 0;
   border: 0;
   overflow-wrap: break-word;
+}
+
+label textarea {
+  min-width: 100%;
+  max-width: 100%;
+  height: 65px;
+  min-height: 65px;
 }
 
 .logo {
@@ -175,7 +191,7 @@ button:active {
   max-width: 30vw;
 }
 
-#boxTools input, #boxTools select {
+#boxTools input, #boxTools select, label textarea {
   border: 1px solid hsla(0, 0%, 0%, 0.45);
 
   box-sizing: border-box;
@@ -186,7 +202,7 @@ button:active {
   border-radius: 5px;
 }
 
-#boxTools input:focus {
+#boxTools input:focus, label textarea:focus {
   background-color: #f0fdf8;
   border: 1px solid hsla(0, 0%, 0%, 0.75);
   outline: none;
