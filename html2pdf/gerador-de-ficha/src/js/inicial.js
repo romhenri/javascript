@@ -1,19 +1,31 @@
-const userInfo = document.getElementById("userInfo");
-const windowWidth = screen.outerWidth;
-const windowHeight = screen.outerHeight;
+const userInfo = document.getElementById('userInfo')
+const secureStatus = document.querySelector('.status')
 
-var scale = "scale(1)";
-document.body.style.webkitTransform = scale; // Chrome, Opera, Safari
-document.body.style.msTransform = scale; // IE 9
-document.body.style.transform = scale; // Geral
+updateUserInfo()
+checkStatus()
 
-updateUserInfo();
+console.log(screen)
+console.log(window)
 
-console.log(screen);
-console.log(window);
-
-window.addEventListener("resize", () => updateUserInfo());
+window.addEventListener('resize', () => {
+	updateUserInfo()
+	checkStatus()
+})
 
 function updateUserInfo() {
-	userInfo.innerHTML = `width: ${window.innerWidth}px e height: ${window.innerHeight}px`;
+	userInfo.innerHTML = `width: ${window.innerWidth}px e height: ${window.innerHeight}px [Min: 1440px]`
+}
+
+function checkStatus() {
+	if (window.innerHeight >= 1440) {
+		//
+		secureStatus.classList.add('secure')
+		document.querySelector('#content').classList.add('secure')
+		//
+	} else if (window.innerHeight <= 1440) {
+		//
+		secureStatus.classList.remove('secure')
+		document.querySelector('#content').classList.remove('secure')
+		//
+	}
 }

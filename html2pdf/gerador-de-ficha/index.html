@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="initial-scale=1.0" />
 		<title>Gerador de Ficha</title>
 		<!-- Style -->
 		<link rel="stylesheet" href="src/css/style.css" />
@@ -26,7 +26,7 @@
 
 		<main>
 			<!-- PDF Preview -->
-			<section id="content">
+			<section id="content" class="secure">
 				<h1 id="title">
 					Nome do Prato
 				</h1>
@@ -148,9 +148,10 @@
 			</div>
 		</main>
 
-		<div id="userInfo">
-			<span>width: px e height: px</span>
-		</div>
+		<footer class="footer">
+			<p id="userInfo">width: px e height: px [Min: 1440px]</p>
+			<div class="status"></div>
+		</footer>
 
 		<!-- Scripts -->
 		<script src="src/js/inicial.js"></script>
