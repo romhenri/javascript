@@ -1,13 +1,29 @@
 #workSpace {
+	position: relative;
 	display: flex;
 	align-items: center;
+	text-align: right;
 	gap: 3px;
-	padding: 0 10px;
-	font-size: 1.5em;
+	padding: 15px 10px 0 10px;
 
-	height: 80px;
+	height: 60px;
 	border-top: 2px solid var(--bgc);
 	overflow: hidden;
+}
+
+#calcsInicial {
+	font-size: 1.5em;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+#calcsView {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 0.8em;
+	opacity: 0.4;
+	letter-spacing: 1px;
 }
 
 #buttons {

@@ -1,6 +1,7 @@
 const calcsInicial = document.querySelector('#calcsInicial')
 const buttons = document.querySelector('#button buttons')
 
+var operation = undefined
 var firstNumber = ''
 var secondNumber = ''
 var isSecondeNumber = false
@@ -23,6 +24,11 @@ const btnEnter = document.querySelector('#enter')
 const btnClear = document.querySelector('#clear')
 btnClear.addEventListener('click', () => {
 	calcsInicial.innerHTML = ''
+	calcsView.innerHTML = ''
+	firstNumber = ''
+	secondNumber = ''
+	isSecondeNumber = false
+	operation = undefined
 })
 
 // Buttons Number
@@ -163,7 +169,17 @@ btnPlus.addEventListener('click', () => {
 	viewSignal.innerText = '+'
 	calcsInicial.appendChild(viewSignal)
 
-	var operation = 'plus'
+	operation = 'plus'
+	isSecondeNumber = true
+})
+
+btnMinus.addEventListener('click', () => {
+	const viewSignal = document.createElement('span')
+	viewSignal.innerText = '-'
+	calcsInicial.appendChild(viewSignal)
+
+	operation = 'minus'
+	isSecondeNumber = true
 })
 
 btnEnter.addEventListener('click', () => {
@@ -175,12 +191,21 @@ btnEnter.addEventListener('click', () => {
 })
 
 function makeCalc() {
-	const calcs = document.querySelectorAll('#calcsInicial span')
+	if (operation == 'plus') {
+		result = parseInt(firstNumber) + parseInt(secondNumber)
+	}
+	if (operation == 'minus') {
+		result = parseInt(firstNumber) - parseInt(secondNumber)
+	}
 
-	console.log(calcs)
+	console.log(`${firstNumber} is ${typeof parseInt(firstNumber)}`)
+	console.log(`${secondNumber} is ${typeof parseInt(secondNumber)}`)
 
-	const calc = document.createElement('span')
-	calc.appendChild(calcs)
+	firstNumber = result
+	secondNumber = ''
+	isSecondeNumber = false
+	operation = undefined
 
-	console.log(calcs)
+	calcsView.innerText = calcsInicial.innerText
+	calcsInicial.innerHTML = result
 }
