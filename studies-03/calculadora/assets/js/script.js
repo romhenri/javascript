@@ -1,4 +1,4 @@
-const workSpace = document.querySelector('#workSpace')
+const calcsInicial = document.querySelector('#calcsInicial')
 const buttons = document.querySelector('#button buttons')
 
 var firstNumber = ''
@@ -16,9 +16,13 @@ const btnEight = document.querySelector('#eight')
 const btnNine = document.querySelector('#nine')
 const btnZero = document.querySelector('#zero')
 
+const btnPlus = document.querySelector('#plus')
+const btnMinus = document.querySelector('#minus')
+const btnEnter = document.querySelector('#enter')
+
 const btnClear = document.querySelector('#clear')
 btnClear.addEventListener('click', () => {
-	workSpace.innerHTML = ''
+	calcsInicial.innerHTML = ''
 })
 
 // Buttons Number
@@ -27,7 +31,7 @@ btnOne.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 	const number = btnOne.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -40,7 +44,7 @@ btnTwo.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 	const number = btnTwo.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -53,7 +57,7 @@ btnThree.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 	const number = btnThree.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -66,7 +70,7 @@ btnFour.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 	const number = btnFour.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -79,7 +83,7 @@ btnFive.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 	const number = btnFive.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -92,7 +96,7 @@ btnSix.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 	const number = btnSix.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -104,9 +108,9 @@ btnSix.addEventListener('click', () => {
 btnSeven.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 
-	const number = btnSix.getAttribute('value')
+	const number = btnSeven.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -119,7 +123,7 @@ btnEight.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 	const number = btnEight.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -132,7 +136,7 @@ btnNine.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 	const number = btnNine.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -145,7 +149,7 @@ btnZero.addEventListener('click', () => {
 	const viewNumber = document.createElement('span')
 	const number = btnZero.getAttribute('value')
 	viewNumber.innerText = number
-	workSpace.appendChild(viewNumber)
+	calcsInicial.appendChild(viewNumber)
 
 	if (!isSecondeNumber) {
 		firstNumber += number
@@ -153,3 +157,30 @@ btnZero.addEventListener('click', () => {
 		secondNumber += number
 	}
 })
+
+btnPlus.addEventListener('click', () => {
+	const viewSignal = document.createElement('span')
+	viewSignal.innerText = '+'
+	calcsInicial.appendChild(viewSignal)
+
+	var operation = 'plus'
+})
+
+btnEnter.addEventListener('click', () => {
+	const viewSignal = document.createElement('span')
+	viewSignal.innerText = '='
+	calcsInicial.appendChild(viewSignal)
+
+	makeCalc()
+})
+
+function makeCalc() {
+	const calcs = document.querySelectorAll('#calcsInicial span')
+
+	console.log(calcs)
+
+	const calc = document.createElement('span')
+	calc.appendChild(calcs)
+
+	console.log(calcs)
+}
