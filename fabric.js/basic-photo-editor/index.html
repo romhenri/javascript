@@ -21,6 +21,20 @@
 		<header></header>
 		<main>
 			<section id="section">
+				<div class="imageOpt">
+					<h2>Adicionar Imagem</h2>
+					<hr />
+					<input
+						type="file"
+						accept="image/*"
+						src=""
+						alt=""
+						id="inputImg"
+						placeholder="Upload"
+					/>
+					<input type="number" name="" id="" placeholder="1" />
+					<button id="btnAddImage">Confirmar</button>
+				</div>
 				<canvas id="canvas" width="800" height="600"> </canvas>
 			</section>
 
@@ -39,8 +53,8 @@
 					<button id="btnPaste">
 						<i class="fa-solid fa-paste"></i>
 					</button>
-					<button id="btnPaste">
-						<i class="fa-solid fa-paste"></i>
+					<button id="ImgPanel">
+						<i class="fa-solid fa-image"></i>
 					</button>
 				</button>
 			</aside>
@@ -49,6 +63,8 @@
 		<!-- http://fabricjs.com/docs/ -->
 		<script src="https://cdn.jsdelivr.net/npm/fabric"></script>
 	</body>
+
+	<script src="src/js/listeners.js"></script>
 	<script src="src/js/main.js"></script>
-	<script src="src/js/drawing.js"></script>
+	<!-- <script src="src/js/drawing.js"></script> -->
 </html>
