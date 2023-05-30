@@ -43,9 +43,10 @@ inputFile.addEventListener('change', function (e) {
 				img.remove()
 				selectImage.innerHTML = `Selecione uma Imagem...`
 				selectImage.style.color = '#686868'
+				disableImageConfig()
 			})
 		})
-
+		activeImageConfig()
 		reader.readAsDataURL(file)
 	} else {
 		picture.innerHTML = pictureImageTxt
@@ -86,3 +87,16 @@ inputScale.addEventListener('change', () => {
 		image.style.scale = '3.0'
 	}
 })
+
+function activeImageConfig() {
+	inputImageMode.disabled = false
+	inputScale.disabled = false
+}
+
+function disableImageConfig() {
+	inputImageMode.disabled = true
+	inputScale.disabled = true
+
+	inputImageMode.value = 'cover'
+	inputScale.value = '1.0'
+}
