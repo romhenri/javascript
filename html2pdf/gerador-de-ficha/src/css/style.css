@@ -177,8 +177,6 @@ label textarea {
 
 	top: 93%;
 	left: 88%;
-
-	width: 80px;
 }
 
 /*  */
@@ -215,6 +213,7 @@ button:active {
 
 #boxTools input,
 #boxTools select,
+.selectImage,
 label textarea {
 	border: 1px solid hsla(0, 0%, 0%, 0.45);
 
@@ -239,6 +238,42 @@ label textarea:focus {
 
 form {
 	width: 400px;
+}
+
+.selectImage {
+	height: 65px;
+	color: #686868;
+	position: relative;
+	overflow: hidden;
+}
+
+.removeImage {
+	width: 35px;
+	height: 35px;
+	background-color: rgba(104, 104, 104, 0.3);
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	text-align: center;
+	border-radius: 50%;
+	margin: 10px 8px;
+	cursor: pointer;
+}
+
+.removeImage:hover {
+	transition: 0.3s;
+	background-color: rgba(104, 104, 104, 0.5);
+}
+.removeImage:active {
+	transition: 0.3s;
+	background-color: rgba(104, 104, 104, 0.8);
+	scale: 80%;
+}
+
+.removeImage i {
+	padding: 8px;
+	font-size: 1em;
+	color: white;
 }
 
 #btnDesign {

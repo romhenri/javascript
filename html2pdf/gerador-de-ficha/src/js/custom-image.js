@@ -24,6 +24,26 @@ inputFile.addEventListener('change', function (e) {
 			img.classList.add('cover')
 
 			box.appendChild(img)
+
+			ShowNameImage()
+
+			// Name Image
+			function ShowNameImage() {
+				const selectImage = document.querySelector('.selectImage')
+
+				selectImage.innerHTML = `${file.name} <div class="removeImage">
+				<i class="fa fa-xmark"></i>
+			</div>`
+				selectImage.style.color = 'black'
+			}
+			// Remove Image
+			const btnRemoveImage = document.querySelector('.removeImage')
+			btnRemoveImage.addEventListener('click', () => {
+				const selectImage = document.querySelector('.selectImage')
+				img.remove()
+				selectImage.innerHTML = `Selecione uma Imagem...`
+				selectImage.style.color = '#686868'
+			})
 		})
 
 		reader.readAsDataURL(file)
