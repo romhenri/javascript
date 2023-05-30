@@ -13,7 +13,7 @@ window.addEventListener('resize', () => {
 })
 
 function updateUserInfo() {
-	userInfo.innerHTML = `width: ${window.innerWidth}px e height: ${window.innerHeight}px [Min: 1440px]`
+	userInfo.innerHTML = `width: ${window.innerWidth}px e height: ${window.innerHeight}px [min-height: 1440px]`
 }
 
 function checkStatus() {

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Gerador de Ficha</title>
 		<!-- Style -->
 		<link rel="stylesheet" href="src/css/style.css" />
@@ -72,6 +72,7 @@
 
 			<!-- PDF Config -->
 			<div id="boxTools">
+				<!-- Text Config -->
 				<label for="inputTitle"
 					>Nome do Prato:
 					<input id="inputTitle" name="inputTitle" type="text" />
@@ -84,7 +85,6 @@
 						type="text"
 					></textarea>
 				</label>
-
 				<label for="inputPrep"
 					>Modo de Preparo:
 					<textarea
@@ -94,6 +94,50 @@
 					></textarea>
 				</label>
 
+				<!-- Image Config -->
+				<div
+					style="
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+					"
+				>
+					<span
+						style="
+							display: flex;
+							justify-content: space-between;
+							width: 333px;
+							margin-bottom: 0;
+						"
+						><label for="inputImageMode">Modo de Imagem:</label>
+						<label for="inputScale">Escala da Imagem:</label></span
+					>
+
+					<form
+						style="
+							display: inline-block;
+							display: flex;
+							justify-content: space-between;
+							margin-top: 0;
+						"
+					>
+						<select id="inputImageMode" name="inputImageMode">
+							<option value="cover">Cobrir</option>
+							<option value="contain">Conter</option>
+						</select>
+
+						<select id="inputScale" name="format">
+							<option value="0.5">0.5</option>
+							<option value="1.0" selected>1.0</option>
+							<option value="1.5">1.5</option>
+							<option value="2.0">2.0</option>
+							<option value="2.5">2.5</option>
+							<option value="3.0">3.0</option>
+						</select>
+					</form>
+				</div>
+
+				<!-- Export Config -->
 				<label for="inputName"
 					>Nome do Arquivo:
 					<input id="inputName" name="inputName" type="text" />
@@ -114,7 +158,7 @@
 							margin-bottom: 0;
 						"
 						><label for="logo">Logo:</label>
-						<label for="format">Format:</label></span
+						<label for="format">Formato:</label></span
 					>
 
 					<form

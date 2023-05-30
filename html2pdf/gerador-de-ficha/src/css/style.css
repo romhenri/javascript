@@ -104,11 +104,19 @@ h2 {
 }
 
 .image {
-	max-height: 450px;
 	width: 100%;
 	position: absolute;
-	background-size: cover;
+	background-size: contain;
 	cursor: pointer;
+}
+
+.image.cover {
+	max-height: 450px;
+}
+
+.image.contain {
+	background-size: contain !important;
+	width: 100%;
 }
 
 .textInput {
@@ -263,12 +271,12 @@ footer a:hover {
 	background-color: #212529;
 	color: aliceblue;
 	width: 100%;
-	height: 20px;
-	top: 100%;
+	height: 40px;
 	gap: 20px;
 	padding: 20px 0px;
-	margin-top: 30px;
 	text-align: center;
+	position: absolute;
+	bottom: 0px;
 }
 
 #userInfo {
