@@ -18,10 +18,6 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 
 -   Gerador de pdf
     <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-pdf" target="_blank">(Deploy)</a>
--   Gerador de Ficha.
-    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-ficha" target="_blank">(Deploy)</a>
--   Gerador de Photogrid.
-    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-photogrid" target="_blank">(Deploy)</a>
 
 #### Fabric.js
 
@@ -30,13 +26,24 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 
 <hr>
 
+## Muccini Admin
+
+> Ferramentas desenvolvidas para otimizar atividades da empresa Famiglia Muccini.
+
+-   Gerador de Ficha.
+    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-ficha" target="_blank">(Deploy)</a>
+-   Gerador de Photogrid.
+    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-photogrid" target="_blank">(Deploy)</a>
+
 ## Basic JavaScript
+
+> Projetos desenvolvidos nos primeiros meses como Desenvolvedor.
 
 #### Studies-01 = Projetos de Janeiro
 
 -   Testando Receptividade.
 -   Média Escolar.
--   Calculadora.
+-   Calculadora. <a href="https://romhenri.github.io/javascript/studies-01/calculadora" target="_blank">(Deploy)</a>
 -   Não Clique no Botão.
 -   Contador.
 -   Conversor de Moedas.
@@ -45,7 +52,7 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 
 -   Hora do dia.
 -   Contador.
--   Calculadora.
+-   Calculadora. <a href="https://romhenri.github.io/javascript/studies-02/calculadora" target="_blank">(Deploy)</a>
 -   Registro de Pet.
 -   Gênio Numérico.
 -   Sorteador.
@@ -53,7 +60,7 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 
 #### Studies-03 = Projetos de Março
 
--   Calculadora.
+-   Calculadora. <a href="https://romhenri.github.io/javascript/studies-03/calculadora" target="_blank">(Deploy)</a>
 -   Contador.
 -   Sorteador.
 
