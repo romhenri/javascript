@@ -16,14 +16,31 @@ main
   justify-content: center
   margin: 30px
 
+  &.grid
+    flex-direction: column
+    justify-content: center
+
+    div
+      text-align: center
+
+  a
+    font-size: 1.5em
+
 header
+  display: flex
+  justify-content: space-around
   background-color: #212529
   color: aliceblue
   height: 5vh
   padding: 10px
-  display: flex
-  justify-content: center
   align-items: center
+
+  a
+    color: #fff
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
 
   /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.171);
 
@@ -270,6 +287,9 @@ footer
   text-align: center
   position: fixed
   bottom: 0
+
+  a
+    color: #fff
 
 #userInfo
   display: block
