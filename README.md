@@ -6,7 +6,7 @@
 
 <hr>
 
-Este repositório tem como intuito armazenar todos os projetos desenvolvidos por mim enquanto estudo Javascript e suas Bibliotecas (Como React.js, Fabric.js e Vue.js), por isso, possui uma variedade de utilidades pois foram feitos com intuito de sempre testar e aprender algo novo.
+Este repositório tem como intuito armazenar todos os projetos desenvolvidos por mim enquanto estudo Javascript e suas Bibliotecas (Como Fabric.js, html2canvas e html2pdf), por isso, possui uma variedade de utilidades pois foram feitos com intuito de sempre testar e aprender algo novo.
 
 <hr>
 
