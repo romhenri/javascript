@@ -2,3 +2,28 @@
 @import '_stylesheet'
 
 // sass --watch src/sass/style.sass:src/css/style.css --style compressed
+
+#mainHeader>div
+	width: 150px
+
+main
+	max-width: 980px
+	margin: 20px auto
+
+.item
+	border: 2px solid #00000065
+	border-radius: 15px
+	margin-bottom: 10px
+	padding: 50px
+
+	&:hover
+		background: #00000008
+
+@media (max-width:800px) 
+	h1
+		font-size: 1.4em
+	#mainHeader
+		div:nth-child(3)
+			display: none
+		div:nth-child(1)
+			display: none
