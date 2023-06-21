@@ -3,14 +3,14 @@
 
 // sass --watch src/sass/style.sass:src/css/style.css --style compressed
 
-#mainHeader>div
+.pageHOME #mainHeader>div
 	width: 150px
 
-main
+.pageHOME main
 	max-width: 980px
 	margin: 20px auto
 
-.item
+.pageHOME .item
 	border: 2px solid #00000065
 	border-radius: 15px
 	margin-bottom: 10px
@@ -20,9 +20,9 @@ main
 		background: #00000008
 
 @media (max-width:800px) 
-	h1
+	.pageHOME h1
 		font-size: 1.4em
-	#mainHeader
+	.pageHOME #mainHeader
 		div:nth-child(3)
 			display: none
 		div:nth-child(1)
