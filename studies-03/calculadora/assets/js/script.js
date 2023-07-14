@@ -204,6 +204,22 @@ btnPlus.addEventListener('click', () => {
 })
 
 btnMinus.addEventListener('click', () => {
+	if (
+		calcsInicial.textContent.includes('0') ||
+		calcsInicial.textContent.includes('1') ||
+		calcsInicial.textContent.includes('2') ||
+		calcsInicial.textContent.includes('3') ||
+		calcsInicial.textContent.includes('4') ||
+		calcsInicial.textContent.includes('5') ||
+		calcsInicial.textContent.includes('6') ||
+		calcsInicial.textContent.includes('7') ||
+		calcsInicial.textContent.includes('8') ||
+		calcsInicial.textContent.includes('9')
+	) {
+	} else {
+		return
+	}
+
 	const viewSignal = document.createElement('span')
 	viewSignal.innerText = '-'
 	calcsInicial.appendChild(viewSignal)
@@ -213,6 +229,22 @@ btnMinus.addEventListener('click', () => {
 })
 
 btnTimes.addEventListener('click', () => {
+	if (
+		calcsInicial.textContent.includes('0') ||
+		calcsInicial.textContent.includes('1') ||
+		calcsInicial.textContent.includes('2') ||
+		calcsInicial.textContent.includes('3') ||
+		calcsInicial.textContent.includes('4') ||
+		calcsInicial.textContent.includes('5') ||
+		calcsInicial.textContent.includes('6') ||
+		calcsInicial.textContent.includes('7') ||
+		calcsInicial.textContent.includes('8') ||
+		calcsInicial.textContent.includes('9')
+	) {
+	} else {
+		return
+	}
+
 	const viewSignal = document.createElement('span')
 	viewSignal.innerText = '*'
 	calcsInicial.appendChild(viewSignal)
@@ -222,6 +254,22 @@ btnTimes.addEventListener('click', () => {
 })
 
 btnDivide.addEventListener('click', () => {
+	if (
+		calcsInicial.textContent.includes('0') ||
+		calcsInicial.textContent.includes('1') ||
+		calcsInicial.textContent.includes('2') ||
+		calcsInicial.textContent.includes('3') ||
+		calcsInicial.textContent.includes('4') ||
+		calcsInicial.textContent.includes('5') ||
+		calcsInicial.textContent.includes('6') ||
+		calcsInicial.textContent.includes('7') ||
+		calcsInicial.textContent.includes('8') ||
+		calcsInicial.textContent.includes('9')
+	) {
+	} else {
+		return
+	}
+
 	const viewSignal = document.createElement('span')
 	viewSignal.innerText = '/'
 	calcsInicial.appendChild(viewSignal)
