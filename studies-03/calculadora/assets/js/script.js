@@ -7,6 +7,8 @@ var secondNumber = ''
 var isSecondeNumber = false
 var lastNumber = 0
 
+var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+
 const btnOne = document.querySelector('#one')
 const btnTwo = document.querySelector('#two')
 const btnThree = document.querySelector('#three')
@@ -177,6 +179,22 @@ btnZero.addEventListener('click', () => {
 })
 
 btnPlus.addEventListener('click', () => {
+	if (
+		calcsInicial.textContent.includes('0') ||
+		calcsInicial.textContent.includes('1') ||
+		calcsInicial.textContent.includes('2') ||
+		calcsInicial.textContent.includes('3') ||
+		calcsInicial.textContent.includes('4') ||
+		calcsInicial.textContent.includes('5') ||
+		calcsInicial.textContent.includes('6') ||
+		calcsInicial.textContent.includes('7') ||
+		calcsInicial.textContent.includes('8') ||
+		calcsInicial.textContent.includes('9')
+	) {
+	} else {
+		return
+	}
+
 	const viewSignal = document.createElement('span')
 	viewSignal.innerText = '+'
 	calcsInicial.appendChild(viewSignal)
