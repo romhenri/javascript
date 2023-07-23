@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			main {
+				width: 60%;
+				margin: auto;
+				margin-top: 50px;
+			}
+
+			main > .box {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+
+			.box > label {
+				text-align: center;
+			}
+
+			.box > textarea {
+				max-width: 100%;
+				min-height: 200px;
+			}
+
+			.box button {
+				width: 100%;
+				padding: 10px 10px;
+			}
+
+			footer {
+				text-align: center;
+			}
+
+			footer a {
+				font-size: 0.6em;
+				text-decoration: none;
+			}
+
+			footer a:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="box">
+				<label for="inputText">
+					Escreva seu texto:
+				</label>
+				<textarea
+					type="text"
+					name="inputText"
+					id="inputText"
+				></textarea>
+				<button id="btnGenerate">Gerar Arquivo</button>
+				<a href="" download="text">
+					<button id="btnDownload">Baixar</button>
+				</a>
+			</div>
+
+			<!-- Créditos -->
+
+			<footer>
+				<a href="https://www.linkedin.com/in/romulo-henri/">
+					Desenvolvido por Rômulo Henri (2023)
+				</a>
+			</footer>
+		</main>
+	</body>
+	<script src="script.js"></script>
+</html>
