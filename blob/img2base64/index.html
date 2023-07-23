@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Imagem para base64</title>
 		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body>
@@ -19,11 +19,13 @@
 					onchange="convertImage()"
 				/>
 
-				<img src="#" alt="" id="image" />
+				<button id="btnCopy" onclick="copyBase64()" disabled>
+					Copiar
+				</button>
 
-				<a href="" download="text">
-					<button id="btnDownload">Baixar</button>
-				</a>
+				<button id="btnDownload" disabled>Baixar</button>
+
+				<img src="#" alt="" id="image" />
 			</div>
 
 			<!-- Créditos -->
@@ -35,5 +37,6 @@
 			</footer>
 		</main>
 	</body>
+	<script src="FileSaver.js"></script>
 	<script src="script.js"></script>
 </html>
