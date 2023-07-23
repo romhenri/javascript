@@ -12,4 +12,15 @@ btnGenerate.addEventListener('click', () => {
 	console.log(url)
 
 	btnDownload.parentElement.href = url
+	btnDownload.classList.add('active')
+	btnGenerate.classList.remove('active')
+	btnGenerate.disabled = true
+	btnDownload.disabled = false
 })
+
+function resetFile() {
+	btnGenerate.classList.add('active')
+	btnDownload.classList.remove('active')
+	btnGenerate.disabled = false
+	btnDownload.disabled = true
+}

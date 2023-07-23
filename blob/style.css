@@ -3,9 +3,11 @@
 }
 
 main {
-	width: 60%;
 	margin: auto;
 	margin-top: 50px;
+
+	width: 980px;
+	max-width: 90%;
 }
 
 main > .box {
@@ -19,13 +21,22 @@ main > .box {
 }
 
 .box > textarea {
+	width: 100%;
+	min-width: 100%;
 	max-width: 100%;
+	margin: auto;
 	min-height: 200px;
+	margin: auto;
 }
 
 .box button {
 	width: 100%;
 	padding: 10px 10px;
+}
+
+button.active {
+	background-color: green;
+	color: aliceblue;
 }
 
 footer {

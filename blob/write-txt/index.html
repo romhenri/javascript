@@ -4,25 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body>
 		<main>
 			<div class="box">
 				<label for="inputText">
-					Faça upload da Imagem:
+					Escreva seu texto:
 				</label>
-				<input
-					type="file"
-					name="userImage"
-					id="userImage"
-					onchange="convertImage()"
-				/>
-
-				<img src="#" alt="" id="image" />
-
+				<textarea
+					type="text"
+					name="inputText"
+					id="inputText"
+					onchange="resetFile()"
+				></textarea>
+				<button id="btnGenerate" class="active">Salvar Arquivo</button>
 				<a href="" download="text">
-					<button id="btnDownload">Baixar</button>
+					<button id="btnDownload" disabled>Baixar</button>
 				</a>
 			</div>
 
@@ -35,5 +33,5 @@
 			</footer>
 		</main>
 	</body>
-	<script src="img2base64.js"></script>
+	<script src="script.js"></script>
 </html>
