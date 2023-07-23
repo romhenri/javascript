@@ -1,0 +1,42 @@
+* {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	width: 60%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+main > .box {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.box > label {
+	text-align: center;
+}
+
+.box > textarea {
+	max-width: 100%;
+	min-height: 200px;
+}
+
+.box button {
+	width: 100%;
+	padding: 10px 10px;
+}
+
+footer {
+	text-align: center;
+}
+
+footer a {
+	font-size: 0.6em;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
