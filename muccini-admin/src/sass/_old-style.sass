@@ -165,7 +165,7 @@ label textarea
   left: 88%
 
 button
-  padding: 30px
+  padding: 20px 30px
   font-size: 22px
   background-color: green
   color: aliceblue
@@ -249,7 +249,15 @@ form
     font-size: 1em
     color: white
 
-#btnDesign
+.flexline
+  position: relative
+  display: flex
+  gap: 5px
+  
+  button
+    flex-grow: 1
+
+#btnDesign, #btnLoad, #btnSave, #btnLoadFake
   background-color: #ececec
 
   /* color: green;
@@ -257,6 +265,25 @@ form
   color: black
 
   /* color: #fff;
+
+#btnLoadFake
+  position: absolute
+  width: 48%
+  z-index: -1
+  cursor: pointer
+
+.flexline input[type='file']
+  opacity: 0 !important
+  cursor: pointer
+
+.flexline label
+  display: none
+  background-color: #3498db
+  border-radius: 5px
+  color: #fff
+  cursor: pointer
+  margin: 10px
+  padding: 6px 20px
 
 footer
   text-align: center
