@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Fetch com JSON Local</title>
+  <style>
+    * {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background-color: darkred;
+      color: #fff;
+      font-weight: 500;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    #infoDesigner {
+      background-color: lightblue;
+      border: 2px solid darkblue;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+    }
+
+    #data {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<header></header>
+
+  <div id="data"></div>
+  
+  <div id="infoDesigner">
+    <p>Nome:</p>
+    <p>Idade:</p>
+  </div>
+
+  <script>
+    const url = 'data.json';
+    
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        const div = document.querySelector('#data');
+        div.innerHTML = `
+        <span>
+        <strong>Nome:</strong>
+        ${data.name}
+        </span>
+        <span>
+        <strong>Email:</strong>
+         ${data.email}
+        </span>
+        `;
+      })
+      .catch(error => console.error('Erro:', error));
+
+      // Header JSON
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        const div = document.querySelector('header');
+        div.textContent = ` ${data.name}`;
+      })
+      .catch(error => console.error('Erro:', error));
+    
+      // Desginer JSON
+    fetch('json/designer.json')
+      .then(response => response.json())
+      .then(designer=> {
+        const div = document.querySelector('#infoDesigner');
+        div.innerHTML = `
+        <p>
+          <strong>Nome:</strong>
+          ${designer.name}
+        </p>
+        <p>
+          <strong>Idade:</strong>
+          ${designer.age} anos
+        </p>
+        `;
+        console.log(designer.name)
+      })
+      .then(designer=> {
+        console.log(designer.age)
+      })
+      .catch(error => console.error('Erro:', error));
+
+    // alert(designer.name)
+  </script>
+</body>
+</html>
