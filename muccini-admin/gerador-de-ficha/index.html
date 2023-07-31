@@ -1,276 +1,304 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gerador de Ficha</title>
-    <!-- Style -->
-    <link rel="stylesheet" href="../src/css/style.css" />
-    <!-- Icon -->
-    <link
-      rel="shortcut icon"
-      href="../src/Logo Muccini PNG.png"
-      type="image/x-icon"
-    />
-    <!-- Font-Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/eacbb44f8a.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Lib html2pdf -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <div>
-        <a href="https://famigliamuccini.github.io/web/"> Retornar ao Site </a>
-      </div>
-      <h1>Gerador de Fichas</h1>
-      <div>
-        <a href="https:github.com/famigliamuccini/web"> Repositório </a>
-      </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gerador de Ficha</title>
+		<!-- Style -->
+		<link rel="stylesheet" href="../src/css/style.css" />
+		<!-- Icon -->
+		<link
+			rel="shortcut icon"
+			href="../src/Logo Muccini PNG.png"
+			type="image/x-icon"
+		/>
+		<!-- Font-Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://kit.fontawesome.com/eacbb44f8a.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Lib html2pdf -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+			integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</head>
+	<body>
+		<header>
+			<div>
+				<a href="https://famigliamuccini.github.io/web/">
+					Retornar ao Site
+				</a>
+			</div>
+			<h1>Gerador de Fichas</h1>
+			<div>
+				<a href="https:github.com/famigliamuccini/web"> Repositório </a>
+			</div>
+		</header>
 
-    <main>
-      <!-- PDF Preview -->
-      <section id="content" class="secure">
-        <h1 id="title">Nome do Prato</h1>
+		<main>
+			<!-- PDF Preview -->
+			<section id="content" class="secure">
+				<h1 id="title">Nome do Prato</h1>
 
-        <hr />
-        <div id="boxImg">
-          <input type="file" accept="image/*" name="" id="inputImg" />
-          <label for="inputImg" class="textInput">
-            <span id="picture">
-              <label> Foto do Prato </label>
-            </span>
-          </label>
-        </div>
-        <h2>Descrição:</h2>
-        <hr />
-        <p id="desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem saepe consectetur perspiciatis? Doloremque voluptatibus
-          dolores excepturi officiis saepe nobis id iusto reiciendis qui
-          accusamus vero ullam perspiciatis, in omnis eaque?
-        </p>
+				<hr />
+				<div id="boxImg">
+					<input type="file" accept="image/*" name="" id="inputImg" />
+					<label for="inputImg" class="textInput">
+						<span id="picture">
+							<label> Foto do Prato </label>
+						</span>
+					</label>
+				</div>
+				<h2>Descrição:</h2>
+				<hr />
+				<p id="desc">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Exercitationem saepe consectetur perspiciatis? Doloremque
+					voluptatibus dolores excepturi officiis saepe nobis id iusto
+					reiciendis qui accusamus vero ullam perspiciatis, in omnis
+					eaque?
+				</p>
 
-        <h2 for="textPrep">Modo de Preparo:</h2>
-        <hr />
-        <p id="prep">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          minus hic doloribus aspernatur accusamus laboriosam nemo, nesciunt
-          reprehenderit itaque voluptates commodi sit, iste modi perferendis
-          eligendi tenetur ut vitae porro?
-        </p>
-        <img
-          id="logoSapore"
-          class="logo"
-          src="../src/Logo Sapore PNG.png"
-          alt="Sapore Logo"
-          style="width: 80px"
-        />
-        <img
-          id="logoMuccini"
-          class="logo"
-          src="../src/Logo Muccini PNG.png"
-          alt="Muccini Logo"
-          style="width: 80px"
-        />
-      </section>
+				<h2 for="textPrep">Modo de Preparo:</h2>
+				<hr />
+				<p id="prep">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Provident minus hic doloribus aspernatur accusamus
+					laboriosam nemo, nesciunt reprehenderit itaque voluptates
+					commodi sit, iste modi perferendis eligendi tenetur ut vitae
+					porro?
+				</p>
+				<img
+					id="logoSapore"
+					class="logo"
+					src="../src/Logo Sapore PNG.png"
+					alt="Sapore Logo"
+					style="width: 80px;"
+				/>
+				<img
+					id="logoMuccini"
+					class="logo"
+					src="../src/Logo Muccini PNG.png"
+					alt="Muccini Logo"
+					style="width: 80px;"
+				/>
+			</section>
 
-      <!-- PDF Config -->
-      <div id="boxTools">
-        <!-- Text Config -->
-        <label for="inputTitle"
-          >Nome do Prato:
-          <input id="inputTitle" name="inputTitle" type="text" />
-        </label>
-        <label for="inputDesc"
-          >Descrição:
-          <textarea id="inputDesc" name="inputDesc" type="text"></textarea>
-        </label>
-        <label for="inputPrep"
-          >Modo de Preparo:
-          <textarea id="inputPrep" name="inputPrep" type="text"></textarea>
-        </label>
+			<!-- PDF Config -->
+			<div id="boxTools">
+				<!-- Text Config -->
+				<label for="inputTitle"
+					>Nome do Prato:
+					<input id="inputTitle" name="inputTitle" type="text" />
+				</label>
+				<label for="inputDesc"
+					>Descrição:
+					<textarea
+						id="inputDesc"
+						name="inputDesc"
+						type="text"
+					></textarea>
+				</label>
+				<label for="inputPrep"
+					>Modo de Preparo:
+					<textarea
+						id="inputPrep"
+						name="inputPrep"
+						type="text"
+					></textarea>
+				</label>
 
-        <!-- Image Config -->
-        <label for="inputTitle">
-          Imagem:
-          <div class="selectImage">Selecione uma Imagem...</div>
-        </label>
-        <div
-          style="display: flex; flex-direction: column; justify-content: center"
-        >
-          <span
-            style="
-              display: flex;
-              justify-content: space-between;
-              width: 333px;
-              margin-bottom: 0;
-            "
-            ><label for="inputImageMode">Modo de Imagem:</label>
-            <label for="inputScale">Escala da Imagem:</label></span
-          >
+				<!-- Image Config -->
+				<label for="inputTitle">
+					Imagem:
+					<div class="selectImage">Selecione uma Imagem...</div>
+				</label>
+				<div
+					style="
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+					"
+				>
+					<span
+						style="
+							display: flex;
+							justify-content: space-between;
+							width: 333px;
+							margin-bottom: 0;
+						"
+						><label for="inputImageMode">Modo de Imagem:</label>
+						<label for="inputScale">Escala da Imagem:</label></span
+					>
 
-          <form
-            style="
-              display: inline-block;
-              display: flex;
-              justify-content: space-between;
-              margin-top: 0;
-            "
-          >
-            <select id="inputImageMode" name="inputImageMode" disabled>
-              <option value="cover">Cobrir</option>
-              <option value="contain">Conter</option>
-            </select>
+					<form
+						style="
+							display: inline-block;
+							display: flex;
+							justify-content: space-between;
+							margin-top: 0;
+						"
+					>
+						<select
+							id="inputImageMode"
+							name="inputImageMode"
+							disabled
+						>
+							<option value="cover">Cobrir</option>
+							<option value="contain">Conter</option>
+						</select>
 
-            <select id="inputScale" name="format" disabled>
-              <option value="0.25">0.25</option>
-              <option value="0.5">0.5</option>
-              <option value="0.75">0.75</option>
-              <option value="1.0" selected>1.0</option>
-              <option value="1.5">1.5</option>
-              <option value="2.0">2.0</option>
-              <option value="2.5">2.5</option>
-              <option value="3.0">3.0</option>
-              <option value="3.5">3.5</option>
-              <option value="4.0">4.0</option>
-              <option value="4.5">4.5</option>
-              <option value="5.0">5.0</option>
-            </select>
-          </form>
-        </div>
-        <div
-          style="display: flex; flex-direction: column; justify-content: center"
-        >
-          <span
-            style="
-              display: flex;
-              justify-content: space-between;
-              width: 292px;
-              margin-bottom: 0;
-            "
-            ><label for="Xmove">Pos. Horizontal:</label>
-            <label for="Ymove">Pos. Vertical:</label></span
-          >
+						<select id="inputScale" name="format" disabled>
+							<option value="0.25">0.25</option>
+							<option value="0.5">0.5</option>
+							<option value="0.75">0.75</option>
+							<option value="1.0" selected>1.0</option>
+							<option value="1.5">1.5</option>
+							<option value="2.0">2.0</option>
+							<option value="2.5">2.5</option>
+							<option value="3.0">3.0</option>
+							<option value="3.5">3.5</option>
+							<option value="4.0">4.0</option>
+							<option value="4.5">4.5</option>
+							<option value="5.0">5.0</option>
+						</select>
+					</form>
+				</div>
+				<div
+					style="
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+					"
+				>
+					<span
+						style="
+							display: flex;
+							justify-content: space-between;
+							width: 292px;
+							margin-bottom: 0;
+						"
+						><label for="Xmove">Pos. Horizontal:</label>
+						<label for="Ymove">Pos. Vertical:</label></span
+					>
 
-          <form>
-            <select id="moveX" name="moveX" disabled>
-              <option value="-50%">- 50%</option>
-              <option value="-40%">- 40%</option>
-              <option value="-30%">- 30%</option>
-              <option value="-20%">- 20%</option>
-              <option value="-10%">-10%</option>
-              <option value="0" selected>0</option>
-              <option value="10%">+ 10%</option>
-              <option value="20%">+ 20%</option>
-              <option value="30%">+ 30%</option>
-              <option value="40%">+ 40%</option>
-              <option value="50%">+ 50%</option>
-            </select>
+					<form>
+						<select id="moveX" name="moveX" disabled>
+							<option value="-50%">- 50%</option>
+							<option value="-40%">- 40%</option>
+							<option value="-30%">- 30%</option>
+							<option value="-20%">- 20%</option>
+							<option value="-10%">-10%</option>
+							<option value="0" selected>0</option>
+							<option value="10%">+ 10%</option>
+							<option value="20%">+ 20%</option>
+							<option value="30%">+ 30%</option>
+							<option value="40%">+ 40%</option>
+							<option value="50%">+ 50%</option>
+						</select>
 
-            <select id="moveY" name="moveY" disabled>
-              <option value="-50%">- 50%</option>
-              <option value="-40%">- 40%</option>
-              <option value="-30%">- 30%</option>
-              <option value="-20%">- 20%</option>
-              <option value="-10%">-10%</option>
-              <option value="0" selected>0</option>
-              <option value="10%">+ 10%</option>
-              <option value="20%">+ 20%</option>
-              <option value="30%">+ 30%</option>
-              <option value="40%">+ 40%</option>
-              <option value="50%">+ 50%</option>
-            </select>
-          </form>
-        </div>
+						<select id="moveY" name="moveY" disabled>
+							<option value="-50%">- 50%</option>
+							<option value="-40%">- 40%</option>
+							<option value="-30%">- 30%</option>
+							<option value="-20%">- 20%</option>
+							<option value="-10%">-10%</option>
+							<option value="0" selected>0</option>
+							<option value="10%">+ 10%</option>
+							<option value="20%">+ 20%</option>
+							<option value="30%">+ 30%</option>
+							<option value="40%">+ 40%</option>
+							<option value="50%">+ 50%</option>
+						</select>
+					</form>
+				</div>
 
-        <!-- Export Config -->
-        <label for="inputName"
-          >Nome do Arquivo:
-          <input id="inputName" name="inputName" type="text" />
-        </label>
+				<!-- Export Config -->
+				<label for="inputName"
+					>Nome do Arquivo:
+					<input id="inputName" name="inputName" type="text" />
+				</label>
 
-        <div
-          style="display: flex; flex-direction: column; justify-content: center"
-        >
-          <span
-            style="
-              display: flex;
-              justify-content: space-between;
-              width: 255px;
-              margin-bottom: 0;
-            "
-            ><label for="logo">Logo:</label>
-            <label for="format">Formato:</label></span
-          >
+				<div
+					style="
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+					"
+				>
+					<span
+						style="
+							display: flex;
+							justify-content: space-between;
+							width: 255px;
+							margin-bottom: 0;
+						"
+						><label for="logo">Logo:</label>
+						<label for="format">Formato:</label></span
+					>
 
-          <form
-            style="
-              display: inline-block;
-              display: flex;
-              justify-content: space-between;
-              margin-top: 0;
-            "
-          >
-            <select id="inputLogo" name="logo">
-              <option value="muc">MUCCINI</option>
-              <option value="sap">SAPORE</option>
-            </select>
+					<form
+						style="
+							display: inline-block;
+							display: flex;
+							justify-content: space-between;
+							margin-top: 0;
+						"
+					>
+						<select id="inputLogo" name="logo">
+							<option value="muc">MUCCINI</option>
+							<option value="sap">SAPORE</option>
+						</select>
 
-            <select id="inputFormat" name="format">
-              <option value="pdf">PDF</option>
-            </select>
-          </form>
-        </div>
+						<select id="inputFormat" name="format">
+							<option value="pdf">PDF</option>
+						</select>
+					</form>
+				</div>
 
-        <div class="flexline">
-          <input
-            type=""
-            id="btnLoad"
-            placeholder="Carregar"
-            onchange="funcLoad()"
-          />
-          <button id="btnLoadFake">Carregar</button>
-          <button id="btnSave">Salvar</button>
-        </div>
+				<div class="flexline">
+					<input
+						type="file"
+						id="btnLoad"
+						placeholder="Carregar"
+						onchange="funcLoad()"
+					/>
+					<button id="btnLoadFake">Carregar</button>
+					<button id="btnSave">Salvar</button>
+				</div>
 
-        <button id="btnDesign">DesignMode</button>
-        <button id="btnGenerate">Exportar PDF</button>
+				<button id="btnDesign">DesignMode</button>
+				<button id="btnGenerate">Exportar PDF</button>
 
-        <footer>
-          <a href="https://www.linkedin.com/in/romulo-henri/"
-            >Desenvolvido por Rômulo Henri</a
-          >
-        </footer>
-      </div>
-    </main>
+				<footer>
+					<a href="https://www.linkedin.com/in/romulo-henri/"
+						>Desenvolvido por Rômulo Henri</a
+					>
+				</footer>
+			</div>
+		</main>
 
-    <footer class="footer">
-      <p id="userInfo">width: px e height: px [Min: 1440px]</p>
-      <div class="status"></div>
-    </footer>
+		<footer class="footer">
+			<p id="userInfo">width: px e height: px [Min: 1440px]</p>
+			<div class="status"></div>
+		</footer>
 
-    <!-- Scripts -->
-    <script src="../src/js/inicial.js"></script>
-    <script src="../src/js/custom.js"></script>
-    <script src="../src/js/custom-image.js"></script>
-    <script src="../src/js/FileSaver.js"></script>
-    <script src="../src/js/load-and-save.js"></script>
-    <script src="../src/js/export.js"></script>
-  </body>
+		<!-- Scripts -->
+		<script src="../src/js/inicial.js"></script>
+		<script src="../src/js/custom.js"></script>
+		<script src="../src/js/custom-image.js"></script>
+		<script src="../src/js/FileSaver.js"></script>
+		<script src="../src/js/load-and-save.js"></script>
+		<script src="../src/js/export.js"></script>
+	</body>
 </html>
