@@ -2,9 +2,15 @@ const calcsInicial = document.querySelector('#calcsInicial')
 const buttons = document.querySelector('#button buttons')
 
 var operation = undefined
+
 var firstNumber = ''
 var secondNumber = ''
+var thirdNumber = ''
+
+var isFirstNumber = true
 var isSecondeNumber = false
+var isThirdNumber = false
+
 var lastNumber = 0
 
 var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -53,11 +59,17 @@ btnOne.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+	
+	if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnTwo.addEventListener('click', () => {
@@ -66,11 +78,16 @@ btnTwo.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+		if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnThree.addEventListener('click', () => {
@@ -79,11 +96,16 @@ btnThree.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+		if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnFour.addEventListener('click', () => {
@@ -92,11 +114,16 @@ btnFour.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+		if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnFive.addEventListener('click', () => {
@@ -105,11 +132,16 @@ btnFive.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+		if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnSix.addEventListener('click', () => {
@@ -118,11 +150,16 @@ btnSix.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+		if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnSeven.addEventListener('click', () => {
@@ -132,11 +169,16 @@ btnSeven.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+		if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnEight.addEventListener('click', () => {
@@ -145,11 +187,16 @@ btnEight.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+		if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnNine.addEventListener('click', () => {
@@ -158,11 +205,16 @@ btnNine.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+		if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnZero.addEventListener('click', () => {
@@ -171,11 +223,16 @@ btnZero.addEventListener('click', () => {
 	viewNumber.innerText = number
 	calcsInicial.appendChild(viewNumber)
 
-	if (!isSecondeNumber) {
+		if (isFirstNumber) {
 		firstNumber += number
-	} else if (firstNumber) {
+
+	} else if (isSecondeNumber) {
 		secondNumber += number
-	}
+
+	} else if (isThirdNumber) {
+		thirdNumber += number
+
+	} 
 })
 
 btnPlus.addEventListener('click', () => {
@@ -200,7 +257,19 @@ btnPlus.addEventListener('click', () => {
 	calcsInicial.appendChild(viewSignal)
 
 	operation = 'plus'
-	isSecondeNumber = true
+
+	
+	if (isFirstNumber) {
+		isFirstNumber = false
+		isSecondeNumber = true
+		isThirdNumber = false
+
+	} else if (isSecondeNumber) {
+		isFirstNumber = false
+		isSecondeNumber = false
+		isThirdNumber = true
+	}
+
 })
 
 btnMinus.addEventListener('click', () => {
@@ -288,11 +357,21 @@ btnEnter.addEventListener('click', () => {
 
 function makeCalc() {
 	if (operation == 'plus') {
+		if (isThirdNumber) {
+			result = parseInt(firstNumber) + parseInt(secondNumber) + parseInt(thirdNumber);
+		} else {
 		result = parseInt(firstNumber) + parseInt(secondNumber)
+		}
 	}
+
 	if (operation == 'minus') {
-		result = parseInt(firstNumber) - parseInt(secondNumber)
-	}
+		if (operation == 'plus') {
+			if (isThirdNumber) {
+				result = parseInt(firstNumber) - parseInt(secondNumber) - parseInt(thirdNumber);
+			} else {
+			result = parseInt(firstNumber) - parseInt(secondNumber)
+			}
+	}}
 	if (operation == 'times') {
 		result = parseInt(firstNumber) * parseInt(secondNumber)
 	}
@@ -302,10 +381,15 @@ function makeCalc() {
 
 	console.log(`${firstNumber} is ${typeof parseInt(firstNumber)}`)
 	console.log(`${secondNumber} is ${typeof parseInt(secondNumber)}`)
+	console.log(`${thirdNumber} is ${typeof parseInt(thirdNumber)}`)
+
 
 	firstNumber = result
 	secondNumber = ''
+	thirdNumber = ''
+	isFirstNumber = true
 	isSecondeNumber = false
+	isThirdNumber = false
 	operation = undefined
 
 	calcsView.innerText = calcsInicial.innerText
