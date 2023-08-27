@@ -8,6 +8,7 @@ const inputLogo = document.querySelector("#inputLogo");
 // Buttons
 const btnGenerate = document.getElementById("btnGenerate");
 const btnDesign = document.getElementById("btnDesign");
+const btnClear = document.getElementById("btnClear");
 // Elements
 const title = document.getElementById("title");
 const prep = document.getElementById("prep");
@@ -15,14 +16,17 @@ const desc = document.getElementById("desc");
 const logoMuccini = document.querySelector("#logoMuccini");
 
 localforage.getItem('title').then(function(value) {
+	if (value == null) {return}
 	title.innerHTML = `${value}`;
 }).catch(function(err) {
 });
 localforage.getItem('desc').then(function(value) {
+	if (value == null) {return}
 	desc.innerHTML = `${value}`;
 }).catch(function(err) {
 });
 localforage.getItem('prep').then(function(value) {
+	if (value == null) {return}
 	prep.innerHTML = `${value}`;
 }).catch(function(err) {
 });
@@ -60,3 +64,10 @@ inputLogo.addEventListener("change", () => {
 btnDesign.addEventListener("click", () => {
 	document.designMode = "on";
 });
+
+btnClear.addEventListener("click", () => {
+	localforage.setItem('title', null)
+	localforage.setItem('desc', null)
+	localforage.setItem('prep', null)
+	window.location.reload(true);
+})
