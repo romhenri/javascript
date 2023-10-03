@@ -6,11 +6,14 @@
 body {
   margin:0
 }
+.designMode {
+  background-color: rgb(223, 238, 223);
+}
 main {
   display:flex;
   flex-flow:row wrap;
   justify-content:center;
-  margin:30px
+  margin:30px;
 }
 main.grid {
   flex-direction:column;
@@ -52,6 +55,7 @@ section#content {
   min-height:1122px;
   max-height:1122px;
   padding:60px;
+  background-color: #fff;
   outline:5px dashed #c01010
 }
 section#content.secure {
@@ -129,6 +133,9 @@ h2 {
   background-size:contain !important;
   width:100%
 }
+.selectImage{
+  background-color: #fff;
+}
 .textInput {
   width:100%;
   height:100%;
@@ -193,6 +200,9 @@ button:hover {
 button:active {
   filter:brightness(80%);
   scale:90%
+}
+#btnClear, #btnDesign {
+  font-size: 1.3em;
 }
 #boxTools {
   display:flex;

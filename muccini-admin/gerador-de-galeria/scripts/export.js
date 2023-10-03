@@ -8,10 +8,6 @@ btnGenerate.addEventListener("click", () => {
 		fileName = inputName.value;
 	}
 
-	if (inputFormat.value == "jpeg") {
-		fileName = `${fileName}.jpeg`;
-	}
-
 	// PDF Content
 	const content = document.querySelector("#content");
 

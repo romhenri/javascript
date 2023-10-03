@@ -15,22 +15,6 @@ const prep = document.getElementById("prep");
 const desc = document.getElementById("desc");
 const logoMuccini = document.querySelector("#logoMuccini");
 
-// localforage.getItem('title').then(function(value) {
-// 	if (value == null) {return}
-// 	title.innerHTML = `${value}`;
-// }).catch(function(err) {
-// });
-// localforage.getItem('desc').then(function(value) {
-// 	if (value == null) {return}
-// 	desc.innerHTML = `${value}`;
-// }).catch(function(err) {
-// });
-// localforage.getItem('prep').then(function(value) {
-// 	if (value == null) {return}
-// 	prep.innerHTML = `${value}`;
-// }).catch(function(err) {
-// });
-
 // Update Data
 inputTitle.addEventListener("change", () => {
 	if (inputTitle.value) {
@@ -38,28 +22,18 @@ inputTitle.addEventListener("change", () => {
 	}
 });
 
-inputDesc.addEventListener("change", () => {
-	if (inputDesc.value) {
-		desc.innerHTML = `${inputDesc.value}`;
-	}
-});
-
-inputPrep.addEventListener("change", () => {
-	if (inputPrep.value) {
-		prep.innerHTML = `${inputPrep.value}`;
-	}
-});
-
-inputLogo.addEventListener("change", () => {
-	if (inputLogo.value == "sap") {
-		logoMuccini.width = "0px";
-		logoMuccini.style.display = "none";
-	}
-});
+const content = document.getElementById('content');
 
 // Design Mode
+var designMode = -1
 btnDesign.addEventListener("click", () => {
-	document.designMode = "on";
+	designMode = designMode * -1;
+	document.body.classList.toggle("designMode");
+	if (designMode == 1) {
+    document.designMode = "on";
+  } else {
+    document.designMode = "off";
+  }
 });
 
 btnClear.addEventListener("click", () => {
