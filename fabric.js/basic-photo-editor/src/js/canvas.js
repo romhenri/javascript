@@ -6,6 +6,8 @@ if (screen.width < 640) {
 }
 
 const canvas = new fabric.Canvas('canvas');
+const ImgPanel = document.getElementById('ImgPanel');
+const inputFile = document.getElementById('inputImg');
 
 let _clipboard;
 let url;
@@ -74,9 +76,6 @@ export function addImage() {
   document.querySelector('.imageOpt').classList.toggle('active')
 }
 
-const ImgPanel = document.getElementById('ImgPanel')
-const inputFile = document.getElementById('inputImg')
-
 // Image Panel
 ImgPanel.addEventListener('click', () => {
 	document.querySelector('.imageOpt').classList.toggle('active')
@@ -102,3 +101,20 @@ inputFile.addEventListener('change', function (e) {
 		picture.innerHTML = pictureImageTxt
 	}
 })
+
+function getCurrentDate() {
+  const date = new Date();
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-based in JavaScript
+  const year = date.getFullYear();
+
+  return `${day}_${month}_${year}`;
+}
+
+export function exportCanvas() {
+  canvas.discardActiveObject()
+	canvas.renderAll()
+	canvas.getElement().toBlob(function (blob) {
+		saveAs(blob, `image-${getCurrentDate()}.png`)
+	})
+}

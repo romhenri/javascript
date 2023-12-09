@@ -1,4 +1,4 @@
-import { copy, paste, addImage, removeActiveObject } from "./canvas.js"
+import { copy, paste, addImage, removeActiveObject, exportCanvas } from "./canvas.js"
 
 const aside = document.querySelector('aside')
 
@@ -8,20 +8,27 @@ const btnRemove = document.getElementById('btnRemove')
 const btnCopy =  document.getElementById('btnCopy')
 const btnPaste = document.getElementById('btnPaste')
 const btnAddImage =  document.getElementById('btnAddImage')
+const btnExport =  document.getElementById('btnExport')
 
 // Remove objects for button
 btnRemove.addEventListener('click', () => {
 	removeActiveObject()
 })
+// Copy
 btnCopy.addEventListener('click', () => {
 	copy();
 })
+// Paste
 btnPaste.addEventListener('click', () => {
 	paste();
 })
 // Add image
 btnAddImage.addEventListener('click', () => {
 	addImage();
+})
+// Export
+btnExport.addEventListener('click', () => {
+	exportCanvas()
 })
 
 // Keys Shortcuts
