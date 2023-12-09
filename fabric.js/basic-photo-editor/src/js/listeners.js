@@ -1,23 +1,44 @@
+import { copy, paste, addImage, removeActiveObject } from "./canvas.js"
+
+const aside = document.querySelector('aside')
+
+const btnBrush = document.getElementById('btnBrush')
+const btnErase =  document.getElementById('btnErase')
+const btnRemove = document.getElementById('btnRemove')
+const btnCopy =  document.getElementById('btnCopy')
+const btnPaste = document.getElementById('btnPaste')
+const btnAddImage =  document.getElementById('btnAddImage')
+
 // Remove objects for button
 btnRemove.addEventListener('click', () => {
 	removeActiveObject()
 })
-// Remove objects for keys
-document.addEventListener('keydown', function (event) {
-	if (event.key === 'Backspace' || event.key === 'Delete') {
-		removeActiveObject()
-	}
+btnCopy.addEventListener('click', () => {
+	copy();
 })
-//
-// Image Panel
-ImgPanel.addEventListener('click', () => {
-	document.querySelector('.imageOpt').classList.toggle('active')
+btnPaste.addEventListener('click', () => {
+	paste();
 })
 // Add image
 btnAddImage.addEventListener('click', () => {
-	fabric.Image.fromURL(url, function (oImg) {
-		oImg.scale(scaleValue).set('flipX', true)
-		canvas.add(oImg)
-	})
-	document.querySelector('.imageOpt').classList.toggle('active')
+	addImage();
+})
+
+// Keys Shortcuts
+document.addEventListener('keydown', function (event) {
+
+	// Remove object
+	if (event.key === 'Backspace' || event.key === 'Delete') {
+		removeActiveObject()
+	}
+
+	// Copy object
+	if (event.ctrlKey && event.key === 'c') {
+		copy()
+	}
+
+	// Paste object
+	if (event.ctrlKey && event.key === 'v') {
+		paste()
+	}
 })
