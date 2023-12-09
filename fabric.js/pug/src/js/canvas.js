@@ -27,7 +27,7 @@ const rect = new fabric.Rect({
 	fill: 'blue',
 })
 
-fabric.Image.fromURL('dog.jpg', function (oImg) {
+fabric.Image.fromURL('./src/images/dog1.png', function (oImg) {
 	oImg.scale(0.3).set('flipX', true)
 	canvas.add(oImg)
 })
