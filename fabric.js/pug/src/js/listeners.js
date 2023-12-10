@@ -1,4 +1,4 @@
-import { copy, paste, addImage, removeActiveObject, exportCanvas } from "./canvas.js"
+import { setBrush, setEraser, copy, paste, addImage, removeActiveObject, exportCanvas } from "./canvas.js"
 
 const aside = document.querySelector('aside')
 
@@ -10,6 +10,14 @@ const btnPaste = document.getElementById('btnPaste')
 const btnAddImage =  document.getElementById('btnAddImage')
 const btnExport =  document.getElementById('btnExport')
 
+// Brush
+btnBrush.addEventListener("click", () => {
+	setBrush();
+});
+// Eraser
+btnErase.addEventListener("click", () => { 
+	setEraser();
+});
 // Remove objects for button
 btnRemove.addEventListener('click', () => {
 	removeActiveObject()

@@ -85,21 +85,20 @@ const rect = new fabric.Rect({
 	fill: 'blue',
 })
 
-fabric.Image.fromURL('./src/images/dog1.png', function (oImg) {
-	oImg.scale(0.3).set('flipX', true)
-	canvas.add(oImg)
-})
-
+export function setBrush() {
+	canvas.isDrawingMode = !canvas.isDrawingMode;
+}
+export function setEraser() {
+	canvas.freeDrawingBrush = new fabric.EraserBrush(canvas);
+}
 export function removeActiveObject() {
 	canvas.remove(canvas.getActiveObject())
 }
-
 export function copy() {
 	canvas.getActiveObject().clone(function (cloned) {
 		_clipboard = cloned
 	})
 }
-
 export function paste() {
   // clone again, so you can do multiple copies.
 	_clipboard.clone(function(clonedObj) {
@@ -125,7 +124,6 @@ export function paste() {
 		canvas.setActiveObject(clonedObj);
 		canvas.requestRenderAll();})
 }
-
 export function addImage() {
   fabric.Image.fromURL(url, function (oImg) {
     oImg.scale(scaleValue).set('flipX', true)
@@ -133,12 +131,10 @@ export function addImage() {
   })
   document.querySelector('.imageOpt').classList.toggle('active')
 }
-
 // Image Panel
 ImgPanel.addEventListener('click', () => {
 	document.querySelector('.imageOpt').classList.toggle('active')
 })
-
 inputFile.addEventListener('change', function (e) {
 	const inputTarget = e.target
 	const file = inputTarget.files[0]
