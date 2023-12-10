@@ -17,6 +17,10 @@ function initCanvas(size = { width: 800, height: 600 }) {
 	})
 }
 
+function get(id) {
+	return document.querySelector(`#${id}`)
+}
+
 let _clipboard;
 let url;
 let scaleValue;
@@ -85,21 +89,56 @@ const rect = new fabric.Rect({
 	fill: 'blue',
 })
 
+let isBrusher = false;
+let isEraser = false;
+
 export function setBrush() {
-	canvas.isDrawingMode = !canvas.isDrawingMode;
+	if (isBrusher) {
+		canvas.isDrawingMode = false;
+		isBrusher = false;
+		get('btnBrush').classList.remove('active');
+		return;
+	} else if (!isBrusher) {
+		canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
+		canvas.freeDrawingBrush.color = '#000000';
+		canvas.isDrawingMode = !canvas.isDrawingMode;
+		get('btnBrush').classList.toggle('active');
+		// canvas.freeDrawingBrush.width = 5;
+		// canvas.freeDrawingBrush.shadowBlur = 0;
+	}
 }
 export function setEraser() {
-	canvas.freeDrawingBrush = new fabric.EraserBrush(canvas);
+	if (!isEraser) {
+		canvas.isDrawingMode = true;
+		canvas.freeDrawingBrush = new fabric.EraserBrush(canvas);
+		isEraser = true;
+		get('btnEraser').classList.add('active');
+	} else {
+		canvas.isDrawingMode = false;
+		canvas.freeDrawingBrush.color = '#000000';
+		isEraser = false;
+		get('btnEraser').classList.remove('active');
+	}
 }
 export function removeActiveObject() {
 	canvas.remove(canvas.getActiveObject())
 }
+export function removeAllActiveObjects() {
+	if (canvas.getActiveObjects().length > 1) {
+		canvas.getActiveObjects().forEach((obj) => {
+			canvas.remove(obj)
+		})
+	}
+}
 export function copy() {
+	if (canvas.getActiveObject() === undefined) return;
+
 	canvas.getActiveObject().clone(function (cloned) {
 		_clipboard = cloned
 	})
 }
 export function paste() {
+	if (canvas.getActiveObject() === undefined) return;
   // clone again, so you can do multiple copies.
 	_clipboard.clone(function(clonedObj) {
 		canvas.discardActiveObject();
