@@ -43,7 +43,7 @@ resizeCanvas();
 document.querySelector('#closeProject').addEventListener('click', () => {
 	project.innerHTML = `
 		<section class="create-project">
-			<h2>Vamos criar um Projeto?</h2>
+			<h2>Let's create a project?</h2>
 
 			<button id="p800x600">800x600</button>
 			<button id="p400x400">400x400</button>
@@ -53,7 +53,7 @@ document.querySelector('#closeProject').addEventListener('click', () => {
 	document.querySelector('#p800x600').addEventListener('click', () => {
 		project.innerHTML = `
 			<canvas id="canvas">
-				<p>Seu navegador não suporta canvas.</p>
+				<p>Your browser doesn't support Canvas.</p>
 			</canvas>
 		`
 		initCanvas()
@@ -63,7 +63,7 @@ document.querySelector('#closeProject').addEventListener('click', () => {
 	document.querySelector('#p400x400').addEventListener('click', () => {
 		project.innerHTML = `
 			<canvas id="canvas">
-				<p>Seu navegador não suporta canvas.</p>
+				<p>Your browser doesn't support Canvas.</p>
 			</canvas>
 		`
 		initCanvas({ width: 400, height: 400 })
