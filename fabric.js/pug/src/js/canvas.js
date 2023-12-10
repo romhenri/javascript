@@ -1,20 +1,78 @@
 // Fabric.js v5
 const section = document.getElementById('section');
-
-if (screen.width < 640) {
-	section.innerHTML = `<canvas id="canvas" width="300" height="400"></canvas>`
-}
-
-const canvas = new fabric.Canvas('canvas');
+const project = document.querySelector('.bg-canvas');
 const ImgPanel = document.getElementById('ImgPanel');
 const inputFile = document.getElementById('inputImg');
+const label = document.querySelector('label');
+var canvas = null
+
+initCanvas();
+
+function initCanvas(size = { width: 800, height: 600 }) {
+	canvas = new fabric.Canvas('canvas', size);
+
+	fabric.Image.fromURL('./src/images/dog1.png', function (oImg) {
+		oImg.scale(0.3).set('flipX', true)
+		canvas.add(oImg)
+	})
+}
 
 let _clipboard;
 let url;
 let scaleValue;
 
-section.width = `${canvas.width}px`;
-section.height = `${canvas.height}px`;
+document.body.style.zoom = "100%"
+
+window.addEventListener('resize', resizeCanvas);
+
+function resizeCanvas() {
+    // var scale = window.devicePixelRatio;  // Altere para 1 no caso de desempenho
+    // canvas.setDimensions({
+    //     width: Math.floor(section.clientWidth * scale),
+    //     height: Math.floor(section.clientHeight * scale)
+    // });
+    // canvas.renderAll();
+
+    // Atualiza o texto da label com as novas dimensões do canvas
+    label.textContent = `width: ${canvas.width}px, height: ${canvas.height}px`;
+}
+
+resizeCanvas();
+
+
+document.querySelector('#closeProject').addEventListener('click', () => {
+	project.innerHTML = `
+		<section class="create-project">
+			<h2>Vamos criar um Projeto?</h2>
+
+			<button id="p800x600">800x600</button>
+			<button id="p400x400">400x400</button>
+		</section>
+	`
+
+	document.querySelector('#p800x600').addEventListener('click', () => {
+		project.innerHTML = `
+			<canvas id="canvas">
+				<p>Seu navegador não suporta canvas.</p>
+			</canvas>
+		`
+		initCanvas()
+		resizeCanvas()
+	})
+
+	document.querySelector('#p400x400').addEventListener('click', () => {
+		project.innerHTML = `
+			<canvas id="canvas">
+				<p>Seu navegador não suporta canvas.</p>
+			</canvas>
+		`
+		initCanvas({ width: 400, height: 400 })
+		resizeCanvas()
+	})
+})
+
+// section.width = `${canvas.width}px`;
+// section.height = `${canvas.height}px`;
 
 // Defined "onload" of page
 var activeObject = canvas.getActiveObject()

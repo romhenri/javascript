@@ -20,7 +20,7 @@
 	<body>
 		<header>
 			<img src="./src/images/pug-logo.png" alt="dog pug">
-			<h1>Pug</h1>
+			<h1>Pug: Image Editor</h1>
 		</header>
 		<main>
 			<section id="section">
@@ -38,7 +38,16 @@
 					<input type="number" name="" id="" placeholder="1" />
 					<button id="btnAddImage">Confirmar</button>
 				</div>
-				<canvas id="canvas" width="800" height="600"> </canvas>
+
+				<div class="bg-canvas">
+					<canvas id="canvas">
+						<p>Seu navegador não suporta canvas.</p>
+					</canvas>
+				</div>
+				<div class="bottom-options">
+					<label for="">width: px; height: px;</label>
+					<button id="closeProject">Fechar Projeto</button>
+				</div>
 			</section>
 
 			<aside>
@@ -65,11 +74,8 @@
 				</button>
 			</aside>
 		</main>
-
-		<!-- http://fabricjs.com/docs/ -->
-		<script src="https://cdn.jsdelivr.net/npm/fabric"></script>
 	</body>
-
+	<script src="./src/js/fabric.js"></script>
 	<script src="./src/js/FileSaver.js"></script>
 	<script type="module" src="src/js/listeners.js"></script>
 	<script type="module" src="src/js/canvas.js"></script>

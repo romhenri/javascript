@@ -24,17 +24,48 @@ header img {
 
 main {
 	display: flex;
+	margin: auto;
 	justify-content: center;
 	gap: 10px;
 }
 
-section {
+section .bg-canvas {
 	background-color: aliceblue;
 	position: relative;
 }
 
+section label {
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	color: #ffffffa3;
+}
+
 canvas {
 	outline: 2px solid black;
+}
+
+.create-project {
+	background-color:#222;;
+	color: #ffffffa3;
+	gap: 10px;
+	width: 600px;
+	height: 400px;
+}
+
+.bottom-options {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	margin-top: 5px;
+	align-items: center;
+}
+
+.bottom-options button, .create-project button {
+	border: none;
+	padding: 3px 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 600;
 }
 
 aside button {
