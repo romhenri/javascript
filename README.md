@@ -12,17 +12,17 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 
 ## Bibliotecas
 
-> html2pdf e fabric.js
+#### Fabric.js
+
+-   Pug: Image Editor.
+<a href="https://romhenri.github.io/javascript/fabric.js/pug" target="_blank">(Deploy)</a>
+> Editor de Imagens feito com JS e Fabric.js.
 
 #### html2pdf
 
 -   Gerador de pdf
-    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-pdf" target="_blank">(Deploy)</a>
-
-#### Fabric.js
-
--   Basic Image Editor.
-    <a href="https://romhenri.github.io/javascript/fabric.js/basic-photo-editor" target="_blank">(Deploy)</a>
+<a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-pdf" target="_blank">(Deploy)</a>
+> Gerador de PDF com html2pdf.
 
 <hr>
 
@@ -31,9 +31,17 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 > Ferramentas desenvolvidas para otimizar atividades da empresa Famiglia Muccini.
 
 -   Gerador de Ficha.
-    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-ficha" target="_blank">(Deploy)</a>
--   Gerador de Photogrid.
-    <a href="https://romhenri.github.io/javascript/html2pdf/gerador-de-photogrid" target="_blank">(Deploy)</a>
+<a href="https://romhenri.github.io/javascript/muccini-admin/gerador-de-ficha/" target="_blank">(Deploy)</a>
+> Gerador de fichas padronizadas para receitas de pratos.
+-   Gerador de Galeria.
+<a href="https://romhenri.github.io/javascript/muccini-admin/gerador-de-galeria/" target="_blank">(Deploy)</a>
+> Gerador de galeria para exibir 6 pratos em uma folha.
+
+## Extensões de Navegador
+
+- Privacy4WhatsApp <a href="https://chromewebstore.google.com/u/1/detail/privacy4whatsapp/dnpggkmlfigdmichcmgecblkoggbnbop?pli=1" target="_blank">(Página na Loja)</a>
+> Extensão de borrar menssagens no WhatsApp Web por privacidade.
+
 
 ## Basic JavaScript
 
@@ -44,7 +52,7 @@ Este repositório tem como intuito armazenar todos os projetos desenvolvidos por
 -   Testando Receptividade.
 -   Média Escolar.
 -   Calculadora. <a href="https://romhenri.github.io/javascript/studies-01/calculadora" target="_blank">(Deploy)</a>
--   Não Clique no Botão.
+-   Não Clique no Botão. <a href="https://romhenri.github.io/javascript/studies-01/nao-clique" target="_blank">(Deploy)</a>
 -   Contador. <a href="https://romhenri.github.io/javascript/studies-01/contador" target="_blank">(Deploy)</a>
 
 #### Studies-02 = Projetos de Fevereiro
