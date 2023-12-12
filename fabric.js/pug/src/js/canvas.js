@@ -9,7 +9,11 @@ var canvas = null
 initCanvas();
 
 function initCanvas(size = { width: 800, height: 600 }) {
-	canvas = new fabric.Canvas('canvas', size);
+	canvas = new fabric.Canvas('canvas', {
+		width: size.width,
+		height: size.height,
+		backgroundColor: '#fff',
+	})
 
 	fabric.Image.fromURL('./src/images/dog1.png', function (oImg) {
 		oImg.scale(0.3).set('flipX', true)
