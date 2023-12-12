@@ -7,48 +7,71 @@ const inputFile = document.getElementById('inputImg');
 const label = document.querySelector('label');
 var canvas = null
 
-initCanvas();
+function get(id) {
+	return document.querySelector(`#${id}`)
+}
 
-function initCanvas(size = { width: 800, height: 600 }) {
+document.body.style.zoom = "100%"
+
+let _clipboard;
+let scaleValue;
+let url;
+
+let isBrusher = false;
+let isEraser = false;
+
+initCanvas();
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+function initCanvas(size = {width:800,height:600}) {
+	console.log("initCanvas...");
 	canvas = new fabric.Canvas('canvas', {
 		width: size.width,
 		height: size.height,
 		backgroundColor: '#fff',
 	})
-
+	
 	fabric.Image.fromURL('./src/images/dog1.png', function (oImg) {
 		oImg.scale(0.3).set('flipX', true)
 		canvas.add(oImg)
 	})
 }
 
-function get(id) {
-	return document.querySelector(`#${id}`)
-}
-
-let _clipboard;
-let url;
-let scaleValue;
-
-document.body.style.zoom = "100%"
-
-window.addEventListener('resize', resizeCanvas);
-
 function resizeCanvas() {
-    // var scale = window.devicePixelRatio;  // Altere para 1 no caso de desempenho
-    // canvas.setDimensions({
-    //     width: Math.floor(section.clientWidth * scale),
-    //     height: Math.floor(section.clientHeight * scale)
-    // });
-    // canvas.renderAll();
-
-    // Atualiza o texto da label com as novas dimensões do canvas
     label.textContent = `width: ${canvas.width}px, height: ${canvas.height}px`;
 }
 
-resizeCanvas();
+function restartData() {
+	_clipboard = null;
+	scaleValue = 0;
+	url = '';
+	isBrusher = false;
+	isEraser = false;
+
+	// Remove class active of all buttons
+	const buttons = document
+	.querySelectorAll('aside button')
+	buttons.forEach((button) => {
+		button.classList.remove('active')
+	})
+}
 
 get('clearProject').addEventListener('click', () => {
+	// Delete all objects
+	// let all = canvas.discardActiveObject().getObjects()
+	// all.forEach((obj) => {
+	// 	canvas.remove(obj)
+	// 	obj = null
+	// })
+
+	// Restart canvas
+	project.innerHTML = `
+		<canvas id="canvas">
+			<p>Your browser doesn't support Canvas.</p>
+		</canvas>
+	`
+	restartData()
 
 	if (canvas.width === 800 && canvas.height === 600) {
 		initCanvas();
@@ -91,11 +114,7 @@ get('closeProject').addEventListener('click', () => {
 	})
 })
 
-// section.width = `${canvas.width}px`;
-// section.height = `${canvas.height}px`;
-
-// Defined "onload" of page
-var activeObject = canvas.getActiveObject()
+// var activeObject = canvas.getActiveObject()
 
 const rect = new fabric.Rect({
 	top: 300,
@@ -104,9 +123,6 @@ const rect = new fabric.Rect({
 	height: 80,
 	fill: 'blue',
 })
-
-let isBrusher = false;
-let isEraser = false;
 
 export function setBrush() {
 	if (isBrusher) {
@@ -186,6 +202,7 @@ export function addImage() {
   })
   document.querySelector('.imageOpt').classList.toggle('active')
 }
+
 // Image Panel
 ImgPanel.addEventListener('click', () => {
 	document.querySelector('.imageOpt').classList.toggle('active')
@@ -210,7 +227,6 @@ inputFile.addEventListener('change', function (e) {
 		picture.innerHTML = pictureImageTxt
 	}
 })
-
 function getCurrentDate() {
   const date = new Date();
   const day = String(date.getDate()).padStart(2, '0');
