@@ -55,6 +55,7 @@ canvas
   gap: 10px
   margin-top: 5px
   align-items: center
+   width: 100%
 
   div
     display: flex
@@ -76,6 +77,13 @@ canvas
   font-weight: 600
 
 aside
+  max-width: 90px
+  max-height: 120px
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  gap: 5px
+
   button
     width: 40px
     height: 40px
@@ -87,12 +95,6 @@ aside
     &:active
       background-color: #f9b865
 
-  max-width: 90px
-  max-height: 120px
-  display: flex
-  flex-wrap: wrap
-  flex-direction: row
-  gap: 5px
 
 @media screen and (max-width: 640px)
   main
