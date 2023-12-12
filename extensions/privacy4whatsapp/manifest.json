@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Privacy4Whatsapp",
   "description": "Blur Whatsapp messages until you hover over them",
-  "version": "1.0",
+  "version": "1.2",
   "icons": {
     "16": "icons/icon-48.png",
     "32": "icons/icon-48.png",

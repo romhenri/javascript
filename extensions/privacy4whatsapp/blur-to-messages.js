@@ -1,4 +1,3 @@
-window.alert("Extension Pivacy4Whatsapp is running! new");
 // Extensions documentation: https://developer.chrome.com/docs/extensions?hl=pt-br
 
 function blurMessages() {
@@ -27,7 +26,26 @@ style.innerHTML = `
   footer .blurred, .kao4egtt .blurred{
     filter: blur(0px);
   }
+  .visible .blurred {
+    filter: none;
+  }
 `;
 
 // Add to head
 document.head.appendChild(style);
+
+document.addEventListener('keydown', function(event) {
+  if (event.altKey) {
+    event.preventDefault();
+    document.body.classList.add('visible');
+  }
+});
+
+document.addEventListener('keyup', function(event) {
+  if (event.key === 'Alt') {
+    if (!document.body.classList.contains('visible')) {
+      return;
+    }
+    document.body.classList.remove('visible');
+  }
+});
