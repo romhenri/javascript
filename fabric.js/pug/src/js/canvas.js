@@ -1,6 +1,7 @@
 // Fabric.js v5
 const section = document.getElementById('section');
-const project = document.querySelector('.bg-canvas');
+const project = document.
+querySelector('.canvas-container');
 const ImgPanel = document.getElementById('ImgPanel');
 const inputFile = document.getElementById('inputImg');
 const label = document.querySelector('label');

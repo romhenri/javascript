@@ -22,30 +22,17 @@
 		<header>
 			<img src="./src/images/pug-logo.png" alt="dog pug">
 			<h1>Pug: Image Editor</h1>
-			<p><small>v1.2.1</small></p>
+			<p><small>v1.2.2</small></p>
 		</header>
 		<main>
 			<section id="section">
-				<div class="imageOpt">
-					<h2>Adicionar Imagem</h2>
-					<hr />
-					<input
-						type="file"
-						accept="image/*"
-						src=""
-						alt=""
-						id="inputImg"
-						placeholder="Upload"
-					/>
-					<input type="number" name="" id="" placeholder="1" />
-					<button id="btnAddImage">Confirmar</button>
-				</div>
 
-				<div class="bg-canvas">
+				<div class="canvas-container">
 					<canvas id="canvas">
 						<p>Your browser doesn't support Canvas.</p>
 					</canvas>
 				</div>
+
 				<div class="bottom-options">
 
 					<label for="">
@@ -64,6 +51,22 @@
 					</div>
 
 				</div>
+
+				<div class="imageOpt modal">
+					<h2>Adicionar Imagem</h2>
+					<hr />
+					<input
+						type="file"
+						accept="image/*"
+						src=""
+						alt=""
+						id="inputImg"
+						placeholder="Upload"
+					/>
+					<input type="number" name="" id="" placeholder="1" />
+					<button id="btnAddImage">Confirmar</button>
+				</div>
+
 			</section>
 
 			<aside>
