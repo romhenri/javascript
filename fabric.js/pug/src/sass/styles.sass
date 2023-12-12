@@ -29,7 +29,7 @@ main
 
 section
   .bg-canvas
-    background-color: aliceblue
+    background-color: transparent
     position: relative
 
   label
@@ -48,11 +48,18 @@ canvas
   height: 400px
 
 .bottom-options
+  overflow: hidden
   display: flex
+  flex-wrap: wrap
   justify-content: space-between
   gap: 10px
   margin-top: 5px
   align-items: center
+
+  div
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
 
   button
     border: none

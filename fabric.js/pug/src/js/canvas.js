@@ -47,8 +47,19 @@ function resizeCanvas() {
 
 resizeCanvas();
 
+get('clearProject').addEventListener('click', () => {
 
-document.querySelector('#closeProject').addEventListener('click', () => {
+	if (canvas.width === 800 && canvas.height === 600) {
+		initCanvas();
+	}
+	else if (
+		canvas.width === 400 && canvas.height === 400
+	){
+		initCanvas({ width: 400, height: 400 });
+	}
+})
+
+get('closeProject').addEventListener('click', () => {
 	project.innerHTML = `
 		<section class="create-project">
 			<h2>Let's create a project?</h2>
@@ -58,7 +69,7 @@ document.querySelector('#closeProject').addEventListener('click', () => {
 		</section>
 	`
 
-	document.querySelector('#p800x600').addEventListener('click', () => {
+	get('p800x600').addEventListener('click', () => {
 		project.innerHTML = `
 			<canvas id="canvas">
 				<p>Your browser doesn't support Canvas.</p>
@@ -68,7 +79,7 @@ document.querySelector('#closeProject').addEventListener('click', () => {
 		resizeCanvas()
 	})
 
-	document.querySelector('#p400x400').addEventListener('click', () => {
+	get('p400x400').addEventListener('click', () => {
 		project.innerHTML = `
 			<canvas id="canvas">
 				<p>Your browser doesn't support Canvas.</p>
