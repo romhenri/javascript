@@ -1,4 +1,4 @@
-import { setBrush, setEraser, copy, paste, addImage, removeActiveObject, removeAllActiveObjects, exportCanvas } from "./canvas.js"
+import { setBrush, setEraser, copy, paste, addImage, addPugImage, removeActiveObject, removeAllActiveObjects, exportCanvas } from "./canvas.js"
 
 const aside = document.querySelector('aside')
 
@@ -8,6 +8,7 @@ const btnRemove = document.getElementById('btnRemove')
 const btnCopy =  document.getElementById('btnCopy')
 const btnPaste = document.getElementById('btnPaste')
 const btnAddImage =  document.getElementById('btnAddImage')
+const btnAddPug =  document.getElementById('ImgPug')
 const btnExport =  document.getElementById('btnExport')
 
 // Brush
@@ -39,6 +40,10 @@ btnPaste.addEventListener('click', () => {
 // Add image
 btnAddImage.addEventListener('click', () => {
 	addImage();
+})
+// Add pug
+btnAddPug.addEventListener('click', () => {
+	addPugImage()
 })
 // Export
 btnExport.addEventListener('click', () => {

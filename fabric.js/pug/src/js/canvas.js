@@ -41,7 +41,6 @@ function initCanvas(size = {width:800,height:600}) {
 function resizeCanvas() {
     label.textContent = `width: ${canvas.width}px, height: ${canvas.height}px`;
 }
-
 function restartData() {
 	_clipboard = null;
 	scaleValue = 0;
@@ -234,6 +233,22 @@ function getCurrentDate() {
   const year = date.getFullYear();
 
   return `${day}_${month}_${year}`;
+}
+// Pug
+export function addPugImage() {
+	// Random between 0 and 0.4
+	const randomSize = Math.random() * (0.4) + 0.1
+	const randomPositionX = Math
+	.floor(Math.random() * canvas.width)
+	const randomPositionY = Math
+	.floor(Math.random() * canvas.height)
+
+	fabric.Image.fromURL('./src/images/dog1.png', function (oImg) {
+		oImg.left = randomPositionX
+		oImg.top = randomPositionY
+		oImg.scale(randomSize).set('flipX', true)
+		canvas.add(oImg)
+	})
 }
 
 export function exportCanvas() {
