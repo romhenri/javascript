@@ -4,7 +4,7 @@ const project = document.
 querySelector('.canvas-container');
 const ImgPanel = document.getElementById('ImgPanel');
 const inputFile = document.getElementById('inputImg');
-const label = document.querySelector('label');
+const label = document.querySelector('.label');
 var canvas = null
 
 function get(id) {
