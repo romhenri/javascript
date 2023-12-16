@@ -24,9 +24,14 @@ main
   border: 2px solid #ffffff20
 
 section
-  .canvas-container
-    canvas
-      outline: 2px solid #ffffff20
+  overflow: hidden
+
+  .canvas-containerr
+    overflow: auto
+    max-width: 800px
+    max-height: 800px
+    // overflow: scroll
+    outline: 2px solid #ffffff20
 
   label
     font-family: sans-serif

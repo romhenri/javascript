@@ -1,7 +1,6 @@
 // Fabric.js v5
 const section = document.getElementById('section');
-const project = document.
-querySelector('.canvas-container');
+const project = document.querySelector('.canvas-containerr');
 const ImgPanel = document.getElementById('ImgPanel');
 const inputFile = document.getElementById('inputImg');
 const label = document.querySelector('.label');
@@ -24,18 +23,30 @@ initCanvas();
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
-function initCanvas(size = {width:800,height:600}) {
+function initCanvas
+	(
+		size = {width:800,height:600},
+	)
+	{
+
 	console.log("initCanvas...");
 	canvas = new fabric.Canvas('canvas', {
 		width: size.width,
 		height: size.height,
 		backgroundColor: '#fff',
+		controlsAboveOverlay: true,
+		stopContextMenu: true
 	})
-	
+
 	fabric.Image.fromURL('./src/images/dog1.png', function (oImg) {
 		oImg.scale(0.3).set('flipX', true)
 		canvas.add(oImg)
 	})
+
+	// canvas.width = 100 
+	// canvas.setHeight(600)
+	// canvas.setZoom(.1)
+	// console.log(canvas);
 }
 
 function resizeCanvas() {
@@ -87,10 +98,21 @@ get('closeProject').addEventListener('click', () => {
 		<section class="create-project">
 			<h2>Let's create a project?</h2>
 
-			<button id="p800x600">800x600</button>
 			<button id="p400x400">400x400</button>
+			<button id="p800x600">800x600</button>
+			<button id="p800x800">800x800</button>
 		</section>
 	`
+
+	get('p400x400').addEventListener('click', () => {
+		project.innerHTML = `
+			<canvas id="canvas">
+				<p>Your browser doesn't support Canvas.</p>
+			</canvas>
+		`
+		initCanvas({ width: 400, height: 400 })
+		resizeCanvas()
+	})
 
 	get('p800x600').addEventListener('click', () => {
 		project.innerHTML = `
@@ -102,13 +124,13 @@ get('closeProject').addEventListener('click', () => {
 		resizeCanvas()
 	})
 
-	get('p400x400').addEventListener('click', () => {
+	get('p800x800').addEventListener('click', () => {
 		project.innerHTML = `
 			<canvas id="canvas">
 				<p>Your browser doesn't support Canvas.</p>
 			</canvas>
 		`
-		initCanvas({ width: 400, height: 400 })
+		initCanvas({width:800,height:800})
 		resizeCanvas()
 	})
 })
