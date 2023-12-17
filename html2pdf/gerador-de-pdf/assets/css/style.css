@@ -1,5 +1,13 @@
 /* === Projects ============================================ */
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 25px;
+}
+
 #workSpace {
     display: flex;
     justify-content: space-evenly;
@@ -7,17 +15,49 @@
 }
 
 section {
-    width: 660px;
     box-sizing: border-box;
     line-height: 20px;
-    padding: 40px;
+
+    width: 700px;
+    min-width: 700px;
+    max-width: 700px;
+    height: 1040px;
+    min-height: 1040px;
+    max-height: 1040px;
+    padding: 60px;
+    /* outline: 5px dashed rgb(192, 16, 16); */
+}
+
+section:focus {
+    outline: 1px solid rgb(192, 16, 16);
+}
+
+.sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button {
+    margin: 0px;
+    padding: 50px;
+    flex-grow: 1;
+}
+
+.btn-generate {
+    background-color: var(--c1);
+}
+
+.btn-edit {
+    background-color: var(--bgc);
 }
 
 section h1 {
     margin-bottom: 10px;
 }
 
-/* === 6. Media Queries ============================================ */
+/*: === 6. Media Queries ================ */
 
 @media screen and (max-width:500px) {
     section {
@@ -48,18 +88,4 @@ section h1 {
         font-size: 12px;
         font-weight: normal;
     }
-}
-
-/*: === 6. Media Queries ================ */
-
-.btn-generate {
-    background-color: var(--c1);
-    margin: auto;
-    margin: 20px 0px 10px;
-}
-
-.btn-edit {
-    background-color: var(--bgc);
-    margin: auto;
-    margin: 20px 0px 10px;
 }
