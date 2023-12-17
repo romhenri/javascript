@@ -26,5 +26,13 @@ btnGenerate.addEventListener("click", () => {
 });
 
 btnEdit.addEventListener("click", () => {
-	console.log("Função indisponível no momento.");
+	const content = document.querySelector("#content");
+
+	if (btnEdit.innerHTML === "Editar") {
+		content.contentEditable = true;
+		btnEdit.innerHTML = "Salvar";
+	} else {
+		content.contentEditable = false;
+		btnEdit.innerHTML = "Editar";
+	}
 });
