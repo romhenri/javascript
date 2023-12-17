@@ -24,7 +24,6 @@ section {
     height: 1040px;
     min-height: 1040px;
     max-height: 1040px;
-    padding: 60px;
     /* outline: 5px dashed rgb(192, 16, 16); */
 }
 
@@ -45,11 +44,11 @@ button {
     flex-grow: 1;
 }
 
-.btn-generate {
+.btn-a {
     background-color: var(--c1);
 }
 
-.btn-edit {
+.btn-b {
     background-color: var(--bgc);
 }
 

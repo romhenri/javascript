@@ -52,11 +52,18 @@ Body {
 }
 
 section {
+    text-align: center;
     width: 60%;
     border-radius: 5px;
-    padding: 20px;
-    /* margin: auto; */
+    padding: 60px 40px;
 
+    color:var(--bgs);
+    background-color: var(--white);
+    box-shadow: 5px 5px 10px var(--shadow);
+}
+
+section.bg-dark {
+    /* padding: 60px; */
     background-color: var(--bgs);
     color: var(--white);
     box-shadow: 5px 5px 10px var(--shadow);
