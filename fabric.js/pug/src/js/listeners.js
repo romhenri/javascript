@@ -27,7 +27,7 @@ btnEraser.addEventListener("click", () => {
 });
 // Remove objects for button
 btnRemove.addEventListener('click', () => {
-	removeActiveObject()
+	removeAllActiveObjects()
 })
 // Copy
 btnCopy.addEventListener('click', () => {
@@ -54,9 +54,10 @@ btnExport.addEventListener('click', () => {
 document.addEventListener('keydown', function (event) {
 
 	// Remove object
-	if (event.key === 'Backspace' || event.key === 'Delete') {
-		removeActiveObject()
-		// Remove all objects in selection
+	if (
+		event.key === 'Backspace' || 
+		event.key === 'Delete'
+	) {
 		removeAllActiveObjects()
 	}
 

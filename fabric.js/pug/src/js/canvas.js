@@ -94,6 +94,8 @@ get('clearProject').addEventListener('click', () => {
 })
 
 get('closeProject').addEventListener('click', () => {
+	restartData()
+
 	project.innerHTML = `
 		<section class="create-project">
 			<h2>Let's create a project?</h2>
@@ -175,6 +177,9 @@ export function setEraser() {
 }
 export function removeActiveObject() {
 	canvas.remove(canvas.getActiveObject())
+
+	// Remove all objects in selection
+	removeAllActiveObjects()
 }
 export function removeAllActiveObjects() {
 	if (canvas.getActiveObjects().length > 1) {
@@ -182,6 +187,7 @@ export function removeAllActiveObjects() {
 			canvas.remove(obj)
 		})
 	}
+	canvas.discardActiveObject()
 }
 export function copy() {
 	if (canvas.getActiveObject() === undefined) return;
