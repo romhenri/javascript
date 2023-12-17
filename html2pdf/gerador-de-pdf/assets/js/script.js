@@ -1,5 +1,7 @@
 console.log("Script started...");
 
+import {getDate} from './getDate.js';
+
 const btnAltBg = document.querySelector("#btnAltBg");
 const btnEdit=document.querySelector("#btnEdit");
 const btnGenerate=document.querySelector("#btnGenerate");
@@ -11,7 +13,7 @@ btnGenerate.addEventListener("click", () => {
 	// PDF Config
 	const options = {
 		margin: [10, 10, 10, 10],
-		filename: "arquivo.pdf",
+		filename: `file-${getDate()}.pdf`,
 		html2canvas: {
 			scale: 2,
 		},

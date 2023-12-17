@@ -35,7 +35,7 @@ DDT VULCAN 1.0.0 - @romhenri
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'sans-serif';
     src: url('assets/css/fonts/Montserrat-Regular.ttf');
     format: ('truetype')
 }
