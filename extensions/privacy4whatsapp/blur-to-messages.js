@@ -6,6 +6,12 @@ function blurMessages() {
   messages.forEach((message) => {
     message.classList.add('blurred');
   });
+
+  const prevMessages = document.querySelectorAll('._2KKXC');
+
+  prevMessages.forEach((message) => {
+    message.classList.add('blurred');
+  });
 }
 
 // Set a observer to blur new messages
@@ -18,7 +24,7 @@ var style = document.createElement('style');
 style.innerHTML = `
   .blurred {
     cursor: pointer !important;
-    filter: blur(2px);
+    filter: blur(3px);
   }
   .blurred:hover {
     filter: blur(0px);
