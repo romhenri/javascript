@@ -1,0 +1,40 @@
+h2 {
+  margin: 0;
+}
+
+main#dates-container {
+  gap: 10px;
+  margin-bottom: 120px;
+}
+
+.card {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  width: 550px;
+  gap: 20px;
+}
+
+.card div {
+  padding: auto 10px;
+}
+
+.card > div:nth-child(1) {
+  width: 185px;
+  padding: 20px;
+  display: flex;
+  background-color: #ebebeb;
+  gap: 5px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.card > div:last-child {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius:  0px 3px 3px 0px;
+}
