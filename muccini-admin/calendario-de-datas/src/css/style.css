@@ -3,6 +3,7 @@ h2 {
 }
 
 main#dates-container {
+  margin-top: 10px;margin-top: 10px;
   gap: 10px;
   margin-bottom: 120px;
 }
@@ -65,6 +66,26 @@ main#dates-container {
   cursor: pointer;
 }
 
+#overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  gap: 5px;
+  margin-top: 20px;
+  max-width: 560px;
+}
+
+#overview p {
+  margin: 0px;
+  font-size: 1rem;
+}
+
+#overview hr {
+  opacity: 0.3;
+}
+
 @media (max-width: 600px) {
   #options {
     display: flex;
@@ -91,7 +112,7 @@ main .card:nth-child(11n) {
     margin-bottom: 0px;
     margin-top: 30px;
   }
-  #options {
+  #options, #overview {
     display: none;
   }
   .card {

@@ -618,6 +618,9 @@ export var dates = [{
   descricao: "Dia Mundial do Trabalho"
 }, {
   data: "05-02",
+  descricao: "Dia Mundial do Atum"
+}, {
+  data: "05-02",
   descricao: "Dia Nacional do Ex-combatente"
 }, {
   data: "05-02",
@@ -672,6 +675,9 @@ export var dates = [{
   descricao: "Dia da Europa"
 }, {
   data: "05-10",
+  descricao: "Dia da Cozinheira"
+}, {
+  data: "05-10",
   descricao: "Dia da Cavalaria"
 }, {
   data: "05-10",
@@ -682,6 +688,12 @@ export var dates = [{
 }, {
   data: "05-12",
   descricao: "Dia Mundial do Enfermeiro"
+}, {
+  data: "05-13",
+  descricao: "Dia Nacional do Chefe de Cozinha"
+}, {
+  data: "05-13",
+  descricao: "Dia Mundial do Coquetel"
 }, {
   data: "05-13",
   descricao: "AboliÃ§Ã£o da Escravatura (1888)"
@@ -717,6 +729,12 @@ export var dates = [{
   descricao: "Dia Internacional da ComunicaÃ§Ã£o e das TelecomunicaÃ§Ãµes"
 }, {
   data: "05-18",
+  descricao: "Dia Mundial do Whisky"
+}, {
+  data: "05-18",
+  descricao: "Dia Nacional do Coquetel"
+}, {
+  data: "05-18",
   descricao: "Dia dos Vidreiros"
 }, {
   data: "05-18",
@@ -732,17 +750,26 @@ export var dates = [{
   descricao: "Dia do ComissÃ¡rio de Menores"
 }, {
   data: "05-21",
+  descricao: "Dia do Chá"
+}, {
+  data: "05-21",
   descricao: "Dia da LÃ­ngua Nacional"
 }, {
   data: "05-22",
   descricao: "Dia do Apicultor"
 }, {
   data: "05-22",
-  descricao: "Dia internacional da Biodiversidade"
+  descricao: "Dia Internacional da Biodiversidade"
 }, {
   data: "05-23",
   descricao: "Dia da Juventude Constitucionalista"
 }, {
+  data: "05-24",
+  descricao: "Dia Nacional do Café"
+},{
+  data: "05-24",
+  descricao: "Dia Nacional do Milho"
+},{
   data: "05-24",
   descricao: "Dia da Infantaria"
 }, {
@@ -770,6 +797,9 @@ export var dates = [{
   data: "05-26",
   descricao: "Dia Nacional do Bombeiro"
 }, {
+  data: "05-28",
+  descricao: "Dia Internacional do Hambúrguer"
+}, {
   data: "05-27",
   descricao: "Dia do Profissional Liberal"
 }, {
@@ -783,6 +813,9 @@ export var dates = [{
   descricao: "Dia do GeÃ³logo"
 }, {
   data: "05-30",
+  descricao: "Dia Mundial da Batata Frita"
+},  {
+  data: "05-30",
   descricao: "Dia das Bandeiras"
 }, {
   data: "05-31",
@@ -795,6 +828,9 @@ export var dates = [{
   descricao: "Dia Mundial das ComunicaÃ§Ãµes Sociais"
 }, {
   data: "06-01",
+  descricao: "Dia Mundial do Leite"
+},  {
+  data: "06-01",
   descricao: "Semana Mundial do Meio Ambiente"
 }, {
   data: "06-01",
@@ -805,6 +841,9 @@ export var dates = [{
 }, {
   data: "06-01",
   descricao: "Dia da Imprensa"
+}, {
+  data: "06-02",
+  descricao: "Dia Nacional do Vinho"
 }, {
   data: "06-02",
   descricao: "Dia Nacional de Combate Ã  CefalÃ©ia"
@@ -933,6 +972,9 @@ export var dates = [{
   descricao: "Dia Nacional do Progresso"
 }, {
   data: "06-28",
+  descricao: "Dia do Ceviche"
+},  {
+  data: "06-28",
   descricao: "Dia da RenovaÃ§Ã£o Espiritual"
 }, {
   data: "06-29",
@@ -978,7 +1020,13 @@ export var dates = [{
   descricao: "Dia da FundaÃ§Ã£o do ExÃ©rcito da SalvaÃ§Ã£o"
 }, {
   data: "07-06",
+  descricao: "Dia da Gastronomia Mineira"
+},{
+  data: "07-06",
   descricao: "Dia da CriaÃ§Ã£o do IBGE"
+}, {
+  data: "07-07",
+  descricao: "Dia Mundial do Chocolate"
 }, {
   data: "07-07",
   descricao: "Dia do Ingresso das Mulheres nas Fileiras da Marinha"
@@ -1008,6 +1056,9 @@ export var dates = [{
   descricao: "Dia Mundial do Rock"
 }, {
   data: "07-14",
+  descricao: "Dia do Macarrão com Queijo"
+}, {
+  data: "07-14",
   descricao: "Dia do Propagandista de LaboratÃ³rio"
 }, {
   data: "07-14",
@@ -1032,6 +1083,9 @@ export var dates = [{
   descricao: "Dia Nacional do Futebol"
 }, {
   data: "07-20",
+  descricao: "Dia Nacional do Biscoito"
+}, {
+  data: "07-20",
   descricao: "Dia da 1Âª Viagem Ã  Lua (1969)"
 }, {
   data: "07-20",
@@ -1048,6 +1102,9 @@ export var dates = [{
 }, {
   data: "07-23",
   descricao: "Dia do Guarda RodoviÃ¡rio"
+}, {
+  data: "07-24",
+  descricao: "Dia Internacional da Tequila"
 }, {
   data: "07-25",
   descricao: "Dia de SÃ£o CristÃ³vÃ£o"
@@ -1071,6 +1128,9 @@ export var dates = [{
   descricao: "Dia do Agricultor"
 }, {
   data: "07-29",
+  descricao: "Dia da Lasanha"
+},  {
+  data: "07-29",
   descricao: "Dia da IdentificaÃ§Ã£o"
 }, {
   data: "07-30",
@@ -1083,6 +1143,9 @@ export var dates = [{
   descricao: "Dia Nacional do Selo"
 }, {
   data: "08-02",
+  descricao: "Dia do Internacional da Cerveja"
+},{
+  data: "08-02",
   descricao: "Dia do inÃ­cio da Semana da Cultura Nordestina"
 }, {
   data: "08-03",
@@ -1094,6 +1157,12 @@ export var dates = [{
   data: "08-04",
   descricao: "Dia da Campanha Educativa de Combate ao CÃ¢ncer"
 }, {
+  data: "08-05",
+  descricao: "Aniverário de João Pessoa"
+}, {
+  data: "08-05",
+  descricao: "Dia Mundial da Ostra"
+},{
   data: "08-05",
   descricao: "Dia Nacional da SaÃºde"
 }, {
@@ -1121,6 +1190,9 @@ export var dates = [{
   data: "08-10",
   descricao: "Dia Internacional do Biodiesel"
 }, {
+  data: "08-11",
+  descricao: "Dia do Garçom"
+},{
   data: "08-11",
   descricao: "Dia da TelevisÃ£o"
 }, {
@@ -1159,6 +1231,9 @@ export var dates = [{
 }, {
   data: "08-16",
   descricao: "Dia do FilÃ³sofo"
+}, {
+  data: "08-17",
+  descricao: "Dia do Pão de Queijo"
 }, {
   data: "08-17",
   descricao: "Dia Nacional da ConstruÃ§Ã£o Social"
@@ -1233,6 +1308,9 @@ export var dates = [{
   descricao: "Dia dos BancÃ¡rios"
 }, {
   data: "08-29",
+  descricao: "Dia Nacional da Pimenta-do-Reino"
+}, {
+  data: "08-29",
   descricao: "Dia Nacional do Combate do Fumo"
 }, {
   data: "08-30",
@@ -1276,6 +1354,9 @@ export var dates = [{
 }, {
   data: "09-08",
   descricao: "Dia Internacional da AlfabetizaÃ§Ã£o"
+},{
+  data: "09-09",
+  descricao: "Dia do Cachorro Quente"
 }, {
   data: "09-09",
   descricao: "Dia do Administrador"
@@ -1285,6 +1366,12 @@ export var dates = [{
 }, {
   data: "09-09",
   descricao: "Dia da Velocidade"
+}, {
+  data: "09-10",
+  descricao: "Dia Mundial do Vinho do Porto"
+}, {
+  data: "09-10",
+  descricao: "Dia do Milk Shake"
 }, {
   data: "09-10",
   descricao: "FundaÃ§Ã£o do 1Âº Jornal do Brasil"
@@ -1298,6 +1385,9 @@ export var dates = [{
   data: "09-12",
   descricao: "Dia do Operador de Rastreamento"
 }, {
+  data: "09-13",
+  descricao: "Dia Nacional da Cachaça"
+},  {
   data: "09-13",
   descricao: "Dia do AgrÃ´nomo"
 }, {
@@ -1327,7 +1417,10 @@ export var dates = [{
 }, {
   data: "09-19",
   descricao: "Dia do Teatro"
-}, {
+},{
+  data: "09-20",
+  descricao: "Aniversário de Silvana Mozzini"
+},  {
   data: "09-20",
   descricao: "Dia do FuncionÃ¡rio Municipal"
 }, {
@@ -1347,10 +1440,16 @@ export var dates = [{
   descricao: "Dia da Luta Nacional das Pessoas com DeficiÃªncias"
 }, {
   data: "09-22",
+  descricao: "Dia da Banana"
+}, {
+  data: "09-22",
   descricao: "Dia da Juventude do Brasil"
 }, {
   data: "09-22",
   descricao: "Dia do Contador"
+}, {
+  data: "09-23",
+  descricao: "Dia do Sorvete"
 }, {
   data: "09-23",
   descricao: "Dia do Soldador"
@@ -1392,6 +1491,9 @@ export var dates = [{
   descricao: "Dia Nacional do Idoso"
 }, {
   data: "09-28",
+  descricao: "Dia Internacional de Conscientização sobre Perda e Desperdício de Alimentos"
+}, {
+  data: "09-28",
   descricao: "Dia da Lei do Ventre Livre"
 }, {
   data: "09-29",
@@ -1412,6 +1514,9 @@ export var dates = [{
   data: "09-30",
   descricao: "Dia da SecretÃ¡ria"
 }, {
+  data: "10-01",
+  descricao: "Dia Mundial do Vegetarianismo"
+},  {
   data: "10-01",
   descricao: "Dia Internacional da Terceira Idade"
 }, {
@@ -1438,6 +1543,9 @@ export var dates = [{
 }, {
   data: "10-03",
   descricao: "Dia Nacional das Abelhas"
+}, {
+  data: "10-04",
+  descricao: "Dia do Barman"
 }, {
   data: "10-04",
   descricao: "Dia da Natureza"
@@ -1483,7 +1591,10 @@ export var dates = [{
 }, {
   data: "10-10",
   descricao: "Dia Mundial do Lions Clube"
-}, {
+},{
+  data: "10-11",
+  descricao: "Dia Mundial do Ovo"
+},  {
   data: "10-11",
   descricao: "Dia do Deficiente FÃ­sico"
 }, {
@@ -1531,6 +1642,9 @@ export var dates = [{
 }, {
   data: "10-16",
   descricao: "Dia Mundial da AlimentaÃ§Ã£o"
+},  {
+  data: "10-16",
+  descricao: "Dia Mundial do Pão"
 }, {
   data: "10-16",
   descricao: "Dia da CiÃªncia e Tecnologia"
@@ -1558,6 +1672,9 @@ export var dates = [{
 }, {
   data: "10-19",
   descricao: "Dia do Profissional da InformÃ¡tica"
+},{
+  data: "10-20",
+  descricao: "Dia Internacional do Chef de Cozinha"
 }, {
   data: "10-20",
   descricao: "Dia Internacional do Controlador de TrÃ¡fego AÃ©reo"
@@ -1565,6 +1682,12 @@ export var dates = [{
   data: "10-20",
   descricao: "Dia do Arquivista"
 }, {
+  data: "10-21",
+  descricao: "Dia da Alimentação na Escola"
+}, {
+  data: "10-21",
+  descricao: "Dia da Alimentação na Enólogo"
+},   {
   data: "10-21",
   descricao: "Dia do Contato"
 }, {
@@ -1595,6 +1718,12 @@ export var dates = [{
   data: "10-24",
   descricao: "Dia das NaÃ§Ãµes Unidas (ONU)"
 }, {
+  data: "10-25",
+  descricao: "Dia do Macarrão"
+}, {
+  data: "10-25",
+  descricao: "Dia do Cheesecake"
+},  {
   data: "10-25",
   descricao: "Dia da Democracia"
 }, {
@@ -1629,6 +1758,9 @@ export var dates = [{
   descricao: "Dia do ComerciÃ¡rio"
 }, {
   data: "10-30",
+  descricao: "Dia da Merendeira Escolar"
+}, {
+  data: "10-30",
   descricao: "Dia do Fisiculturista"
 }, {
   data: "10-31",
@@ -1641,11 +1773,20 @@ export var dates = [{
   descricao: "Dia da Reforma Luterana"
 }, {
   data: "11-01",
+  descricao: "Dia do Sushi"
+},{
+  data: "11-01",
+  descricao: "Dia Mundial do Veganismo"
+}, {
+  data: "11-01",
   descricao: "Dia de Todos os Santos"
 }, {
   data: "11-02",
   descricao: "Dia de Finados"
 }, {
+  data: "11-03",
+  descricao: "Dia do Sanduíche"
+},{
   data: "11-03",
   descricao: "Dia do Cabeleireiro"
 }, {
@@ -1827,6 +1968,9 @@ export var dates = [{
   descricao: "Dia da JustiÃ§a"
 }, {
   data: "12-09",
+  descricao: "Dia do Profissional de Culinária"
+},{
+  data: "12-09",
   descricao: "Dia da CrianÃ§a Especial"
 }, {
   data: "12-09",
@@ -1860,7 +2004,7 @@ export var dates = [{
   descricao: "Dia do Marinheiro"
 }, {
   data: "12-13",
-  descricao: "Dia do Ã“tico"
+  descricao: "Dia do Ótico"
 }, {
   data: "12-13",
   descricao: "Dia de Santa Luzia"

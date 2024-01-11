@@ -2,6 +2,7 @@ import { dates } from './dates.js';
 
 const main = document.querySelector('main');
 const options = document.querySelector('#options');
+const overview = document.querySelector('#overview');
 
 let sortedDates = [];
 
@@ -17,7 +18,7 @@ sortedDates = dates.sort((a, b) => {
 
 window.addEventListener('load', () => {
   options.innerHTML = `
-    <button class="active">All</button>
+    <button class="active">Ano</button>
     <button>Jan</button>
     <button>Fev</button>
     <button>Mar</button>
@@ -68,6 +69,16 @@ function generateCards(dateArray) {
   })
 }
 
+function updateOverview() {
+  overview.innerHTML = `
+  <hr/>
+    <p>
+      ${main.querySelectorAll('.card').length} Datas
+    </p>
+  <hr/>
+  `
+}
+
 function RenderCard(
   date,
   desc
@@ -95,6 +106,7 @@ function RenderCard(
     
   `
   main.appendChild(card);
+  updateOverview();
 }
 
 function fixName(name) {
