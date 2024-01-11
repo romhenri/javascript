@@ -24,17 +24,90 @@ main#dates-container {
 
 .card > div:nth-child(1) {
   width: 185px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   background-color: #ebebeb;
   gap: 5px;
   border-radius: 0px 10px 10px 0px;
+  padding-left: 20px;
 }
 
 .card > div:last-child {
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 8px;
   box-sizing: border-box;
   border-radius:  0px 3px 3px 0px;
+}
+
+#options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+#options button {
+  width: 50px;
+  height: 40px;
+  font-size: 1rem;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ebebeb;
+  color: #464646;
+  border: 0;
+}
+
+#options button.active {
+  background-color: #a3e4c0;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #options {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .card {
+    width: 100%;
+    gap: 5px;
+  }
+  .card > div:nth-child(1) {
+    padding-left: 30px;
+  }
+}
+
+/* Print */
+main .card:nth-child(11n) {
+  page-break-before: always;
+}
+@media print {
+  h1 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+  #options {
+    display: none;
+  }
+  .card {
+    width: 100%;
+    gap: 5px;
+  }
+  .card > div:nth-child(1) {
+    padding-left: 20px;
+    padding-right: 0px;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .card > div:nth-child(2) {
+    padding-left: 10px;
+  }
+  footer.footer {
+    display: none;
+  }
 }

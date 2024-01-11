@@ -1,8 +1,11 @@
 import { dates } from './dates.js';
 
 const main = document.querySelector('main');
+const options = document.querySelector('#options');
 
-const sortedDates = dates.sort((a, b) => {
+let sortedDates = [];
+
+sortedDates = dates.sort((a, b) => {
   if (a.data > b.data) {
     return 1;
   }
@@ -12,9 +15,58 @@ const sortedDates = dates.sort((a, b) => {
   return 0;
 });
 
-sortedDates.forEach(date => {
-  RenderCard(date.data, date.descricao);
-})
+window.addEventListener('load', () => {
+  options.innerHTML = `
+    <button class="active">All</button>
+    <button>Jan</button>
+    <button>Fev</button>
+    <button>Mar</button>
+    <button>Abr</button>
+    <button>Maio</button>
+    <button>Jun</button>
+    
+    <button>Jul</button>
+    <button>Ago</button>
+    <button>Set</button>
+    <button>Out</button>
+    <button>Nov</button>
+    <button>Dez</button>
+`;
+  options.querySelectorAll('button').forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const month = index < 10 ? `0${index}` : `${index}`;
+
+      options.querySelectorAll('button').forEach(button => {
+        button.classList.remove('active');
+      });
+
+      button.classList.add('active');
+
+      generateCards(filterByMonth(month));
+    });
+  });
+});
+
+generateCards(sortedDates);
+
+function filterByMonth(month) {
+  if (month === '00') return sortedDates;
+
+  const filteredDates = sortedDates.filter(date => {
+    return date.data.split('-')[0] === month;
+  });
+
+  //console.log(filteredDates);
+  return filteredDates;
+}
+
+function generateCards(dateArray) {
+  main.innerHTML = '';
+
+  dateArray.forEach(date => {
+    RenderCard(date.data, date.descricao);
+  })
+}
 
 function RenderCard(
   date,

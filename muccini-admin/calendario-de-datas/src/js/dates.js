@@ -13,6 +13,9 @@ export var dates = [{
 }, {
   data: "01-04",
   descricao: "Dia Mundial do Braille"
+},{
+  data: "01-04",
+  descricao: "Dia Nacional do Espaguete"
 }, {
   data: "01-05",
   descricao: "CriaÃ§Ã£o da 1ª Tipografia no Brasil"
@@ -129,13 +132,16 @@ export var dates = [{
   descricao: "Dia Nacional das HistÃ³rias em Quadrinhos"
 }, {
   data: "01-31",
-  descricao: "Dia do LanÃ§amento do 1Âº SatÃ©lite (EUA)"
+  descricao: "Dia do LanÃ§amento do 1º SatÃ©lite (EUA)"
 }, {
   data: "01-31",
   descricao: "Dia Mundial do MÃ¡gico"
 }, {
   data: "02-01",
   descricao: "Dia do PublicitÃ¡rio"
+}, {
+  data: "02-01",
+  descricao: "Dia do Tomate"
 }, {
   data: "02-02",
   descricao: "Dia do Agente Fiscal"
@@ -156,6 +162,9 @@ export var dates = [{
   descricao: "Dia Mundial contra o CÃ¢ncer"
 }, {
   data: "02-05",
+  descricao: "Dia Mundial da Nutella"
+}, {
+  data: "02-05",
   descricao: "Dia do Datiloscopista"
 }, {
   data: "02-06",
@@ -170,6 +179,9 @@ export var dates = [{
   data: "02-08",
   descricao: "Dia do Quadro do MagistÃ©rio do ExÃ©rcito"
 }, {
+  data: "02-10",
+  descricao: "Dia Mundial das Leguminosas"
+},{
   data: "02-10",
   descricao: "Dia do Atleta Profissional"
 }, {
@@ -188,12 +200,18 @@ export var dates = [{
   data: "02-14",
   descricao: "Dia da Amizade"
 }, {
+  data: "02-14",
+  descricao: "Valentine’s day"
+}, {
   data: "02-15",
   descricao: "Dia Internacional de Luta contra o CÃ¢ncer na InfÃ¢ncia"
 }, {
   data: "02-16",
   descricao: "Dia do RepÃ³rter"
 }, {
+  data: "02-17",
+  descricao: "Dia Mundial do Gato"
+},{
   data: "02-17",
   descricao: "Fim da Semana da Arte Moderna (1922)"
 }, {
@@ -214,7 +232,10 @@ export var dates = [{
 }, {
   data: "02-21",
   descricao: "Data Festiva do ExÃ©rcito"
-}, {
+},{
+  data: "02-22",
+  descricao: "Dia Mundial da Margarita"
+},  {
   data: "02-22",
   descricao: "Dia do Auxiliar de ServiÃ§os Gerais"
 }, {
@@ -238,6 +259,9 @@ export var dates = [{
 }, {
   data: "02-28",
   descricao: "Dia da Ressaca"
+}, {
+  data: "03-01",
+  descricao: "Dia da Pipoca"
 }, {
   data: "03-01",
   descricao: "Dia Internacional da ProteÃ§Ã£o Civil"
@@ -318,11 +342,20 @@ export var dates = [{
   descricao: "Dia do Marceneiro"
 }, {
   data: "03-20",
+  descricao: "Dia Mundial sem Carne"
+},  {
+  data: "03-20",
   descricao: "Dia do Contador de HistÃ³rias"
 }, {
   data: "03-20",
   descricao: "InÃ­cio do Outono"
 }, {
+  data: "03-21",
+  descricao: "Dia do Pão Francês"
+}, {
+  data: "03-21",
+  descricao: "Dia Universal do Tiramisu"
+},{
   data: "03-21",
   descricao: "Dia Universal do Teatro"
 }, {
@@ -337,6 +370,9 @@ export var dates = [{
 }, {
   data: "03-23",
   descricao: "Dia Mundial da Meteorologia"
+},{
+  data: "03-25",
+  descricao: "Dia do Waffle"
 }, {
   data: "03-25",
   descricao: "Dia internacional da Solidariedade da Pessoa Detenta ou Desaparecida"
@@ -344,6 +380,9 @@ export var dates = [{
   data: "03-25",
   descricao: "Dia Nacional do Oficial de JustiÃ§a"
 }, {
+  data: "03-26",
+  descricao: "Dia do Chocolate"
+},{
   data: "03-26",
   descricao: "Dia do Cacau"
 }, {
@@ -434,6 +473,9 @@ export var dates = [{
   data: "04-11",
   descricao: "Dia do Infectologista"
 }, {
+  data: "04-11",
+  descricao: "Dia do Fondue de Queijo"
+},  {
   data: "04-12",
   descricao: "Dia do Obstetra"
 }, {
@@ -446,6 +488,9 @@ export var dates = [{
   data: "04-13",
   descricao: "Dia do Hino Nacional (1Âº ExecuÃ§Ã£o do Hino Nacional Brasileiro -1831)"
 }, {
+  data: "04-14",
+  descricao: "Dia Mundial do Café"
+},{
   data: "04-14",
   descricao: "Dia Pan-Americano"
 }, {
@@ -501,6 +546,9 @@ export var dates = [{
   descricao: "Tiradentes"
 }, {
   data: "04-22",
+  descricao: "Dia da Mandioca"
+}, {
+  data: "04-22",
   descricao: "Dia da Comunidade Luso-brasileira"
 }, {
   data: "04-22",
@@ -522,6 +570,15 @@ export var dates = [{
   descricao: "Dia Nacional da EducaÃ§Ã£o de Surdos"
 }, {
   data: "04-24",
+  descricao: "Dia Internacional do Milho"
+}, {
+  data: "04-24",
+  descricao: "Dia do Churrasco"
+},{
+  data: "04-24",
+  descricao: "Dia do Chimarrão"
+},{
+  data: "04-24",
   descricao: "Dia do Agente de Viagem"
 }, {
   data: "04-24",
@@ -534,7 +591,7 @@ export var dates = [{
   descricao: "Dia do Goleiro"
 }, {
   data: "04-26",
-  descricao: "Dia da 1Âª Missa no Brasil"
+  descricao: "Dia da 1ª Missa no Brasil"
 }, {
   data: "04-27",
   descricao: "Dia da Empregada DomÃ©stica"
