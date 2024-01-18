@@ -1,4 +1,5 @@
 import { dates } from './dates.js';
+import makeFirstCapital from './makeFisrtCapital.js';
 
 const main = document.querySelector('main');
 const options = document.querySelector('#options');
@@ -65,7 +66,11 @@ function generateCards(dateArray) {
   main.innerHTML = '';
 
   dateArray.forEach(date => {
-    RenderCard(date.data, date.descricao);
+    RenderCard(
+      date.data,
+      date.descricao,
+      date.tipo
+    );
   })
 }
 
@@ -81,15 +86,23 @@ function updateOverview() {
 
 function RenderCard(
   date,
-  desc
+  desc,
+  type
 ) {
   const card = document.createElement('div');
   card.classList.add('card');
   const day = date.split('-')[1];
   const month = date.split('-')[0];
 
+  if (type === "comida") {
+    card.classList.add('food-date');
+  }
+  if (type === "muccini") {
+    card.classList.add('muccini-date');
+  }
+
   card.innerHTML = `
-    <div>
+    <div id="date">
       <div>
         ${getDay(day)} de
       </div>
@@ -98,12 +111,17 @@ function RenderCard(
       </div>
     </div>  
     
-    <div>
+    <div id="name">
       <p>
         ${fixName(desc)}
       </p>
     </div>
-    
+
+    <div id="type">
+      <p>
+        ${makeFirstCapital(type)}
+      </p>
+    </div>
   `
   main.appendChild(card);
   updateOverview();
